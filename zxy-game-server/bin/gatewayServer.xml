@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!-- ================== 网关服务端socket配置 ================== -->
+	<bean id="gatewayServer.mina.backlog" class="java.lang.Integer">
+		<constructor-arg value="12000" />
+	</bean>
+
+	<bean id="gatewayServer.mina.tcp.nodelay" class="java.lang.Boolean">
+		<constructor-arg value="true" />
+	</bean>
+
+	<bean id="gatewayServer.mina.receive.buffer.size" class="java.lang.Integer">
+		<constructor-arg value="4096" />
+	</bean>
+
+	<bean id="gatewayServer.mina.send.buffer.size" class="java.lang.Integer">
+		<constructor-arg value="4096" />
+	</bean>
+
+	<bean id="gatewayServer.mina.read.buffer.size" class="java.lang.Integer">
+		<constructor-arg value="1280" />
+	</bean>
+
+	<bean id="gatewayServer.mina.both.idle.time" class="java.lang.Integer">
+		<constructor-arg value="60" />
+	</bean>
+
+	<bean id="gatewayServer.mina.write.timeout" class="java.lang.Integer">
+		<constructor-arg value="60" />
+	</bean>
+
+	<bean id="gatewayServer.mina.work.pool.min" class="java.lang.Integer">
+		<constructor-arg value="8" />
+	</bean>
+
+	<bean id="gatewayServer.mina.work.pool.max" class="java.lang.Integer">
+		<constructor-arg value="64" />
+	</bean>
+
+	<bean id="gatewayServer.mina.work.pool.idle" class="java.lang.Integer">
+		<constructor-arg value="30" />
+	</bean>	
+</beans>

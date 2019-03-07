@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   star:星级
+   needSoul:需要的精魄
+   heroId:可兑换仙人id
+-->
+
+<root>
+  <item star="2" needSoul="3" heroId="104"/>
+  <item star="2" needSoul="3" heroId="107"/>
+  <item star="2" needSoul="3" heroId="111"/>
+  <item star="2" needSoul="3" heroId="113"/>
+  <item star="2" needSoul="3" heroId="114"/>
+  <item star="2" needSoul="3" heroId="115"/>
+  <item star="2" needSoul="3" heroId="131"/>
+  <item star="2" needSoul="3" heroId="132"/>
+  <item star="2" needSoul="3" heroId="118"/>
+  <item star="2" needSoul="3" heroId="119"/>
+  <item star="2" needSoul="3" heroId="120"/>
+  <item star="2" needSoul="3" heroId="134"/>
+  <item star="2" needSoul="3" heroId="141"/>
+  <item star="2" needSoul="3" heroId="142"/>
+  <item star="2" needSoul="3" heroId="143"/>
+  <item star="2" needSoul="3" heroId="144"/>
+  <item star="2" needSoul="3" heroId="145"/>
+  <item star="3" needSoul="6" heroId="101"/>
+  <item star="3" needSoul="6" heroId="102"/>
+  <item star="3" needSoul="6" heroId="103"/>
+  <item star="3" needSoul="6" heroId="105"/>
+  <item star="3" needSoul="6" heroId="109"/>
+  <item star="3" needSoul="6" heroId="116"/>
+  <item star="3" needSoul="6" heroId="124"/>
+  <item star="3" needSoul="6" heroId="128"/>
+  <item star="3" needSoul="6" heroId="136"/>
+  <item star="3" needSoul="6" heroId="122"/>
+  <item star="3" needSoul="6" heroId="123"/>
+  <item star="3" needSoul="6" heroId="135"/>
+  <item star="3" needSoul="6" heroId="139"/>
+  <item star="4" needSoul="8" heroId="106"/>
+  <item star="4" needSoul="8" heroId="125"/>
+  <item star="4" needSoul="8" heroId="127"/>
+  <item star="4" needSoul="8" heroId="129"/>
+  <item star="4" needSoul="8" heroId="140"/>
+  <item star="4" needSoul="8" heroId="150"/>
+  <item star="4" needSoul="8" heroId="151"/>
+  <item star="4" needSoul="8" heroId="152"/>
+  <item star="4" needSoul="8" heroId="153"/>
+  <item star="4" needSoul="8" heroId="154"/>
+  <item star="4" needSoul="8" heroId="155"/>
+  <item star="4" needSoul="8" heroId="161"/>
+  <item star="4" needSoul="8" heroId="162"/>
+  <item star="4" needSoul="8" heroId="163"/>
+  <item star="4" needSoul="8" heroId="164"/>
+  <item star="4" needSoul="8" heroId="165"/>
+  <item star="4" needSoul="8" heroId="172"/>
+  <item star="4" needSoul="8" heroId="179"/>
+  <item star="4" needSoul="8" heroId="186"/>
+  <item star="5" needSoul="15" heroId="100"/>
+  <item star="5" needSoul="15" heroId="108"/>
+  <item star="5" needSoul="15" heroId="110"/>
+  <item star="5" needSoul="15" heroId="117"/>
+  <item star="5" needSoul="15" heroId="121"/>
+  <item star="5" needSoul="15" heroId="126"/>
+  <item star="5" needSoul="15" heroId="147"/>
+  <item star="5" needSoul="15" heroId="148"/>
+  <item star="5" needSoul="15" heroId="149"/>
+  <item star="5" needSoul="15" heroId="156"/>
+  <item star="5" needSoul="15" heroId="157"/>
+  <item star="5" needSoul="15" heroId="158"/>
+  <item star="5" needSoul="15" heroId="159"/>
+  <item star="5" needSoul="15" heroId="160"/>
+  <item star="5" needSoul="15" heroId="169"/>
+  <item star="5" needSoul="15" heroId="171"/>
+  <item star="5" needSoul="15" heroId="175"/>
+  <item star="5" needSoul="15" heroId="176"/>
+  <item star="5" needSoul="15" heroId="178"/>
+  <item star="5" needSoul="15" heroId="180"/>
+  <item star="5" needSoul="15" heroId="181"/>
+  <item star="5" needSoul="15" heroId="182"/>
+  <item star="5" needSoul="15" heroId="184"/>
+  <item star="5" needSoul="15" heroId="185"/>
+  <item star="5" needSoul="15" heroId="188"/>
+  <item star="5" needSoul="15" heroId="189"/>
+  <item star="6" needSoul="60" heroId="166"/>
+  <item star="6" needSoul="60" heroId="167"/>
+  <item star="6" needSoul="60" heroId="168"/>
+</root>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   powerRank:最强势力名次
+   totalValueExpr:计算总数表达式 (x1:仙人总击  x2:仙人总防御 x3:仙人总生命)
+   hurtPercent:攻击当前名次额外增加伤害百分比1-100
+   killPercent:杀死当前名次玩家额外增加伤害百分比(当前生命上限 * 百分比)
+-->
+
+<root>
+  <item powerRank="1" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="200" killPercent="20"/>
+  <item powerRank="2" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="196" killPercent="20"/>
+  <item powerRank="3" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="192" killPercent="20"/>
+  <item powerRank="4" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="188" killPercent="20"/>
+  <item powerRank="5" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="184" killPercent="20"/>
+  <item powerRank="6" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="180" killPercent="20"/>
+  <item powerRank="7" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="176" killPercent="20"/>
+  <item powerRank="8" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="172" killPercent="20"/>
+  <item powerRank="9" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="168" killPercent="20"/>
+  <item powerRank="10" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="164" killPercent="20"/>
+  <item powerRank="11" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="160" killPercent="20"/>
+  <item powerRank="12" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="156" killPercent="20"/>
+  <item powerRank="13" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="152" killPercent="20"/>
+  <item powerRank="14" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="148" killPercent="20"/>
+  <item powerRank="15" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="144" killPercent="20"/>
+  <item powerRank="16" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="140" killPercent="20"/>
+  <item powerRank="17" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="136" killPercent="20"/>
+  <item powerRank="18" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="132" killPercent="20"/>
+  <item powerRank="19" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="128" killPercent="20"/>
+  <item powerRank="20" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="124" killPercent="20"/>
+  <item powerRank="21" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="120" killPercent="20"/>
+  <item powerRank="22" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="116" killPercent="20"/>
+  <item powerRank="23" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="112" killPercent="20"/>
+  <item powerRank="24" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="108" killPercent="20"/>
+  <item powerRank="25" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="104" killPercent="20"/>
+  <item powerRank="26" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="100" killPercent="20"/>
+  <item powerRank="27" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="96" killPercent="20"/>
+  <item powerRank="28" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="92" killPercent="20"/>
+  <item powerRank="29" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="88" killPercent="20"/>
+  <item powerRank="30" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="84" killPercent="20"/>
+  <item powerRank="31" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="80" killPercent="20"/>
+  <item powerRank="32" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="76" killPercent="20"/>
+  <item powerRank="33" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="72" killPercent="20"/>
+  <item powerRank="34" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="68" killPercent="20"/>
+  <item powerRank="35" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="64" killPercent="20"/>
+  <item powerRank="36" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="60" killPercent="20"/>
+  <item powerRank="37" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="56" killPercent="20"/>
+  <item powerRank="38" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="52" killPercent="20"/>
+  <item powerRank="39" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="48" killPercent="20"/>
+  <item powerRank="40" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="44" killPercent="20"/>
+  <item powerRank="41" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="40" killPercent="20"/>
+  <item powerRank="42" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="36" killPercent="20"/>
+  <item powerRank="43" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="32" killPercent="20"/>
+  <item powerRank="44" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="28" killPercent="20"/>
+  <item powerRank="45" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="24" killPercent="20"/>
+  <item powerRank="46" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="20" killPercent="20"/>
+  <item powerRank="47" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="16" killPercent="20"/>
+  <item powerRank="48" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="12" killPercent="20"/>
+  <item powerRank="49" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="8" killPercent="20"/>
+  <item powerRank="50" totalValueExpr="x1*2.5+x2*2.5+x3" hurtPercent="0" killPercent="20"/>
+</root>

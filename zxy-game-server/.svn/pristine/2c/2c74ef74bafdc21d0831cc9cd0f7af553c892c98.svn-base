@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   mapId:抢夺战斗的地图id
+   consumeEnergyExpr:抢夺一次消耗的精力公式    x1:对方等级
+   actorPercent:抢夺玩家成功获得 百分比(1-100)
+   robotPercent:抢夺机器人成功获得的百分比(1-100)
+   openTime:每天开放时间(小时)  0-23。填-1表示不开放
+   endTime:每天结束时间(小时)   0-23。填-1表示不开放
+   snatchGoldPercent:抢夺成功获得对方金币百分比 小胜4_金币百分比|中胜5_金币百分比|大胜6_金币百分比
+   awardScoreNumExpr:奖励的积分  大败1_积分计算表达式值|失败2_积分计算表达式值|惜败3_积分计算表达式值|小胜4_积分计算表达式值|中胜5_积分计算表达式值|大胜6_积分计算表达式值,x1表示对手掌教等级，x1  自己等级 x2  对方等级
+   snatchMaxNum:抢夺次数上限
+   costTicket:购买一次扣除的点券(公式x1表示购买次数)
+   flushTime:回复一次战斗次数需要时间(秒)
+   rewardNum:每天能获得奖励的抢夺次数(战斗就可获得奖励)
+-->
+
+<root>
+  <item mapId="4" consumeEnergyExpr="1" actorPercent="50" robotPercent="50" openTime="0" endTime="23" snatchGoldPercent="1_20|2_15|3_10|4_10|5_15|6_20" awardScoreNumExpr="1_1|2_1|3_1|4_1|5_1|6_1" snatchMaxNum="20" costTicket="(x1+2)*20" flushTime="600" rewardNum="10"/>
+</root>

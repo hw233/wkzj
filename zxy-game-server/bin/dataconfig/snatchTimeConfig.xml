@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   startTime:开始时间yyyy-mm-dd hh:mm:ss
+   endTime:结束时间yyyy-mm-dd hh:mm:ss
+-->
+
+<root>
+  <item startTime="2014-04-14 00:00:00" endTime="2014-04-14 23:59:00"/>
+</root>

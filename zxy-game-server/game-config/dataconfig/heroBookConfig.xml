@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   heroId:英雄id
+   heroLevel:需要英雄等级
+   delveNum:需要潜修次数
+-->
+
+<root>
+  <item heroId="100" heroLevel="200" delveNum="400"/>
+  <item heroId="101" heroLevel="120" delveNum="120"/>
+  <item heroId="102" heroLevel="120" delveNum="120"/>
+  <item heroId="103" heroLevel="120" delveNum="120"/>
+  <item heroId="104" heroLevel="120" delveNum="120"/>
+  <item heroId="105" heroLevel="120" delveNum="120"/>
+  <item heroId="106" heroLevel="150" delveNum="300"/>
+  <item heroId="107" heroLevel="120" delveNum="120"/>
+  <item heroId="108" heroLevel="200" delveNum="400"/>
+  <item heroId="109" heroLevel="120" delveNum="120"/>
+  <item heroId="110" heroLevel="200" delveNum="400"/>
+  <item heroId="111" heroLevel="120" delveNum="120"/>
+  <item heroId="112" heroLevel="120" delveNum="120"/>
+  <item heroId="113" heroLevel="120" delveNum="120"/>
+  <item heroId="114" heroLevel="120" delveNum="120"/>
+  <item heroId="115" heroLevel="120" delveNum="120"/>
+  <item heroId="116" heroLevel="120" delveNum="120"/>
+  <item heroId="124" heroLevel="120" delveNum="120"/>
+  <item heroId="125" heroLevel="150" delveNum="300"/>
+  <item heroId="127" heroLevel="150" delveNum="300"/>
+  <item heroId="128" heroLevel="120" delveNum="120"/>
+  <item heroId="129" heroLevel="150" delveNum="300"/>
+  <item heroId="131" heroLevel="120" delveNum="120"/>
+  <item heroId="132" heroLevel="120" delveNum="120"/>
+  <item heroId="133" heroLevel="120" delveNum="120"/>
+  <item heroId="136" heroLevel="120" delveNum="120"/>
+  <item heroId="137" heroLevel="120" delveNum="120"/>
+  <item heroId="117" heroLevel="200" delveNum="400"/>
+  <item heroId="118" heroLevel="120" delveNum="120"/>
+  <item heroId="119" heroLevel="120" delveNum="120"/>
+  <item heroId="120" heroLevel="120" delveNum="120"/>
+  <item heroId="121" heroLevel="200" delveNum="400"/>
+  <item heroId="122" heroLevel="120" delveNum="120"/>
+  <item heroId="126" heroLevel="200" delveNum="400"/>
+  <item heroId="130" heroLevel="120" delveNum="120"/>
+  <item heroId="134" heroLevel="120" delveNum="120"/>
+  <item heroId="138" heroLevel="120" delveNum="120"/>
+  <item heroId="140" heroLevel="150" delveNum="300"/>
+  <item heroId="141" heroLevel="120" delveNum="120"/>
+  <item heroId="142" heroLevel="120" delveNum="120"/>
+  <item heroId="143" heroLevel="120" delveNum="120"/>
+  <item heroId="146" heroLevel="120" delveNum="120"/>
+  <item heroId="147" heroLevel="200" delveNum="400"/>
+  <item heroId="148" heroLevel="200" delveNum="400"/>
+  <item heroId="149" heroLevel="200" delveNum="400"/>
+  <item heroId="123" heroLevel="120" delveNum="120"/>
+  <item heroId="135" heroLevel="120" delveNum="120"/>
+  <item heroId="139" heroLevel="120" delveNum="120"/>
+  <item heroId="144" heroLevel="120" delveNum="120"/>
+  <item heroId="145" heroLevel="120" delveNum="120"/>
+  <item heroId="150" heroLevel="150" delveNum="300"/>
+  <item heroId="151" heroLevel="150" delveNum="300"/>
+  <item heroId="152" heroLevel="150" delveNum="300"/>
+  <item heroId="153" heroLevel="150" delveNum="300"/>
+  <item heroId="154" heroLevel="150" delveNum="300"/>
+  <item heroId="155" heroLevel="150" delveNum="300"/>
+  <item heroId="156" heroLevel="200" delveNum="400"/>
+  <item heroId="157" heroLevel="200" delveNum="400"/>
+  <item heroId="158" heroLevel="200" delveNum="400"/>
+  <item heroId="159" heroLevel="200" delveNum="400"/>
+  <item heroId="160" heroLevel="200" delveNum="400"/>
+  <item heroId="161" heroLevel="120" delveNum="120"/>
+  <item heroId="162" heroLevel="150" delveNum="300"/>
+  <item heroId="163" heroLevel="150" delveNum="300"/>
+  <item heroId="164" heroLevel="150" delveNum="300"/>
+  <item heroId="165" heroLevel="150" delveNum="300"/>
+  <item heroId="166" heroLevel="300" delveNum="600"/>
+  <item heroId="167" heroLevel="300" delveNum="600"/>
+  <item heroId="168" heroLevel="300" delveNum="600"/>
+  <item heroId="169" heroLevel="200" delveNum="400"/>
+  <item heroId="170" heroLevel="120" delveNum="120"/>
+  <item heroId="171" heroLevel="200" delveNum="400"/>
+  <item heroId="172" heroLevel="150" delveNum="300"/>
+  <item heroId="173" heroLevel="300" delveNum="600"/>
+  <item heroId="174" heroLevel="120" delveNum="120"/>
+  <item heroId="175" heroLevel="200" delveNum="400"/>
+  <item heroId="176" heroLevel="200" delveNum="400"/>
+  <item heroId="177" heroLevel="120" delveNum="120"/>
+  <item heroId="178" heroLevel="200" delveNum="400"/>
+  <item heroId="179" heroLevel="150" delveNum="300"/>
+  <item heroId="180" heroLevel="200" delveNum="400"/>
+  <item heroId="181" heroLevel="200" delveNum="400"/>
+  <item heroId="182" heroLevel="200" delveNum="400"/>
+  <item heroId="183" heroLevel="300" delveNum="600"/>
+  <item heroId="184" heroLevel="200" delveNum="400"/>
+  <item heroId="185" heroLevel="200" delveNum="400"/>
+</root>

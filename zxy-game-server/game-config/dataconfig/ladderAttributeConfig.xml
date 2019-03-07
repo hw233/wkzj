@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   level:玩家等级
+   atk:附加的攻击
+   defense:附加的防御
+   hp:附加的血量
+-->
+
+<root>
+  <item level="1" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="2" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="3" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="4" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="5" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="6" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="7" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="8" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="9" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="10" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="11" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="12" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="13" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="14" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="15" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="16" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="17" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="18" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="19" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="20" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="21" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="22" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="23" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="24" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="25" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="26" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="27" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="28" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="29" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="30" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="31" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="32" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="33" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="34" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="35" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="36" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="37" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="38" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="39" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="40" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="41" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="42" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="43" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="44" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="45" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="46" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="47" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="48" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="49" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="50" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="51" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="52" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="53" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="54" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="55" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="56" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="57" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="58" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="59" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="60" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="61" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="62" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="63" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="64" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="65" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="66" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="67" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="68" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="69" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="70" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="71" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="72" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="73" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="74" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="75" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="76" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="77" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="78" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="79" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="80" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="81" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="82" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="83" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="84" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="85" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="86" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="87" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="88" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="89" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="90" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="91" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="92" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="93" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="94" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="95" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="96" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="97" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="98" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="99" atk="1.8" defense="1.5" hp="1.5"/>
+  <item level="100" atk="1.8" defense="1.5" hp="1.5"/>
+</root>

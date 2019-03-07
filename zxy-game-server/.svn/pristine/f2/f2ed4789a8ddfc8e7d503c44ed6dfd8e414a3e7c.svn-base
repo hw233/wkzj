@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   exchangeId:商品兑换id
+   exType:类型(0.物品 1.装备 2.仙人魂魄)
+   id:奖励id
+   num:购买一次的数量
+   costPowerNum:购买一次消耗的势力点
+-->
+
+<root>
+  <item exchangeId="1" exType="2" id="150" num="1" costPowerNum="1"/>
+  <item exchangeId="2" exType="2" id="151" num="1" costPowerNum="1"/>
+  <item exchangeId="3" exType="2" id="149" num="1" costPowerNum="1"/>
+  <item exchangeId="4" exType="2" id="117" num="1" costPowerNum="1"/>
+  <item exchangeId="5" exType="2" id="176" num="1" costPowerNum="1"/>
+  <item exchangeId="6" exType="2" id="178" num="1" costPowerNum="1"/>
+  <item exchangeId="7" exType="2" id="157" num="1" costPowerNum="1"/>
+  <item exchangeId="8" exType="2" id="166" num="1" costPowerNum="5"/>
+</root>

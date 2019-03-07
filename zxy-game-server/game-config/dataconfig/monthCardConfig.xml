@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   rechargeType:详见RechargeType
+   firstReward:首次充值赠送列表 type_id_数量|… (0:物品，1：装备，2：仙人魂魄，3金币，4：仙人)
+   day:充值一次增加可领取天数（-1为无限制）
+   endDay:剩余多少天可再次充值
+   dayReward:type_id_数量(公式x1表示玩家等级,x2表示vip等级)|.. (0:物品，1：装备，2：仙人魂魄，3金币，4：仙人，5：元宝)
+-->
+
+<root>
+  <item rechargeType="2" firstReward="4_110_40|0_1000_5|0_2005_10|0_5001_500|0_1009_1" day="30" endDay="3" dayReward="5_0_ternary(x2&gt;12,380,(x2-2)*20+180)|0_1000_2|0_7006_(x1*6+10)*0.1"/>
+  <item rechargeType="3" firstReward="1_1072_1|1_3060_1|0_1000_10|0_2007_20|0_5001_2000" day="-1" endDay="3" dayReward="5_0_150|0_5001_x1*21+20|0_5002_x1*18.5+20"/>
+  <item rechargeType="4" firstReward="1_1072_1|1_3060_1|0_1000_10|0_2007_20|0_5001_2000" day="365" endDay="3" dayReward="5_0_150|0_5001_x1*21+20|0_5002_x1*18.5+20"/>
+</root>

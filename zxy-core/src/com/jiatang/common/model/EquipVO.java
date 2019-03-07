@@ -1,0 +1,254 @@
+package com.jiatang.common.model;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.jtang.core.protocol.IoBufferSerializer;
+import com.jtang.core.utility.RandomUtils;
+import com.jtang.core.utility.Splitable;
+import com.jtang.core.utility.StringUtils;
+import com.jtang.core.utility.UUIDUtils;
+
+public class EquipVO extends IoBufferSerializer implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3277467921948497916L;
+
+	/**
+	 * uuid，装备唯一id
+	 */
+	public long uuid;
+	
+	/**
+	 * 装备配置id
+	 */
+	public int equipId;
+	
+	/**
+	 * 等级
+	 */
+	public int level;
+	
+	/**
+	 * 装备类型
+	 */
+	public EquipType equipType;
+	
+	/**
+	 * 装备攻击
+	 */
+	public int atk;
+	
+	/**
+	 * 装备防御
+	 */
+	public int defense;
+	
+	/**
+	 * 装备血
+	 */
+	public int hp;
+	
+	/**
+	 * 装备射程
+	 */
+	public int attackScope;
+	
+	/**
+	 * 装备已经精炼次数
+	 */
+	public int refineNum;
+	
+	/**
+	 * 精炼获得的属性值和，比如精炼了两次，则
+	 * 此值就是两次精炼的随机值之和
+	 */
+	public int refineValue;
+	
+	/**
+	 * 精炼获得的属性值和，包括精炼室给予的附加效果值
+	 * 每一次去精炼的时候，装备的新属性值=当前值-
+	 * totalRefineValue + (refineVelue + 
+	 * 本次精炼的随机值) * (1 + 当前精炼室提供的附加百分比)
+	 */
+	public int totalRefineValue;
+	
+	/**
+	 * --------可能不需要此属性---------
+	 * 装备已经强化次数
+	 */
+	public int enhancedNum;
+	
+	/**
+	 * 强化室额外增加的属性值
+	 */
+	public int enhancedAttributeValue;
+	
+	/**
+	 * 最大精炼次数
+	 */
+	public int maxRefineNum;
+	
+	
+	/**
+	 * 精炼累计消耗的金币
+	 */
+	public long costGold;
+	
+	/**
+	 * 累计消耗的精炼石
+	 */
+	public int costStoneNum;
+	
+	/**
+	 * 突破次数
+	 */
+	public int developNum;
+	
+	/**
+	 * 总字段数
+	 */
+	private static final int COLUMN_NUM = 17;
+	
+	/**
+	 * 从数据库读取blob串后进行VO实例化
+	 * @param equipArray
+	 * @return
+	 */
+	public static EquipVO valueOf(String[] equipArray) {
+		EquipVO vo = new EquipVO();
+		// int recordLen = 14;
+		if (equipArray.length < COLUMN_NUM) {
+			ArrayList<String> arrlist = new ArrayList<>();
+			for (String string : equipArray) {
+				arrlist.add(string);
+			}
+			for (int i = equipArray.length; i < COLUMN_NUM; i++) {
+				arrlist.add("0");
+			}
+			equipArray = arrlist.toArray(equipArray);
+		}
+		vo.uuid = Long.valueOf(equipArray[0]);
+		vo.equipId = Integer.valueOf(equipArray[1]);
+		vo.level = Integer.valueOf(equipArray[2]);
+		vo.equipType = EquipType.getType(Integer.valueOf(equipArray[3]));
+		vo.atk = Integer.valueOf(equipArray[4]);
+		vo.defense = Integer.valueOf(equipArray[5]);
+		vo.hp = Integer.valueOf(equipArray[6]);
+		vo.attackScope = Integer.valueOf(equipArray[7]);
+		vo.refineNum = Integer.valueOf(equipArray[8]);
+		vo.refineValue = Integer.valueOf(equipArray[9]);
+		vo.totalRefineValue = Integer.valueOf(equipArray[10]);
+		vo.enhancedNum = Integer.valueOf(equipArray[11]);
+		vo.enhancedAttributeValue = Integer.valueOf(equipArray[12]);
+		vo.maxRefineNum = Integer.valueOf(equipArray[13]);
+		vo.costGold = Long.valueOf(equipArray[14]);
+		vo.costStoneNum = Integer.valueOf(equipArray[15]);
+		vo.developNum = Integer.valueOf(equipArray[16]);
+		return vo;
+	}
+	
+	/**
+	 * 根据配置id实例化vo
+	 * @param equipId
+	 * @return
+	 */
+	public static EquipVO valueOf(int equipId, int type, int atk, int maxAtk, int defense, int maxDefense, int hp, int maxHp, int atkScope,
+			int refineNum, int serverId) {
+//		EquipConfig cfg = EquipService.get(equipId);
+//		if (cfg == null) {
+//			return null;
+//		}
+//		RefineEquipConfig refineEquipCfg = RefineEquipService.get(cfg.getStar(), cfg.getType());
+//		if (cfg == null || refineEquipCfg == null) {
+//			return null;
+//		}
+
+		EquipVO vo = new EquipVO();
+		vo.uuid = UUIDUtils.getUUID(serverId);
+		vo.equipId = equipId;
+		vo.level = 1;
+		vo.equipType = EquipType.getType(type);
+		vo.atk = RandomUtils.nextInt(atk, maxAtk);
+		vo.defense = RandomUtils.nextInt(defense, maxDefense);
+		vo.hp = RandomUtils.nextInt(hp, maxHp);
+		vo.attackScope = atkScope;
+		vo.refineNum = 0;
+		vo.refineValue = 0;
+		vo.totalRefineValue = 0;
+		vo.enhancedNum = 0;
+		vo.enhancedAttributeValue = 0;
+		vo.maxRefineNum = refineNum;
+		vo.costGold = 0;
+		vo.costStoneNum = 0;
+		vo.developNum = 0;
+		return vo;
+	}
+	
+	/**
+	 * EquipVO转Blob String
+	 * @return
+	 */
+	public String parse2String() {
+		List<Object> list = new ArrayList<Object>();
+		list.add(uuid);
+		list.add(equipId);
+		list.add(level);
+		list.add(equipType.getId());
+		list.add(atk);
+		list.add(defense);
+		list.add(hp);
+		list.add(attackScope);
+		list.add(refineNum);
+		list.add(refineValue);
+		list.add(totalRefineValue);
+		list.add(enhancedNum);
+		list.add(enhancedAttributeValue);
+		list.add(maxRefineNum);
+		list.add(costGold);
+		list.add(costStoneNum);
+		list.add(developNum);
+		return StringUtils.collection2SplitString(list, Splitable.ATTRIBUTE_SPLIT);
+	}
+	
+
+	@Override
+	public void write() {
+		this.writeLong(uuid);
+		this.writeInt(equipId);
+		this.writeInt(level);
+		this.writeInt(equipType.getId());
+		this.writeInt(atk);
+		this.writeInt(defense);
+		this.writeInt(hp);
+		this.writeInt(attackScope);
+		this.writeInt(enhancedNum);
+		this.writeInt(refineNum);
+		this.writeInt(maxRefineNum);
+		this.writeLong(costGold);
+		this.writeInt(costStoneNum);
+		this.writeInt(developNum);
+	}
+	
+	@Override
+	public void readBuffer(IoBufferSerializer buffer) {
+		this.uuid = buffer.readLong();
+		this.equipId = buffer.readInt();
+		this.level = buffer.readInt();
+		this.equipType = EquipType.getType(buffer.readInt());
+		this.atk = buffer.readInt();
+		this.defense = buffer.readInt();
+		this.hp = buffer.readInt();
+		this.attackScope = buffer.readInt();
+		this.enhancedNum = buffer.readInt();
+		this.refineNum = buffer.readInt();
+		this.maxRefineNum = buffer.readInt();
+		this.costGold = buffer.readLong();
+		this.costStoneNum = buffer.readInt();
+		this.developNum = buffer.readInt();
+	}
+	
+}

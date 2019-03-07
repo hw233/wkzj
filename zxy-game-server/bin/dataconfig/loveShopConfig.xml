@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:商品id
+   itemId:物品id
+   type:类型
+   num:数量(最大数量)
+   costTicket:总共消耗的元宝
+   costGoods:总共消耗的物品
+-->
+
+<root>
+  <item id="1" itemId="30049" type="0" num="5" costTicket="" costGoods="50"/>
+  <item id="2" itemId="30053" type="0" num="5" costTicket="" costGoods="50"/>
+  <item id="3" itemId="30106" type="0" num="5" costTicket="" costGoods="80"/>
+  <item id="4" itemId="7006" type="0" num="5" costTicket="25" costGoods=""/>
+  <item id="5" itemId="1003" type="0" num="50" costTicket="" costGoods="16"/>
+</root>

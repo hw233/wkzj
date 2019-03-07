@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   vipLevel:vip等级
+   rewards:兑换的奖励(格式：物品类型_物品id_数量|物品类型_物品id_数量) 物品类型 0 物品, 1 装备, 2 仙人魂魄
+-->
+
+<root>
+  <item vipLevel="1" rewards="0_2004_3"/>
+  <item vipLevel="2" rewards="0_2007_3"/>
+  <item vipLevel="3" rewards="0_2007_6"/>
+</root>

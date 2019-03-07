@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   battleId:战场id
+   mapId:地图id
+   awardReputation:奖励声望值  格式:小胜4_声望值(公式x1代表玩家等级)|中胜5_声望值|大胜6_声望值
+   awardHeroExp:奖励所有仙人经验值  格式:小胜4_经验(公式x1代表玩家等级)|中胜5_经验|大胜6_经验
+   morale:气势(公式x1代表玩家等级)
+   reward:战场奖励  类型_id_数量(公式x1代表玩家等级)   (类型 0.物品 1.装备 2.魂魄 3.金币)_几率(千分比)
+-->
+
+<root>
+  <item battleId="31001" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31002" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32001" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32002" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33001" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33002" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31003" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31004" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32003" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32004" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33003" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33004" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31005" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31006" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31007" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32005" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32006" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32007" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33005" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33006" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33007" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31008" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31009" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31010" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32008" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32009" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32010" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33008" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33009" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33010" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31011" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31012" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31013" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32011" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32012" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32013" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33011" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33012" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33013" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31014" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31015" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31016" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31017" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="31018" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32014" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32015" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32016" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32017" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="32018" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33014" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33015" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33016" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33017" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+  <item battleId="33018" mapId="1" awardReputation="" awardHeroExp="" morale="x1*x1*1.2" reward="0_5002_x1*0.7_1000"/>
+</root>

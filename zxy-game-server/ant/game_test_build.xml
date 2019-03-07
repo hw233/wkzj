@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jt-server" default="default" basedir="../">
+	<tstamp>
+		<format property="create.time" pattern="yyyyMMdd_HHmm" />
+		<format property="package.time" pattern="yyyy/MM/dd HH:mm:ss" />
+	</tstamp>
+
+	<property name="src.dir" value="src" />
+	<property name="core.src.dir" value="../zxy-core/src" />
+	<property name="lib.dir" value="../zxy-core/lib" />
+	<property name="resource.dir" value="game-config" />
+
+	<property name="jarName" value="zxy-game-server.jar" />
+	<property name="classes.tempdir" value="classes" />
+	<property name="target.tempdir" value="target" />
+	<property name="publish.trunk.dir" value="../../../publish/server/build_test/gameserver" />
+
+	<path id="compile.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<!-- 默认 -->
+	<target name="default" depends="package,clean" />
+
+	<!-- 编译 -->
+	<target name="compile">
+		<mkdir dir="${classes.tempdir}" />
+		<delete dir="${classes.tempdir}" includeemptydirs="true">
+			<include name="**/*.*" />
+		</delete>
+		<javac debug="true" deprecation="true" destdir="${classes.tempdir}" nowarn="true" optimize="on" target="1.7" encoding="utf-8" source="1.7" includeAntRuntime="false">
+			<classpath refid="compile.classpath" />
+			<src path="${core.src.dir}" />
+			<src path="${src.dir}" />
+		</javac>
+	</target>
+
+	<!-- COPY -->
+	<target name="copy" depends="compile">
+		<delete dir="${target.tempdir}">
+		</delete>
+		<copy todir="${target.tempdir}">
+			<fileset dir=".">
+				<include name="${resource.dir}/**/*.*" />
+				<include name="${lib.dir}/*.*" />
+			</fileset>
+		</copy>
+		<copy todir="${target.tempdir}/lib">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- 打包 -->
+	<target name="package" depends="copy">
+		<path id="target-classpath">
+			<fileset dir="${lib.dir}" includes="**/*.jar" />
+		</path>
+
+		<pathconvert property="mf.classpath" pathsep=" " description="把上面定义的path转换成property, path中jar包的路径用空格分开">
+			<mapper>
+				<chainedmapper>
+					<!-- 移除绝对路径 -->
+					<flattenmapper />
+				</chainedmapper>
+			</mapper>
+			<path refid="target-classpath" description="path引用了上面定义的target-classpath" />
+		</pathconvert>
+
+		<mkdir dir="${target.tempdir}/" />
+		<jar destfile="${target.tempdir}/lib/${jarName}">
+			<fileset dir="${classes.tempdir}">
+				<include name="**/*.*"/>
+			</fileset>
+			<!-- set mainfest information to manifest -->
+			<manifest>
+				<attribute name="Manifest-Version" value="1.0" />
+				<attribute name="Build-Jdk" value="${java.version}" />
+				<attribute name="Built-By" value="${user.name}_debug" />
+				<attribute name="Package-Time" value="${package.time}" />
+				<attribute name="Main-Class" value="com.jtang.gameserver.GameLauncher" />
+				<attribute name="Class-Path" value=" ../${resource.dir}/ ${mf.classpath} " >
+				</attribute>
+			</manifest>
+		</jar>
+		<delete dir="${classes.tempdir}" includeemptydirs="true" deleteonexit="true"/>
+	</target>
+
+	<target name="release" depends="package">
+		<delete dir="${publish.trunk.dir}/*.jar" />
+		<delete dir="${publish.trunk.dir}/*.xml" />
+		<delete dir="${publish.trunk.dir}/*.js" />
+		<delete dir="${publish.trunk.dir}/*.bat" />
+		<delete dir="${publish.trunk.dir}/*.sh" />
+
+		<copy todir="${publish.trunk.dir}">
+			<fileset dir="${target.tempdir}">
+				<include name="**/*.*" />
+			</fileset>
+			<fileset dir="ant/dist/testlauncher">
+				<include name="*.bat" />
+				<include name="*.sh" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- 清理 -->
+	<target name="clean" depends="release">
+		<delete dir="${classes.tempdir}" />
+		<delete dir="${target.tempdir}" />
+	</target>
+</project>
+

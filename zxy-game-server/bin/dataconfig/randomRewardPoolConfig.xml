@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   rewardType:奖励类型（1.精炼石2.潜修石3.聚仙符4.扫荡符5.金币6.元宝）
+   rewardId:奖励id
+   num:数量(公式 x1表示玩家等级)
+   rate:几率(同类型和为1000)
+-->
+
+<root>
+  <item rewardType="1" rewardId="5002" num="x1*0.8+1" rate="1000"/>
+  <item rewardType="2" rewardId="5001" num="x1*0.5+1" rate="1000"/>
+  <item rewardType="3" rewardId="1000" num="1" rate="1000"/>
+  <item rewardType="4" rewardId="1002" num="1" rate="1000"/>
+  <item rewardType="5" rewardId="" num="x1*100+125" rate="1000"/>
+  <item rewardType="6" rewardId="" num="10" rate="700"/>
+  <item rewardType="6" rewardId="" num="20" rate="200"/>
+  <item rewardType="6" rewardId="" num="30" rate="100"/>
+</root>

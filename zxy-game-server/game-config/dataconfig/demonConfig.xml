@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   difficultId:难度
+   demonMonsterId:怪物组id 对应demonMonsterConfg
+   killBossReward:击杀boss奖励  格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量(x1代表玩家等级)
+   killBossCampReward:击杀boss正营奖励  格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量(x1代表玩家等级)_概率千分比
+   failReward:攻击boss失败奖励  格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量_概率千分比
+   powerRankMin:最强势力排名下限
+   powerRankMax:最强势力排名上限
+   featsOfPlayer:攻击玩家得到的功勋值， x1被攻击玩家功勋值
+   maxFeatsOfPlayer:攻击玩家得到的功勋值上限
+   featsOfBoss:攻击BOSS得到的功勋值， x1玩家伤害总和
+   attackPlayerNum:攻击玩家次数
+   atkBossUseTicketNum:攻击boss消耗点券
+   atkPlayerUseTicketNum:攻击玩家消耗点券
+   interval:攻击boss时间间隔（秒）
+   upFeatsReward:功勋值较高的一方(获胜阵营)获得奖励 格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量(x1代表玩家等级)
+   downFeatsReward:功勋总值低的一方(失败阵营)获得奖劢  格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量(x1代表玩家等级)
+   topPlayerReward:第一名额外奖励 格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量_概率千分比|...
+   topPlayerLeastReward:第一名保底奖励 格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量
+   topPlayerLeastNum:保底时次数
+   consumeTicketReward:消耗点券产生奖励    格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量表达式（x1*1000, x1:表示消耗点券数）_概率千分比|...
+   extraScore:结束时额外奖励积分 (x1：表示人数多的一方多出的人数）
+   extraFeats:人少的一方额外奖励功勋值 (x1:表示人数多的一方多出的人数, x2:产生的固定功勋值)
+   attackBossExtScore:攻击BOSS获得的额外积分
+   attackBossExtScoreNum:每次获得积分需要攻击boss次数
+   attackBossExtScoreNumMax:攻击boss额外积分最大领取次数
+-->
+
+<root>
+  <item difficultId="1" demonMonsterId="1" killBossReward="0_30047_4|0_5001_x1*40+800" killBossCampReward="0_30047_2_1000" failReward="" powerRankMin="1" powerRankMax="20" featsOfPlayer="x1*0.05" maxFeatsOfPlayer="300000" featsOfBoss="x1" attackPlayerNum="20" atkBossUseTicketNum="50" atkPlayerUseTicketNum="50" interval="60" upFeatsReward="0_5002_300+x1*10" downFeatsReward="0_5002_200+x1*5" topPlayerReward="0_5001_1000_1000" topPlayerLeastReward="" topPlayerLeastNum="" consumeTicketReward="0_5002_x1*0.5_850|0_5002_x1*0.75_100|0_5002_x1_50" extraScore="x1*500" extraFeats="x2*0.05*x1" attackBossExtScore="500" attackBossExtScoreNum="5" attackBossExtScoreNumMax="3"/>
+  <item difficultId="2" demonMonsterId="2" killBossReward="0_30047_2|0_5001_x1*30+600" killBossCampReward="0_30047_1_1000" failReward="" powerRankMin="21" powerRankMax="50" featsOfPlayer="x1*0.05" maxFeatsOfPlayer="300000" featsOfBoss="x1" attackPlayerNum="20" atkBossUseTicketNum="50" atkPlayerUseTicketNum="50" interval="60" upFeatsReward="0_5002_200+x1*8" downFeatsReward="0_5002_140+x1*4" topPlayerReward="0_5001_500_1000" topPlayerLeastReward="" topPlayerLeastNum="" consumeTicketReward="0_5002_x1*0.5_850|0_5002_x1*0.75_100|0_5002_x1_50" extraScore="x1*160" extraFeats="x2*0.05*x1" attackBossExtScore="160" attackBossExtScoreNum="5" attackBossExtScoreNumMax="3"/>
+  <item difficultId="3" demonMonsterId="3" killBossReward="0_5001_x1*20+400" killBossCampReward="" failReward="" powerRankMin="51" powerRankMax="100" featsOfPlayer="x1*0.05" maxFeatsOfPlayer="300000" featsOfBoss="x1" attackPlayerNum="20" atkBossUseTicketNum="50" atkPlayerUseTicketNum="50" interval="60" upFeatsReward="0_5002_100+x1*6" downFeatsReward="0_5002_70+x1*3" topPlayerReward="0_5001_300_1000" topPlayerLeastReward="" topPlayerLeastNum="" consumeTicketReward="0_5002_x1*0.5_850|0_5002_x1*0.75_100|0_5002_x1_50" extraScore="x1*60" extraFeats="x2*0.05*x1" attackBossExtScore="60" attackBossExtScoreNum="5" attackBossExtScoreNumMax="3"/>
+  <item difficultId="4" demonMonsterId="4" killBossReward="0_5001_x1*10+200" killBossCampReward="" failReward="" powerRankMin="101" powerRankMax="300" featsOfPlayer="x1*0.05" maxFeatsOfPlayer="300000" featsOfBoss="x1" attackPlayerNum="20" atkBossUseTicketNum="50" atkPlayerUseTicketNum="50" interval="60" upFeatsReward="0_5002_50+x1*4" downFeatsReward="0_5002_35+x1*2" topPlayerReward="0_5001_100_1000" topPlayerLeastReward="" topPlayerLeastNum="" consumeTicketReward="0_5002_x1*0.5_850|0_5002_x1*0.75_100|0_5002_x1_50" extraScore="x1*15" extraFeats="x2*0.05*x1" attackBossExtScore="15" attackBossExtScoreNum="5" attackBossExtScoreNumMax="3"/>
+</root>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   fightType:挑战类型 0.向下挑战(小于自己等级) 1.向上挑战(大于等于自己等级)
+   reward:type(详见RewardType)_id_num|..
+   rate:几率(同挑战类型几率和为1000)
+-->
+
+<root>
+  <item fightType="0" reward="5_0_1|0_5001_10" rate="800"/>
+  <item fightType="0" reward="5_0_2|0_5001_15" rate="200"/>
+  <item fightType="1" reward="5_0_2|0_5001_15" rate="800"/>
+  <item fightType="1" reward="5_0_3|0_5001_20" rate="200"/>
+</root>

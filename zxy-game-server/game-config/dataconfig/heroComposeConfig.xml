@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   composeStar:合成的仙人星级
+   requireHeroNum:要求的仙人数
+   basePercent:随机基础百分比(0-100)
+   useTicketPercent:使用点券的百分比(0-100)
+   consumeTicket:消耗点券数
+   heroList:随机的仙人列表 格式:仙人id_概率百分比|仙人id_概率百分比|仙人id_概率百分比
+   heroSoulNum:获得魂魄的个数
+   failReward:合成失败产生的物品，格式:类型（0.物品1.装备2.魂魄）_ID_数量|...
+-->
+
+<root>
+  <item composeStar="1" requireHeroNum="5" basePercent="50" useTicketPercent="100" consumeTicket="100" heroList="104_5|107_5|111_6|113_6|114_6|115_6|131_6|132_6|118_6|119_6|120_6|134_6|141_6|142_6|143_6|144_6|145_6" heroSoulNum="10" failReward="0_5001_100"/>
+  <item composeStar="2" requireHeroNum="5" basePercent="40" useTicketPercent="100" consumeTicket="200" heroList="101_8|102_8|103_8|105_8|109_8|116_8|124_8|128_8|136_8|122_7|123_7|135_7|139_7" heroSoulNum="15" failReward="0_5001_500"/>
+  <item composeStar="3" requireHeroNum="5" basePercent="30" useTicketPercent="100" consumeTicket="800" heroList="125_7|127_7|129_7|140_7|152_7|153_7|154_7|164_7|162_7|163_6|165_6|172_6|179_6|186_6|161_7" heroSoulNum="30" failReward="0_5001_1500"/>
+  <item composeStar="4" requireHeroNum="5" basePercent="10" useTicketPercent="100" consumeTicket="3000" heroList="108_10|126_10|148_10|156_10|157_10|159_10|178_10|181_10|182_10|184_10" heroSoulNum="40" failReward="0_5001_3000"/>
+  <item composeStar="5" requireHeroNum="5" basePercent="1" useTicketPercent="100" consumeTicket="20000" heroList="167_100" heroSoulNum="80" failReward="0_5001_5000"/>
+</root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   marrayRequestTimeOut:请婚时间间隔(秒)
+   marryConsumTicketNum:结婚消耗点券数
+   marryConsumeGoodsId:结婚消耗物品id
+   marryConsumeGoodsNum:结婚消耗物品数量
+   marryRequestMax:每个角色最大请婚数
+   gift:礼物（类型_id_数量_概率|…）
+   unloveUseTicket:离婚消耗点券
+   systemMsg:系统公告
+   privateMsg:私聊信息
+   actorLimitLevel:需要角色最低等级
+-->
+
+<root>
+  <item marrayRequestTimeOut="86400" marryConsumTicketNum="100" marryConsumeGoodsId="1005" marryConsumeGoodsNum="1" marryRequestMax="10" gift="0_1000_3_250|0_1003_100_250|2_108_2_100|2_117_2_100|2_126_2_100|2_157_2_100|2_160_2_100" unloveUseTicket="200" systemMsg="【%s】和【%s】喜结良缘，恭喜他们成为神仙眷侣！" privateMsg="%s请求与你结缘。" actorLimitLevel="19"/>
+</root>

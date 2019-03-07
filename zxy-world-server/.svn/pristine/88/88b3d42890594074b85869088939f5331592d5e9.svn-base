@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" /><!-- mysql驱动类名 -->
+		<property name="initialSize" value="20" /><!-- 连接池启动时的初始值 -->
+		<property name="maxActive" value="20" /><!-- 连接池的最大值 -->
+		<property name="maxIdle" value="10" /><!-- 允许最大空闲值 -->
+		<property name="minIdle" value="10" /><!-- 允许最小空闲值 -->
+		<property name="timeBetweenEvictionRunsMillis" value="90000" /><!-- 失效检查线程运行时间间隔，要小于MySQL的'wait_timeout'时间 -->
+		<property name="testOnBorrow" value="false" />
+		<property name="testWhileIdle" value="true" />
+		<property name="validationQuery" value="select 5" /><!-- 检查连接有效性的SQL语句 -->
+	</bean>
+	<bean id="xjdbcTemplate" class="com.jtang.core.db.BaseJdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="jdbc.key" class="java.lang.String">
+		<constructor-arg value="zttdev#zttdev.com" />
+	</bean>
+	<bean id="jdbc.url" class="java.lang.String">
+		<constructor-arg value="jdbc:mysql://172.25.0.43:32959/zttworld?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true" />
+	</bean>
+
+	<bean id="jdbc.entity_scan_package" class="java.lang.String">
+		<constructor-arg value="com.jtang.worldserver.dbproxy.entity" />
+	</bean>
+
+</beans>

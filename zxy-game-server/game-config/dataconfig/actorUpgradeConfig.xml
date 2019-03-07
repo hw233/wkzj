@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   level:等级
+   needReputation:需要声望
+   heroLevelLimit:仙人升级的上限
+   equipLevelLimit:装备升级的上限
+   snatchVoucherLimit:抢夺兑换券上限数
+   reward:奖励(类型（详见RewardType）_id_数量)
+   addVitMax:增加的活力上限
+-->
+
+<root>
+  <item level="1" needReputation="10" heroLevelLimit="2" equipLevelLimit="2" snatchVoucherLimit="1000" reward="" addVitMax=""/>
+  <item level="2" needReputation="60" heroLevelLimit="4" equipLevelLimit="4" snatchVoucherLimit="2000" reward="2_100_1" addVitMax="6"/>
+  <item level="3" needReputation="130" heroLevelLimit="6" equipLevelLimit="6" snatchVoucherLimit="3000" reward="0_6001_10" addVitMax="6"/>
+  <item level="4" needReputation="140" heroLevelLimit="8" equipLevelLimit="8" snatchVoucherLimit="4000" reward="2_100_1" addVitMax="6"/>
+  <item level="5" needReputation="240" heroLevelLimit="10" equipLevelLimit="10" snatchVoucherLimit="5000" reward="0_6001_10" addVitMax="6"/>
+  <item level="6" needReputation="252" heroLevelLimit="12" equipLevelLimit="12" snatchVoucherLimit="6000" reward="2_100_1" addVitMax="6"/>
+  <item level="7" needReputation="302" heroLevelLimit="14" equipLevelLimit="14" snatchVoucherLimit="7000" reward="0_6001_10" addVitMax="6"/>
+  <item level="8" needReputation="342" heroLevelLimit="16" equipLevelLimit="16" snatchVoucherLimit="8000" reward="2_100_1" addVitMax="6"/>
+  <item level="9" needReputation="381" heroLevelLimit="18" equipLevelLimit="18" snatchVoucherLimit="9000" reward="0_6001_10" addVitMax="6"/>
+  <item level="10" needReputation="562" heroLevelLimit="20" equipLevelLimit="20" snatchVoucherLimit="10000" reward="2_100_1" addVitMax="6"/>
+  <item level="11" needReputation="943" heroLevelLimit="22" equipLevelLimit="22" snatchVoucherLimit="11000" reward="0_6001_10" addVitMax="6"/>
+  <item level="12" needReputation="1068" heroLevelLimit="24" equipLevelLimit="24" snatchVoucherLimit="12000" reward="2_100_1" addVitMax="6"/>
+  <item level="13" needReputation="1175" heroLevelLimit="26" equipLevelLimit="26" snatchVoucherLimit="13000" reward="0_6001_10" addVitMax="6"/>
+  <item level="14" needReputation="1313" heroLevelLimit="28" equipLevelLimit="28" snatchVoucherLimit="14000" reward="2_100_1" addVitMax="6"/>
+  <item level="15" needReputation="1431" heroLevelLimit="30" equipLevelLimit="30" snatchVoucherLimit="15000" reward="0_6001_10" addVitMax="6"/>
+  <item level="16" needReputation="1590" heroLevelLimit="32" equipLevelLimit="32" snatchVoucherLimit="16000" reward="2_100_1" addVitMax="6"/>
+  <item level="17" needReputation="2110" heroLevelLimit="34" equipLevelLimit="34" snatchVoucherLimit="17000" reward="0_6001_10" addVitMax="6"/>
+  <item level="18" needReputation="2680" heroLevelLimit="36" equipLevelLimit="36" snatchVoucherLimit="18000" reward="2_100_1" addVitMax="6"/>
+  <item level="19" needReputation="3230" heroLevelLimit="38" equipLevelLimit="38" snatchVoucherLimit="19000" reward="0_1005_1" addVitMax="6"/>
+  <item level="20" needReputation="3840" heroLevelLimit="40" equipLevelLimit="40" snatchVoucherLimit="20000" reward="2_100_1" addVitMax="6"/>
+  <item level="21" needReputation="4430" heroLevelLimit="42" equipLevelLimit="42" snatchVoucherLimit="21000" reward="0_6001_10" addVitMax="6"/>
+  <item level="22" needReputation="5070" heroLevelLimit="44" equipLevelLimit="44" snatchVoucherLimit="22000" reward="2_100_1" addVitMax="6"/>
+  <item level="23" needReputation="5690" heroLevelLimit="46" equipLevelLimit="46" snatchVoucherLimit="23000" reward="0_6001_10" addVitMax="6"/>
+  <item level="24" needReputation="6380" heroLevelLimit="48" equipLevelLimit="48" snatchVoucherLimit="24000" reward="2_100_1" addVitMax="6"/>
+  <item level="25" needReputation="7030" heroLevelLimit="50" equipLevelLimit="50" snatchVoucherLimit="25000" reward="0_6001_10" addVitMax="6"/>
+  <item level="26" needReputation="7460" heroLevelLimit="52" equipLevelLimit="52" snatchVoucherLimit="26000" reward="2_100_1" addVitMax="6"/>
+  <item level="27" needReputation="7860" heroLevelLimit="54" equipLevelLimit="54" snatchVoucherLimit="27000" reward="0_6001_10" addVitMax="6"/>
+  <item level="28" needReputation="8340" heroLevelLimit="56" equipLevelLimit="56" snatchVoucherLimit="28000" reward="2_100_1" addVitMax="6"/>
+  <item level="29" needReputation="8770" heroLevelLimit="58" equipLevelLimit="58" snatchVoucherLimit="29000" reward="0_6001_10" addVitMax="6"/>
+  <item level="30" needReputation="9280" heroLevelLimit="60" equipLevelLimit="60" snatchVoucherLimit="30000" reward="2_100_1" addVitMax="6"/>
+  <item level="31" needReputation="19500" heroLevelLimit="62" equipLevelLimit="62" snatchVoucherLimit="31000" reward="0_6001_10" addVitMax="6"/>
+  <item level="32" needReputation="20600" heroLevelLimit="64" equipLevelLimit="64" snatchVoucherLimit="32000" reward="2_100_1" addVitMax="6"/>
+  <item level="33" needReputation="21600" heroLevelLimit="66" equipLevelLimit="66" snatchVoucherLimit="33000" reward="0_6001_10" addVitMax="6"/>
+  <item level="34" needReputation="22780" heroLevelLimit="68" equipLevelLimit="68" snatchVoucherLimit="34000" reward="2_100_1" addVitMax="6"/>
+  <item level="35" needReputation="23840" heroLevelLimit="70" equipLevelLimit="70" snatchVoucherLimit="35000" reward="0_6001_10" addVitMax="6"/>
+  <item level="36" needReputation="24400" heroLevelLimit="72" equipLevelLimit="72" snatchVoucherLimit="36000" reward="2_100_1" addVitMax="6"/>
+  <item level="37" needReputation="24800" heroLevelLimit="74" equipLevelLimit="74" snatchVoucherLimit="37000" reward="0_6001_10" addVitMax="6"/>
+  <item level="38" needReputation="25360" heroLevelLimit="76" equipLevelLimit="76" snatchVoucherLimit="38000" reward="2_100_1" addVitMax="6"/>
+  <item level="39" needReputation="25760" heroLevelLimit="78" equipLevelLimit="78" snatchVoucherLimit="39000" reward="0_6001_10" addVitMax="6"/>
+  <item level="40" needReputation="26320" heroLevelLimit="80" equipLevelLimit="80" snatchVoucherLimit="40000" reward="2_100_1" addVitMax="6"/>
+  <item level="41" needReputation="40080" heroLevelLimit="82" equipLevelLimit="82" snatchVoucherLimit="41000" reward="0_6001_10" addVitMax="6"/>
+  <item level="42" needReputation="40920" heroLevelLimit="84" equipLevelLimit="84" snatchVoucherLimit="42000" reward="2_100_1" addVitMax="6"/>
+  <item level="43" needReputation="41520" heroLevelLimit="86" equipLevelLimit="86" snatchVoucherLimit="43000" reward="0_6001_10" addVitMax="6"/>
+  <item level="44" needReputation="42360" heroLevelLimit="88" equipLevelLimit="88" snatchVoucherLimit="44000" reward="2_100_1" addVitMax="6"/>
+  <item level="45" needReputation="42960" heroLevelLimit="90" equipLevelLimit="90" snatchVoucherLimit="45000" reward="0_6001_10" addVitMax="6"/>
+  <item level="46" needReputation="43800" heroLevelLimit="92" equipLevelLimit="92" snatchVoucherLimit="46000" reward="2_100_1" addVitMax="6"/>
+  <item level="47" needReputation="44400" heroLevelLimit="94" equipLevelLimit="94" snatchVoucherLimit="47000" reward="0_6001_10" addVitMax="6"/>
+  <item level="48" needReputation="45240" heroLevelLimit="96" equipLevelLimit="96" snatchVoucherLimit="48000" reward="2_100_1" addVitMax="6"/>
+  <item level="49" needReputation="45840" heroLevelLimit="98" equipLevelLimit="98" snatchVoucherLimit="49000" reward="0_6001_10" addVitMax="6"/>
+  <item level="50" needReputation="46680" heroLevelLimit="100" equipLevelLimit="100" snatchVoucherLimit="50000" reward="2_100_1" addVitMax="6"/>
+  <item level="51" needReputation="63040" heroLevelLimit="102" equipLevelLimit="102" snatchVoucherLimit="51000" reward="0_6001_10" addVitMax="6"/>
+  <item level="52" needReputation="64160" heroLevelLimit="104" equipLevelLimit="104" snatchVoucherLimit="52000" reward="2_100_1" addVitMax="6"/>
+  <item level="53" needReputation="64960" heroLevelLimit="106" equipLevelLimit="106" snatchVoucherLimit="53000" reward="0_6001_10" addVitMax="6"/>
+  <item level="54" needReputation="66080" heroLevelLimit="108" equipLevelLimit="108" snatchVoucherLimit="54000" reward="2_100_1" addVitMax="6"/>
+  <item level="55" needReputation="66880" heroLevelLimit="110" equipLevelLimit="110" snatchVoucherLimit="55000" reward="0_6001_10" addVitMax="6"/>
+  <item level="56" needReputation="68000" heroLevelLimit="112" equipLevelLimit="112" snatchVoucherLimit="56000" reward="2_100_1" addVitMax="6"/>
+  <item level="57" needReputation="68800" heroLevelLimit="114" equipLevelLimit="114" snatchVoucherLimit="57000" reward="0_6001_10" addVitMax="6"/>
+  <item level="58" needReputation="69920" heroLevelLimit="116" equipLevelLimit="116" snatchVoucherLimit="58000" reward="2_100_1" addVitMax="6"/>
+  <item level="59" needReputation="70720" heroLevelLimit="118" equipLevelLimit="118" snatchVoucherLimit="59000" reward="0_6001_10" addVitMax="6"/>
+  <item level="60" needReputation="71840" heroLevelLimit="120" equipLevelLimit="120" snatchVoucherLimit="60000" reward="2_100_1" addVitMax="6"/>
+  <item level="61" needReputation="90800" heroLevelLimit="122" equipLevelLimit="122" snatchVoucherLimit="61000" reward="0_6001_10" addVitMax="6"/>
+  <item level="62" needReputation="92200" heroLevelLimit="124" equipLevelLimit="124" snatchVoucherLimit="62000" reward="2_100_1" addVitMax="6"/>
+  <item level="63" needReputation="93200" heroLevelLimit="126" equipLevelLimit="126" snatchVoucherLimit="63000" reward="0_6001_10" addVitMax="6"/>
+  <item level="64" needReputation="94600" heroLevelLimit="128" equipLevelLimit="128" snatchVoucherLimit="64000" reward="2_100_1" addVitMax="6"/>
+  <item level="65" needReputation="95600" heroLevelLimit="130" equipLevelLimit="130" snatchVoucherLimit="65000" reward="0_6001_10" addVitMax="6"/>
+  <item level="66" needReputation="97000" heroLevelLimit="132" equipLevelLimit="132" snatchVoucherLimit="66000" reward="2_100_1" addVitMax="6"/>
+  <item level="67" needReputation="98000" heroLevelLimit="134" equipLevelLimit="134" snatchVoucherLimit="67000" reward="0_6001_10" addVitMax="6"/>
+  <item level="68" needReputation="99400" heroLevelLimit="136" equipLevelLimit="136" snatchVoucherLimit="68000" reward="2_100_1" addVitMax="6"/>
+  <item level="69" needReputation="100400" heroLevelLimit="138" equipLevelLimit="138" snatchVoucherLimit="69000" reward="0_6001_10" addVitMax="6"/>
+  <item level="70" needReputation="101800" heroLevelLimit="140" equipLevelLimit="140" snatchVoucherLimit="70000" reward="2_100_1" addVitMax="6"/>
+  <item level="71" needReputation="123360" heroLevelLimit="142" equipLevelLimit="142" snatchVoucherLimit="71000" reward="0_6001_10" addVitMax="6"/>
+  <item level="72" needReputation="125040" heroLevelLimit="144" equipLevelLimit="144" snatchVoucherLimit="72000" reward="2_100_1" addVitMax="6"/>
+  <item level="73" needReputation="126240" heroLevelLimit="146" equipLevelLimit="146" snatchVoucherLimit="73000" reward="0_6001_10" addVitMax="6"/>
+  <item level="74" needReputation="127920" heroLevelLimit="148" equipLevelLimit="148" snatchVoucherLimit="74000" reward="2_100_1" addVitMax="6"/>
+  <item level="75" needReputation="129120" heroLevelLimit="150" equipLevelLimit="150" snatchVoucherLimit="75000" reward="0_6001_10" addVitMax="6"/>
+  <item level="76" needReputation="130800" heroLevelLimit="152" equipLevelLimit="152" snatchVoucherLimit="76000" reward="2_100_1" addVitMax="6"/>
+  <item level="77" needReputation="132000" heroLevelLimit="154" equipLevelLimit="154" snatchVoucherLimit="77000" reward="0_6001_10" addVitMax="6"/>
+  <item level="78" needReputation="133680" heroLevelLimit="156" equipLevelLimit="156" snatchVoucherLimit="78000" reward="2_100_1" addVitMax="6"/>
+  <item level="79" needReputation="134880" heroLevelLimit="158" equipLevelLimit="158" snatchVoucherLimit="79000" reward="0_6001_10" addVitMax="6"/>
+  <item level="80" needReputation="136560" heroLevelLimit="160" equipLevelLimit="160" snatchVoucherLimit="80000" reward="2_100_1" addVitMax="6"/>
+  <item level="81" needReputation="160720" heroLevelLimit="162" equipLevelLimit="162" snatchVoucherLimit="81000" reward="0_6001_10" addVitMax="6"/>
+  <item level="82" needReputation="162680" heroLevelLimit="164" equipLevelLimit="164" snatchVoucherLimit="82000" reward="2_100_1" addVitMax="6"/>
+  <item level="83" needReputation="164080" heroLevelLimit="166" equipLevelLimit="166" snatchVoucherLimit="83000" reward="0_6001_10" addVitMax="6"/>
+  <item level="84" needReputation="166040" heroLevelLimit="168" equipLevelLimit="168" snatchVoucherLimit="84000" reward="2_100_1" addVitMax="6"/>
+  <item level="85" needReputation="167440" heroLevelLimit="170" equipLevelLimit="170" snatchVoucherLimit="85000" reward="0_6001_10" addVitMax="6"/>
+  <item level="86" needReputation="169400" heroLevelLimit="172" equipLevelLimit="172" snatchVoucherLimit="86000" reward="2_100_1" addVitMax="6"/>
+  <item level="87" needReputation="170800" heroLevelLimit="174" equipLevelLimit="174" snatchVoucherLimit="87000" reward="0_6001_10" addVitMax="6"/>
+  <item level="88" needReputation="172760" heroLevelLimit="176" equipLevelLimit="176" snatchVoucherLimit="88000" reward="2_100_1" addVitMax="6"/>
+  <item level="89" needReputation="174160" heroLevelLimit="178" equipLevelLimit="178" snatchVoucherLimit="89000" reward="0_6001_10" addVitMax="6"/>
+  <item level="90" needReputation="176120" heroLevelLimit="180" equipLevelLimit="180" snatchVoucherLimit="90000" reward="2_100_1" addVitMax="6"/>
+  <item level="91" needReputation="202880" heroLevelLimit="182" equipLevelLimit="182" snatchVoucherLimit="91000" reward="0_6001_10" addVitMax="6"/>
+  <item level="92" needReputation="205120" heroLevelLimit="184" equipLevelLimit="184" snatchVoucherLimit="92000" reward="2_100_1" addVitMax="6"/>
+  <item level="93" needReputation="206720" heroLevelLimit="186" equipLevelLimit="186" snatchVoucherLimit="93000" reward="0_6001_10" addVitMax="6"/>
+  <item level="94" needReputation="208960" heroLevelLimit="188" equipLevelLimit="188" snatchVoucherLimit="94000" reward="2_100_1" addVitMax="6"/>
+  <item level="95" needReputation="210560" heroLevelLimit="190" equipLevelLimit="190" snatchVoucherLimit="95000" reward="0_6001_10" addVitMax="6"/>
+  <item level="96" needReputation="212160" heroLevelLimit="192" equipLevelLimit="192" snatchVoucherLimit="96000" reward="2_100_1" addVitMax="6"/>
+  <item level="97" needReputation="213760" heroLevelLimit="194" equipLevelLimit="194" snatchVoucherLimit="97000" reward="0_6001_10" addVitMax="6"/>
+  <item level="98" needReputation="215360" heroLevelLimit="196" equipLevelLimit="196" snatchVoucherLimit="98000" reward="2_100_1" addVitMax="6"/>
+  <item level="99" needReputation="216960" heroLevelLimit="198" equipLevelLimit="198" snatchVoucherLimit="99000" reward="0_6001_10" addVitMax="6"/>
+  <item level="100" needReputation="218560" heroLevelLimit="200" equipLevelLimit="200" snatchVoucherLimit="100000" reward="2_100_1" addVitMax="6"/>
+</root>

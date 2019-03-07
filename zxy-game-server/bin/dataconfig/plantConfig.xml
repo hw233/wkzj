@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   plantId:种植物品id
+   growTime:成长时间(秒)
+   reward:成熟后固定奖励 (类型(类型 0.物品 1.装备 2.魂魄 3.金币)_id_数量公式_几率(1000)|...)
+-->
+
+<root>
+  <item plantId="1" growTime="9000" reward="0_5002_100_1000"/>
+</root>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:奖励唯一id
+   rewardType:奖励类型 0:道具，1：势力经验，2：当前活力，3：当前斗法次数、4：金钱、5：元宝、6：随vip等级变化物品、7：掌教经验值、8：补满试炼洞次数
+   reward:如果是道具（格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量（支持表达式））支持一个列表，否则就是一个增加的值，精力和活力直接补充到上限 如果是vip等级变化物品就填1_类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量|… 掌教经验值格式（x1*系数，x1代表掌教在该等级所需经验）
+-->
+
+<root>
+  <item id="1" rewardType="2" reward="0"/>
+  <item id="2" rewardType="5" reward="20"/>
+  <item id="3" rewardType="7" reward="x1*0.01"/>
+  <item id="4" rewardType="7" reward="x1*0.01"/>
+  <item id="5" rewardType="0" reward="0_5001_20+x1*3"/>
+  <item id="6" rewardType="7" reward="x1*0.01"/>
+  <item id="7" rewardType="7" reward="x1*0.01"/>
+  <item id="8" rewardType="7" reward="x1*0.01"/>
+  <item id="9" rewardType="7" reward="x1*0.01"/>
+  <item id="10" rewardType="7" reward="x1*0.01"/>
+  <item id="14" rewardType="0" reward="0_5001_50+x1*5"/>
+  <item id="15" rewardType="0" reward="0_5002_50+x1*5"/>
+  <item id="16" rewardType="0" reward="0_5002_20+x1*3"/>
+  <item id="17" rewardType="6" reward="4_0_1002_15|5_0_1002_20|6_0_1002_25|7_0_1002_30|8_0_1002_35|9_0_1002_40|10_0_1002_45|11_0_1002_65|12_0_1002_70|13_0_1002_75|14_0_1002_80|15_0_1002_85"/>
+  <item id="18" rewardType="3" reward="0"/>
+  <item id="19" rewardType="7" reward="x1*0.01"/>
+  <item id="20" rewardType="7" reward="x1*0.01"/>
+  <item id="21" rewardType="7" reward="x1*0.01"/>
+  <item id="22" rewardType="0" reward="0_1003_30"/>
+  <item id="23" rewardType="0" reward="0_7006_5"/>
+  <item id="24" rewardType="0" reward="0_6001_5"/>
+  <item id="25" rewardType="0" reward="0_1000_3"/>
+  <item id="26" rewardType="0" reward="0_6001_10"/>
+  <item id="27" rewardType="0" reward="0_5002_10+x1*2"/>
+  <item id="28" rewardType="0" reward="0_5001_10+x1*3"/>
+  <item id="29" rewardType="0" reward="0_6002_1"/>
+  <item id="30" rewardType="0" reward="0_9070_1"/>
+  <item id="31" rewardType="0" reward="0_2004_10"/>
+  <item id="32" rewardType="6" reward="4_0_1003_50|5_0_1003_100|6_0_1003_100|7_0_1003_100|8_0_1003_100|9_0_1003_100|10_0_1003_100|11_0_1003_100|12_0_1003_100|13_0_1003_100|14_0_1003_100|15_0_1003_100"/>
+  <item id="33" rewardType="0" reward="0_1001_2"/>
+  <item id="34" rewardType="8" reward="0"/>
+  <item id="35" rewardType="0" reward="0_9050_1"/>
+  <item id="36" rewardType="0" reward="0_9060_1"/>
+  <item id="37" rewardType="0" reward="0_9070_1"/>
+  <item id="38" rewardType="7" reward="x1*0.01"/>
+</root>

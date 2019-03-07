@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   buildCount:打造次数
+   openDate:开放时间
+   closeDate:结束时间
+   buildEquips:要打造的装备
+-->
+
+<root>
+  <item buildCount="1" openDate="2015-01-20 00:00:00" closeDate="2015-01-20 23:59:59" buildEquips="1_3040|2_1007"/>
+</root>

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><!--	表名：装备、碎片提炼黑名单	type: 类型	1-装备碎片；2-装备	id:   装备、碎片对应的基础配置ID--><root>	<item type="1" id="20052"/>	<item type="2" id="1003"/></root>

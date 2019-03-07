@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   startDate:开始日期 格式：2014-01-25
+   endDate:结束日期 格式：2014-01-25 （备注：2014-01-26，即26号23点59分结束）
+   startTime:每日比赛开始时间
+   signupTime:报名时间（必须小于开始时间）
+   endTime:每日比赛结束时间
+   topPowerRank:每天参与的前x名最强势力
+   awardActorLevel:比赛结束后领奖的角色等级
+   atkCDTime:攻击后冷确时间(秒)
+   reliveTime:复活时间(秒)
+   winPoint:胜利服每次增加积分点
+   failPoint:失败服每次增加积分点
+   drawPoint:平局服每次增加积分点
+   notTargetPoint:轮空获得的积分点
+   winDayReward:每天胜利服的玩家奖励物品 格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币)_物品id_物品数量表达式(x1*1000, x1:表示等级)|后面多个奖励
+   winDayExchangePoint:每天胜利服的玩家奖励贡献点：
+   winDayKillExchangePoint:每天胜利服的玩家累计杀人奖劢贡献点： (x1:累计击败人数)
+   failDayReward:每天失败服的玩家奖励物品(没有则不填) 格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量表达式(x1*1000, x1:表示等级)|后面多个奖励
+   failDayExchangePoint:每天失败服的玩家奖励贡献点：(没有填0)
+   failDayKillExchangePoint:每天失败服的玩家累计杀人奖劢贡献点： (x1:累计击败人数) (没有填0)
+   joinLevel:可以进入跨服战的等级
+   protectTime:复活保护时间(秒)
+-->
+
+<root>
+  <item startDate="2014-04-01" endDate="2014-04-23" startTime="21:30" signupTime="21:20" endTime="22:00" topPowerRank="50" awardActorLevel="15" atkCDTime="20" reliveTime="120" winPoint="2" failPoint="1" drawPoint="1" notTargetPoint="1" winDayReward="0_5001_1000" winDayExchangePoint="1000" winDayKillExchangePoint="x1*50" failDayReward="" failDayExchangePoint="0" failDayKillExchangePoint="x1*50" joinLevel="15" protectTime="10"/>
+</root>

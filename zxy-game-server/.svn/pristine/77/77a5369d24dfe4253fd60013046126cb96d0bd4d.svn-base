@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   type:公告类型  1、抢夺X等级以上的角色成功  2、最强势力前X名获得奖励需全服公告
+   conditions:公告触发条件  1、被击杀角色的等级  2、排名 注意：如果有多个触发条件，则使用_来分隔，比如条件1_条件2
+-->
+
+<root>
+  <item type="1" conditions="100"/>
+  <item type="2" conditions="50"/>
+</root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   difficultId:难度
+   time:时间(yyyy-mm-dd hh:mm:ss)
+   reward:奖励(类型(详见rewrdType)_id_数量_几率(多个随机一个,几率合小于1000)|...)
+   least:保底次数(区间x_x)
+   leastReward:奖励(类型_id_数量)
+-->
+
+<root>
+  <item difficultId="1" time="2015-02-14 00:00:00" reward="0_1008_1_500" least="4_5" leastReward="0_1008_1"/>
+  <item difficultId="1" time="2015-02-15 00:00:00" reward="0_1008_1_500" least="4_5" leastReward="0_1008_1"/>
+  <item difficultId="1" time="2015-02-16 00:00:00" reward="0_1008_1_500" least="4_5" leastReward="0_1008_1"/>
+  <item difficultId="2" time="2015-02-14 00:00:00" reward="0_1008_1_500" least="4_5" leastReward="0_1008_1"/>
+  <item difficultId="2" time="2015-02-15 00:00:00" reward="0_1008_1_500" least="4_5" leastReward="0_1008_1"/>
+  <item difficultId="2" time="2015-02-16 00:00:00" reward="0_1008_1_500" least="4_5" leastReward="0_1008_1"/>
+  <item difficultId="3" time="2015-02-14 00:00:00" reward="0_1008_1_500" least="4_5" leastReward="0_1008_1"/>
+  <item difficultId="3" time="2015-02-15 00:00:00" reward="0_1008_1_500" least="4_5" leastReward="0_1008_1"/>
+  <item difficultId="3" time="2015-02-16 00:00:00" reward="0_1008_1_500" least="4_5" leastReward="0_1008_1"/>
+</root>

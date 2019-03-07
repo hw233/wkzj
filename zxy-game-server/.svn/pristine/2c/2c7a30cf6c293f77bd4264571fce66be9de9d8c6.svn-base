@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   taskId:任务id(id:99，100，101monthCardConfig占用了) id22不可变动
+   taskType:任务类型(见DailyTaskType) (id:14,19，20monthCardConfig占用了)
+   completeRule:完成条件 御赐小宴填时间（例如：12:00_13:00)其他填完成值
+   rewardIds:关联dailyTaskRewardConfig里的id，例如（1_2_3）
+-->
+
+<root>
+  <item taskId="1" taskType="1" completeRule="18:00_20:00" rewardIds="1"/>
+  <item taskId="2" taskType="2" completeRule="10" rewardIds="2_22"/>
+  <item taskId="3" taskType="3" completeRule="5" rewardIds="3_22"/>
+  <item taskId="4" taskType="4" completeRule="10" rewardIds="4_23"/>
+  <item taskId="5" taskType="5" completeRule="1" rewardIds="5_31"/>
+  <item taskId="6" taskType="6" completeRule="5" rewardIds="6_24"/>
+  <item taskId="7" taskType="7" completeRule="5" rewardIds="7_25"/>
+  <item taskId="8" taskType="8" completeRule="1" rewardIds="8_26"/>
+  <item taskId="9" taskType="9" completeRule="1" rewardIds="9_27"/>
+  <item taskId="10" taskType="10" completeRule="1" rewardIds="10_28"/>
+  <item taskId="12" taskType="1" completeRule="14:00_16:00" rewardIds="1"/>
+  <item taskId="13" taskType="1" completeRule="21:00_23:00" rewardIds="14_15"/>
+  <item taskId="14" taskType="12" completeRule="1" rewardIds="16_31"/>
+  <item taskId="15" taskType="13" completeRule="4" rewardIds="17_32_33"/>
+  <item taskId="17" taskType="15" completeRule="3" rewardIds="19_22"/>
+  <item taskId="18" taskType="16" completeRule="2" rewardIds="20_30"/>
+  <item taskId="19" taskType="18" completeRule="17:00_19:00" rewardIds="18"/>
+  <item taskId="20" taskType="17" completeRule="5" rewardIds="21_22"/>
+  <item taskId="22" taskType="18" completeRule="19:00_21:00" rewardIds="34"/>
+  <item taskId="23" taskType="21" completeRule="5" rewardIds="35_38"/>
+  <item taskId="24" taskType="21" completeRule="10" rewardIds="36"/>
+  <item taskId="25" taskType="21" completeRule="15" rewardIds="37"/>
+</root>

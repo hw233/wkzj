@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   index:第几个格子
+   autoUnlock:是否是自动解锁,自动解锁在条件达到时会自动推送解锁信息到客户端，不需要客户端发请求
+   needActorLevel:角色等级限制 (无限制填0)
+   needTick:扣除的点券数 (不需要点券填0)
+-->
+
+<root>
+  <item index="1" autoUnlock="1" needActorLevel="1" needTick="0"/>
+  <item index="2" autoUnlock="1" needActorLevel="1" needTick="0"/>
+  <item index="3" autoUnlock="1" needActorLevel="2" needTick="0"/>
+  <item index="4" autoUnlock="1" needActorLevel="5" needTick="0"/>
+  <item index="5" autoUnlock="1" needActorLevel="10" needTick="0"/>
+  <item index="6" autoUnlock="1" needActorLevel="15" needTick="0"/>
+  <item index="7" autoUnlock="1" needActorLevel="20" needTick="0"/>
+  <item index="8" autoUnlock="1" needActorLevel="25" needTick="0"/>
+  <item index="9" autoUnlock="1" needActorLevel="30" needTick="0"/>
+</root>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   map:挑战地图(18vs18地图)
+   viewRank:固定显示多少排行
+   fightNum:每天挑战次数
+   fightTime:每次挑战间隔时间(秒)
+   viewUp:当前排行可挑战向上名次
+   viewDown:当前排行可挑战向下名次
+   upList:向上挑战节点列表 名次(公式 x1表示玩家当前排行)_名次…
+   minRank:发奖最小排行
+   maxRank:发奖最大排行
+   costTicket:补满次数扣除的点券 次数_价格|次数_价格
+   upListNum:向上挑战节点排行显示个数
+   upRankNum:向上周围排行显示个数
+   downRankNum:向下周围排行显示个数
+   fightInfo:战斗记录保存条数
+   sendChat:发放世界公告的排行
+   sendTime:奖励发放时间(24小时制)
+-->
+
+<root>
+  <item map="5" viewRank="50" fightNum="5" fightTime="120" viewUp="5" viewDown="5" upList="x1*0.9_x1*0.8_x1*0.7" minRank="1" maxRank="500" costTicket="1_50|2_100|3_150" upListNum="1" upRankNum="1" downRankNum="1" fightInfo="20" sendChat="20" sendTime="19"/>
+</root>

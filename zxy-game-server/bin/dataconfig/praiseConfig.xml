@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   equipUpgradeNum:装备强化次数
+   snatchNum:抢夺次数
+   activeReward:激活奖励  格式: 类型(0:物品，1：装备，2：仙人魂魄）_物品id_物品数量
+   praiseReward:好评奖励  格式: 类型(0:物品，1：装备，2：仙人魂魄 ）_物品id_物品数量
+-->
+
+<root>
+  <item equipUpgradeNum="50" snatchNum="150" activeReward="0_20065_1" praiseReward="0_20066_1"/>
+</root>

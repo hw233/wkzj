@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   storyId:故事id
+   order:通关顺序
+   name:故事名称
+   crossReward:通关奖励活力(格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币,4:英雄，5：点券，6：活力，7：精力）_物品id_物品数量)
+   twoStarReward:二星通关时奖励(格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币,4:英雄，5：点券，6：活力，7：精力）_物品id_物品数量)
+   threeStarRaward:三星通关奖励物品(格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币,4:英雄，5：点券，6：活力，7：精力）_物品id_物品数量)
+-->
+
+<root>
+  <item storyId="1" order="1" name="高老庄" crossReward="6_0_10" twoStarReward="1_2002_1" threeStarRaward="2_100_1"/>
+  <item storyId="2" order="2" name="狮驼岭" crossReward="6_0_15" twoStarReward="0_5001_50" threeStarRaward="2_100_1"/>
+  <item storyId="3" order="3" name="两界关" crossReward="6_0_20" twoStarReward="0_5002_50" threeStarRaward="2_100_1"/>
+  <item storyId="4" order="4" name="幽冥血海" crossReward="6_0_25" twoStarReward="1_1028_1" threeStarRaward="2_100_1"/>
+  <item storyId="5" order="5" name="委羽界" crossReward="6_0_30" twoStarReward="1_3019_1" threeStarRaward="2_100_1"/>
+  <item storyId="6" order="6" name="浮屠山" crossReward="6_0_35" twoStarReward="2_140_10" threeStarRaward="2_100_1"/>
+  <item storyId="7" order="7" name="花果山" crossReward="6_0_40" twoStarReward="2_140_10" threeStarRaward="2_100_1"/>
+  <item storyId="8" order="8" name="青丘国" crossReward="6_0_45" twoStarReward="2_140_10" threeStarRaward="2_100_1"/>
+  <item storyId="9" order="9" name="火焰山" crossReward="6_0_50" twoStarReward="0_30850_5" threeStarRaward="2_100_1"/>
+  <item storyId="10" order="10" name="五庄观" crossReward="6_0_55" twoStarReward="0_30850_5" threeStarRaward="2_100_1"/>
+  <item storyId="11" order="11" name="东海龙宫" crossReward="6_0_60" twoStarReward="0_30850_5" threeStarRaward="2_100_1"/>
+  <item storyId="12" order="12" name="蛟魔殿" crossReward="6_0_65" twoStarReward="0_30900_10" threeStarRaward="2_100_1"/>
+  <item storyId="13" order="13" name="灌江口" crossReward="6_0_70" twoStarReward="0_30900_10" threeStarRaward="2_100_1"/>
+  <item storyId="14" order="14" name="珞珈山" crossReward="6_0_75" twoStarReward="0_30900_10" threeStarRaward="2_100_1"/>
+  <item storyId="15" order="15" name="朱紫国" crossReward="6_0_80" twoStarReward="0_30013_10" threeStarRaward="2_100_1"/>
+  <item storyId="16" order="16" name="通天河" crossReward="6_0_85" twoStarReward="0_30013_10" threeStarRaward="2_100_1"/>
+  <item storyId="17" order="17" name="娑婆净土" crossReward="6_0_90" twoStarReward="0_30013_10" threeStarRaward="2_100_1"/>
+  <item storyId="18" order="18" name="方寸山" crossReward="6_0_95" twoStarReward="0_31001_5" threeStarRaward="2_100_1"/>
+  <item storyId="19" order="19" name="北极天" crossReward="6_0_100" twoStarReward="0_31001_5" threeStarRaward="2_100_2"/>
+  <item storyId="20" order="20" name="灵霄宝殿" crossReward="6_0_105" twoStarReward="0_31001_5" threeStarRaward="2_100_2"/>
+  <item storyId="21" order="21" name="雷音寺" crossReward="6_0_110" twoStarReward="0_30008_10" threeStarRaward="2_100_2"/>
+  <item storyId="22" order="22" name="灵山" crossReward="6_0_115" twoStarReward="0_30008_10" threeStarRaward="2_100_2"/>
+  <item storyId="23" order="23" name="娲皇宫" crossReward="6_0_120" twoStarReward="0_30008_10" threeStarRaward="2_100_2"/>
+  <item storyId="24" order="24" name="火云洞" crossReward="6_0_125" twoStarReward="0_30002_10" threeStarRaward="2_100_2"/>
+  <item storyId="25" order="25" name="太阳星宫" crossReward="6_0_130" twoStarReward="0_30002_10" threeStarRaward="2_100_2"/>
+  <item storyId="26" order="26" name="玉虚宫" crossReward="6_0_135" twoStarReward="0_30002_10" threeStarRaward="0_30081_8"/>
+  <item storyId="27" order="27" name="金鳖岛" crossReward="6_0_140" twoStarReward="0_31053_15" threeStarRaward="0_30081_8"/>
+  <item storyId="28" order="28" name="八景宫" crossReward="6_0_145" twoStarReward="0_31053_15" threeStarRaward="0_30081_8"/>
+  <item storyId="29" order="29" name="六道轮回" crossReward="6_0_150" twoStarReward="0_30090_20" threeStarRaward="0_30081_8"/>
+  <item storyId="30" order="30" name="紫霄宫" crossReward="6_0_155" twoStarReward="0_30090_20" threeStarRaward="0_30081_8"/>
+  <item storyId="101" order="31" name="高老庄" crossReward="6_0_160" twoStarReward="0_5001_2000" threeStarRaward="0_7102_5"/>
+  <item storyId="102" order="32" name="狮驼岭" crossReward="6_0_165" twoStarReward="0_5002_2000" threeStarRaward="0_30109_8"/>
+  <item storyId="103" order="33" name="两界关" crossReward="6_0_170" twoStarReward="0_5001_2100" threeStarRaward="0_7102_5"/>
+  <item storyId="104" order="34" name="幽冥血海" crossReward="6_0_175" twoStarReward="0_5002_2100" threeStarRaward="0_30109_8"/>
+  <item storyId="105" order="35" name="委羽界" crossReward="6_0_180" twoStarReward="0_5001_2200" threeStarRaward="0_7102_5"/>
+  <item storyId="106" order="36" name="浮屠山" crossReward="6_0_185" twoStarReward="0_5002_2200" threeStarRaward="0_30109_8"/>
+  <item storyId="107" order="37" name="花果山" crossReward="6_0_190" twoStarReward="0_5001_2300" threeStarRaward="0_7102_5"/>
+  <item storyId="108" order="38" name="青丘国" crossReward="6_0_195" twoStarReward="0_5002_2300" threeStarRaward="0_30109_8"/>
+  <item storyId="109" order="39" name="火焰山" crossReward="6_0_200" twoStarReward="0_5001_2400" threeStarRaward="0_7102_5"/>
+  <item storyId="110" order="40" name="五庄观" crossReward="6_0_205" twoStarReward="0_5002_2400" threeStarRaward="0_30109_8"/>
+</root>

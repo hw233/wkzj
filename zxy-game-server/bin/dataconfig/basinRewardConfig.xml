@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   recharge:充值元宝
+   reward:奖励(类型<详见RewardType>_id_数量|...)
+   rewardIcon:客户端显示的奖励礼包
+-->
+
+<root>
+  <item recharge="1000" reward="0_3003_3|0_5001_500|0_5002_500|0_1000_10" rewardIcon="21020"/>
+  <item recharge="2000" reward="0_3003_5|0_5001_800|0_5002_800" rewardIcon="21021"/>
+  <item recharge="5000" reward="0_3003_8|0_5001_1500|0_5002_1500|0_6003_5" rewardIcon="21022"/>
+  <item recharge="10000" reward="0_3003_10|0_5001_3000|0_5002_3000|1_2024_1" rewardIcon="21023"/>
+</root>

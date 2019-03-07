@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   equipStar:装备星级
+   equipType:装备类型,1：武器2：防具3：饰品
+   minAttack:精炼效果提升攻击最小值
+   missMaxAttack:提升未命中攻击最大值
+   maxAttack:精炼效果提升攻击最大值
+   minDefense:精炼效果提升防御最小值
+   missMaxDefense:提升未命中防御最大值
+   maxDefense:精炼效果提升防御最大值
+   minHp:精炼效果提升生命最小值
+   missMaxHp:提升未命中最大值
+   maxHp:精炼效果提升生命最大值
+   consumeStoneType1:类型1精炼石消耗个数，精炼石消耗个数，x1表示装备等级，x2表示已精炼次数，消耗为0表示没有此功能， 表达式=（装备等级 >1） ? 装备等级：0
+   consumeStoneType2:类型2精炼石消耗个数，精炼石消耗个数，x1表示装备等级，x2表示已精炼次数，消耗为0表示没有此功能， 表达式=（装备等级 >1） ? 装备等级：0
+   consumeStoneType3:类型3精炼石消耗个数，精炼石消耗个数，x1表示装备等级，x2表示已精炼次数，消耗为0表示没有此功能， 表达式=（装备等级 >1） ? 装备等级：0
+   consumeGold:精炼消耗的金币数,表达式 =向上取整(装备等级/10)*num*(100%+此装备星级*星级百分比）；（num和星级百分比都由策划填写）x1：装备等级，x2:装备星阶x3.精炼次数
+   refineNum:每次升级增加的精炼次数
+-->
+
+<root>
+  <item equipStar="1" equipType="1" minAttack="2" missMaxAttack="3" maxAttack="4" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="1"/>
+  <item equipStar="2" equipType="1" minAttack="2" missMaxAttack="3" maxAttack="4" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="1"/>
+  <item equipStar="3" equipType="1" minAttack="2" missMaxAttack="3" maxAttack="4" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="2"/>
+  <item equipStar="4" equipType="1" minAttack="2" missMaxAttack="3" maxAttack="4" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="2"/>
+  <item equipStar="5" equipType="1" minAttack="2" missMaxAttack="3" maxAttack="4" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="3"/>
+  <item equipStar="6" equipType="1" minAttack="2" missMaxAttack="3" maxAttack="4" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="3"/>
+  <item equipStar="1" equipType="2" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="2" missMaxDefense="3" maxDefense="4" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="1"/>
+  <item equipStar="2" equipType="2" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="2" missMaxDefense="3" maxDefense="4" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="1"/>
+  <item equipStar="3" equipType="2" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="2" missMaxDefense="3" maxDefense="4" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="2"/>
+  <item equipStar="4" equipType="2" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="2" missMaxDefense="3" maxDefense="4" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="2"/>
+  <item equipStar="5" equipType="2" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="2" missMaxDefense="3" maxDefense="4" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="3"/>
+  <item equipStar="6" equipType="2" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="2" missMaxDefense="3" maxDefense="4" minHp="0" missMaxHp="0" maxHp="0" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="3"/>
+  <item equipStar="1" equipType="3" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="3" missMaxHp="6" maxHp="10" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="1"/>
+  <item equipStar="2" equipType="3" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="3" missMaxHp="6" maxHp="10" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="1"/>
+  <item equipStar="3" equipType="3" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="3" missMaxHp="6" maxHp="10" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="2"/>
+  <item equipStar="4" equipType="3" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="3" missMaxHp="6" maxHp="10" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="2"/>
+  <item equipStar="5" equipType="3" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="3" missMaxHp="6" maxHp="10" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="3"/>
+  <item equipStar="6" equipType="3" minAttack="0" missMaxAttack="0" maxAttack="0" minDefense="0" missMaxDefense="0" maxDefense="0" minHp="3" missMaxHp="6" maxHp="10" consumeStoneType1="ternary(x2&gt;0,x2*0+0,0)" consumeStoneType2="ternary(x2&gt;0,x2*0.19+1,1)" consumeStoneType3="ternary(x2&gt;0,x2*0.373+3,2)" consumeGold="200*(1+x3*0.2)" refineNum="3"/>
+</root>

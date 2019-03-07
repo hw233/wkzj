@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   flushTime:刷新时间(整点)
+   needTicket:消耗多少点券刷新(x1 表示点券刷新次数)
+   goodsId:消耗刷新物品id
+   goodsNum:消耗多少物品
+   rewardPool:奖励总量(类型_数量|...)
+-->
+
+<root>
+  <item flushTime="6:00:00_12:00:00_18:00:00_0:00:00" needTicket="x1*5+5" goodsId="1001" goodsNum="1" rewardPool="0_1|3_3|2_2"/>
+</root>

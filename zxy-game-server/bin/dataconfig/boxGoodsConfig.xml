@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   boxId:宝箱id
+   id:奖励id
+   num:奖励数量(物品(公式<x1表示玩家等级>/数量))
+   proportion:概率(装备、装备碎片同类型、星级和为1000，物品同id的和为1000)
+-->
+
+<root>
+  <item boxId="9020" id="5002" num="0.14*x1+6" proportion="1000"/>
+  <item boxId="9030" id="5002" num="0.35*x1+12" proportion="1000"/>
+  <item boxId="9040" id="5002" num="0.6*x1+24" proportion="1000"/>
+</root>

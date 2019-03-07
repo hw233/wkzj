@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:配置id(1.南天门  2.前殿 3.宝殿   4.超过30次后的)
+   interval:到达次数区间 （格式：最小次数_最大次数） -1:表示无限
+   costTicket:消耗点券数量
+   reward:达到最大次数获得的奖励配置（ 类型：0.物品 1.装备 2.仙人魂魄）（公式：数量；1*x1代表等级） (格式：类型_id_公式_几率)
+   rewardCount:第几次获得区间最好奖励
+-->
+
+<root>
+  <item id="1" interval="0_100" costTicket="10" reward="1_2045_1_1000" rewardCount="15_15"/>
+  <item id="2" interval="101_200" costTicket="50" reward="1_3011_1_100" rewardCount="150_150"/>
+  <item id="3" interval="201_300" costTicket="300" reward="1_3046_1_100" rewardCount="250_250"/>
+  <item id="4" interval="301_-1" costTicket="300" reward="" rewardCount="90_100"/>
+</root>

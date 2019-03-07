@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   beginLevel:对应掌教的开始等级
+   endLevel:对应掌教的结束等级
+   monster:怪物id和位置     怪物id1_位置1(1-9 代表9个格子)|id2_位置2     位置:9 8 7     6 5 4     3 2 1
+   battleId:战场id
+   proportion:几率(每个等级几率总和必须为1000)
+-->
+
+<root>
+  <item beginLevel="1" endLevel="5" monster="30010101_7|30010201_9" battleId="31001" proportion="166"/>
+  <item beginLevel="1" endLevel="5" monster="30010101_2|30010201_5" battleId="31002" proportion="167"/>
+  <item beginLevel="1" endLevel="5" monster="30010102_7|30010202_9" battleId="32001" proportion="166"/>
+  <item beginLevel="1" endLevel="5" monster="30010102_2|30010202_5" battleId="32002" proportion="167"/>
+  <item beginLevel="1" endLevel="5" monster="30010103_7|30010203_9" battleId="33001" proportion="167"/>
+  <item beginLevel="1" endLevel="5" monster="30010103_2|30010203_5" battleId="33002" proportion="167"/>
+  <item beginLevel="6" endLevel="10" monster="30010301_4|30010101_5|30010101_6|30010201_8" battleId="31003" proportion="166"/>
+  <item beginLevel="6" endLevel="10" monster="30010301_1|30010101_2|30010101_3|30010401_5" battleId="31004" proportion="167"/>
+  <item beginLevel="6" endLevel="10" monster="30010302_4|30010102_5|30010102_6|30010202_8" battleId="32003" proportion="166"/>
+  <item beginLevel="6" endLevel="10" monster="30010302_1|30010102_2|30010102_3|30010402_5" battleId="32004" proportion="167"/>
+  <item beginLevel="6" endLevel="10" monster="30010303_4|30010103_5|30010103_6|30010203_8" battleId="33003" proportion="167"/>
+  <item beginLevel="6" endLevel="10" monster="30010303_1|30010103_2|30010103_3|30010403_5" battleId="33004" proportion="167"/>
+  <item beginLevel="11" endLevel="15" monster="30010501_4|30010601_5|30010301_6|30010401_7|30010401_9" battleId="31005" proportion="111"/>
+  <item beginLevel="11" endLevel="15" monster="30010501_4|30010301_5|30010501_6|30010401_7|30010701_8|30010401_9" battleId="31006" proportion="111"/>
+  <item beginLevel="11" endLevel="15" monster="30010901_1|30010901_2|30010901_3|30010801_4|30010801_5|30010801_6" battleId="31007" proportion="111"/>
+  <item beginLevel="11" endLevel="15" monster="30010502_4|30010602_5|30010302_6|30010402_7|30010402_9" battleId="32005" proportion="111"/>
+  <item beginLevel="11" endLevel="15" monster="30010502_4|30010302_5|30010502_6|30010402_7|30010702_8|30010402_9" battleId="32006" proportion="111"/>
+  <item beginLevel="11" endLevel="15" monster="30010902_1|30010902_2|30010902_3|30010802_4|30010802_5|30010802_6" battleId="32007" proportion="111"/>
+  <item beginLevel="11" endLevel="15" monster="30010503_4|30010603_5|30010303_6|30010403_7|30010403_9" battleId="33005" proportion="111"/>
+  <item beginLevel="11" endLevel="15" monster="30010503_4|30010303_5|30010503_6|30010403_7|30010703_8|30010403_9" battleId="33006" proportion="111"/>
+  <item beginLevel="11" endLevel="15" monster="30010903_1|30010903_2|30010903_3|30010803_4|30010803_5|30010803_6" battleId="33007" proportion="112"/>
+  <item beginLevel="16" endLevel="22" monster="30011001_1|30011001_2|30011001_3|30011201_4|30011101_5|30011201_6|30011301_8" battleId="31008" proportion="111"/>
+  <item beginLevel="16" endLevel="22" monster="30011101_1|30011101_2|30011101_3|30010801_4|30010801_6|30011301_7|30011301_9" battleId="31009" proportion="111"/>
+  <item beginLevel="16" endLevel="22" monster="30010601_1|30010601_2|30011001_3|30011401_6|30011301_7|30011301_8|30011301_9" battleId="31010" proportion="111"/>
+  <item beginLevel="16" endLevel="22" monster="30011002_1|30011002_2|30011002_3|30011202_4|30011102_5|30011202_6|30011302_8" battleId="32008" proportion="111"/>
+  <item beginLevel="16" endLevel="22" monster="30011102_1|30011102_2|30011102_3|30010802_4|30010802_6|30011302_7|30011302_9" battleId="32009" proportion="111"/>
+  <item beginLevel="16" endLevel="22" monster="30010602_1|30010602_2|30011002_3|30011402_6|30011302_7|30011302_8|30011302_9" battleId="32010" proportion="111"/>
+  <item beginLevel="16" endLevel="22" monster="30011003_1|30011003_2|30011003_3|30011203_4|30011103_5|30011203_6|30011303_8" battleId="33008" proportion="111"/>
+  <item beginLevel="16" endLevel="22" monster="30011103_1|30011103_2|30011103_3|30010803_4|30010803_6|30011303_7|30011303_9" battleId="33009" proportion="111"/>
+  <item beginLevel="16" endLevel="22" monster="30010603_1|30010603_2|30011003_3|30011403_6|30011303_7|30011303_8|30011303_9" battleId="33010" proportion="112"/>
+  <item beginLevel="23" endLevel="31" monster="30011601_1|30011601_3|30011401_4|30011401_5|30011401_6|30011501_7|30011401_8|30011501_9" battleId="31011" proportion="111"/>
+  <item beginLevel="23" endLevel="31" monster="30011801_1|30011901_2|30011801_3|30011401_4|30011401_5|30011501_7|30011501_8|30011401_9" battleId="31012" proportion="111"/>
+  <item beginLevel="23" endLevel="31" monster="30011801_1|30011801_3|30012101_4|30012101_5|30012101_6|30011501_7|30011501_8|30011501_9" battleId="31013" proportion="111"/>
+  <item beginLevel="23" endLevel="31" monster="30011602_1|30011602_3|30011402_4|30011402_5|30011402_6|30011502_7|30011402_8|30011502_9" battleId="32011" proportion="111"/>
+  <item beginLevel="23" endLevel="31" monster="30011802_1|30011902_2|30011802_3|30011402_4|30011402_5|30011502_7|30011502_8|30011402_9" battleId="32012" proportion="111"/>
+  <item beginLevel="23" endLevel="31" monster="30011802_1|30011802_3|30012102_4|30012102_5|30012102_6|30011502_7|30011502_8|30011502_9" battleId="32013" proportion="111"/>
+  <item beginLevel="23" endLevel="31" monster="30011603_1|30011603_3|30011403_4|30011403_5|30011403_6|30011503_7|30011403_8|30011503_9" battleId="33011" proportion="111"/>
+  <item beginLevel="23" endLevel="31" monster="30011803_1|30011903_2|30011803_3|30011403_4|30011403_5|30011503_7|30011503_8|30011403_9" battleId="33012" proportion="111"/>
+  <item beginLevel="23" endLevel="31" monster="30011803_1|30011803_3|30012103_4|30012103_5|30012103_6|30011503_7|30011503_8|30011503_9" battleId="33013" proportion="112"/>
+  <item beginLevel="32" endLevel="250" monster="30012201_1|30012201_2|30012201_3|30012301_4|30012401_5|30012301_6|30012501_7|30012501_8|30012501_9" battleId="31014" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30012601_1|30012601_2|30012601_3|30012701_4|30012401_5|30012701_6|30012901_7|30012901_8|30012901_9" battleId="31015" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30013001_1|30013101_2|30013001_3|30013201_4|30013301_5|30013201_6|30013201_7|30013501_8|30013201_9" battleId="31016" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30013601_1|30013601_2|30013601_3|30013701_4|30013701_5|30013701_6|30013801_7|30013801_8|30013801_9" battleId="31017" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30013901_1|30013901_2|30013901_3|30014001_4|30014001_5|30014001_6|30014101_7|30014101_8|30014101_9" battleId="31018" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30012202_1|30012202_2|30012202_3|30012302_4|30012402_5|30012302_6|30012502_7|30012502_8|30012502_9" battleId="32014" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30012602_1|30012602_2|30012602_3|30012702_4|30012402_5|30012702_6|30012902_7|30012902_8|30012902_9" battleId="32015" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30013002_1|30013102_2|30013002_3|30013202_4|30013302_5|30013202_6|30013202_7|30013502_8|30013202_9" battleId="32016" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30013602_1|30013602_2|30013602_3|30013702_4|30013702_5|30013702_6|30013802_7|30013802_8|30013802_9" battleId="32017" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30013902_1|30013902_2|30013902_3|30014002_4|30014002_5|30014002_6|30014102_7|30014102_8|30014102_9" battleId="32018" proportion="67"/>
+  <item beginLevel="32" endLevel="250" monster="30012203_1|30012203_2|30012203_3|30012303_4|30012403_5|30012303_6|30012503_7|30012503_8|30012503_9" battleId="33014" proportion="66"/>
+  <item beginLevel="32" endLevel="250" monster="30012603_1|30012603_2|30012603_3|30012703_4|30012403_5|30012703_6|30012903_7|30012903_8|30012903_9" battleId="33015" proportion="66"/>
+  <item beginLevel="32" endLevel="250" monster="30013003_1|30013103_2|30013003_3|30013203_4|30013303_5|30013203_6|30013203_7|30013503_8|30013203_9" battleId="33016" proportion="66"/>
+  <item beginLevel="32" endLevel="250" monster="30013603_1|30013603_2|30013603_3|30013703_4|30013703_5|30013703_6|30013803_7|30013803_8|30013803_9" battleId="33017" proportion="66"/>
+  <item beginLevel="32" endLevel="250" monster="30013903_1|30013903_2|30013903_3|30014003_4|30014003_5|30014003_6|30014103_7|30014103_8|30014103_9" battleId="33018" proportion="66"/>
+</root>

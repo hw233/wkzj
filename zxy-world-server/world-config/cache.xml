@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!-- 每次处理角色数 -->
+	<bean id="cache.each_clean_actor_num" class="java.lang.Integer" >
+		<constructor-arg value="600" />
+	</bean>
+
+	<!-- 退出超过x分钟后进行清理 :默认:1800秒(30分钟) -->
+	<bean id="cache.logout_expired_time" class="java.lang.Integer" >
+		<constructor-arg value="600" />
+	</bean>
+	
+	<!-- 触发清理周期,默认:每5 分钟 -->
+	<bean id="cache.trigger_schedule_time" class="java.lang.Integer" >
+		<constructor-arg value="5" />
+	</bean>
+
+</beans>

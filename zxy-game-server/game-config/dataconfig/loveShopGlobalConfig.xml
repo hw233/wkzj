@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   flushTime:刷新时间 24小时制(时间1_时间2_...)
+   costGoods:购买消耗的物品id
+   flushMax:刷新次数上限
+-->
+
+<root>
+  <item flushTime="12:00:00_18:00:00" costGoods="1007" flushMax="10"/>
+</root>

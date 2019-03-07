@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   flushTime:刷新间隔时间
+   maxStar:最大次数
+   mustRewardId:第一次使用完必出奖励
+   openLevel:开放等级
+-->
+
+<root>
+  <item flushTime="600" maxStar="20" mustRewardId="4" openLevel="12"/>
+</root>

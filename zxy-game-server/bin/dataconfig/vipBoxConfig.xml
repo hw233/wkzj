@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   vipLevel:vip等级
+   goodsId:箱子ID
+   boxNum:可领取箱子的个数
+-->
+
+<root>
+  <item vipLevel="0" goodsId="9083" boxNum="0"/>
+  <item vipLevel="1" goodsId="9083" boxNum="5"/>
+  <item vipLevel="2" goodsId="9083" boxNum="5"/>
+  <item vipLevel="3" goodsId="9083" boxNum="5"/>
+  <item vipLevel="4" goodsId="9083" boxNum="10"/>
+  <item vipLevel="5" goodsId="9083" boxNum="10"/>
+  <item vipLevel="6" goodsId="9083" boxNum="10"/>
+  <item vipLevel="7" goodsId="9083" boxNum="10"/>
+  <item vipLevel="8" goodsId="9083" boxNum="15"/>
+  <item vipLevel="9" goodsId="9083" boxNum="15"/>
+  <item vipLevel="10" goodsId="9083" boxNum="15"/>
+  <item vipLevel="11" goodsId="9083" boxNum="20"/>
+  <item vipLevel="12" goodsId="9083" boxNum="30"/>
+  <item vipLevel="13" goodsId="9083" boxNum="35"/>
+  <item vipLevel="14" goodsId="9083" boxNum="40"/>
+  <item vipLevel="15" goodsId="9083" boxNum="50"/>
+</root>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   star:仙人星级（魂魄）
+   goodsId:兑换物品id
+   num:兑换数量
+-->
+
+<root>
+  <item star="1" goodsId="6004" num="2"/>
+  <item star="2" goodsId="6004" num="3"/>
+  <item star="3" goodsId="6004" num="4"/>
+  <item star="4" goodsId="6004" num="5"/>
+  <item star="5" goodsId="6004" num="6"/>
+  <item star="6" goodsId="6004" num="8"/>
+</root>

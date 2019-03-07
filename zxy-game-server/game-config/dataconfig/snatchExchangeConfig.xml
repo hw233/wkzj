@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   exchangeId:序号id（0为不出售）
+   needScore:花费的兑换券
+   rewardId:物品id
+   rewardType:奖励类型(0.物品2.仙人魂魄)
+   rewardNum:奖励数量
+-->
+
+<root>
+  <item exchangeId="1" needScore="2" rewardId="30037" rewardType="0" rewardNum="1"/>
+  <item exchangeId="2" needScore="2" rewardId="30000" rewardType="0" rewardNum="1"/>
+  <item exchangeId="3" needScore="2" rewardId="30003" rewardType="0" rewardNum="1"/>
+  <item exchangeId="4" needScore="2" rewardId="30018" rewardType="0" rewardNum="1"/>
+  <item exchangeId="5" needScore="3" rewardId="30054" rewardType="0" rewardNum="1"/>
+  <item exchangeId="6" needScore="3" rewardId="30045" rewardType="0" rewardNum="1"/>
+  <item exchangeId="7" needScore="3" rewardId="30048" rewardType="0" rewardNum="1"/>
+  <item exchangeId="8" needScore="3" rewardId="30077" rewardType="0" rewardNum="1"/>
+  <item exchangeId="9" needScore="3" rewardId="30057" rewardType="0" rewardNum="1"/>
+  <item exchangeId="10" needScore="3" rewardId="30067" rewardType="0" rewardNum="1"/>
+  <item exchangeId="11" needScore="4" rewardId="30062" rewardType="0" rewardNum="1"/>
+</root>

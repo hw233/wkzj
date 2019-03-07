@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   framId:边框id
+   framType:边框类型(1.普通 2.vip 3.最强势力 4.节日边框)
+   unLock:解锁条件 1.所有人都可用   2.vip才可用,解锁条件配置vip等级  x_x   3.最强势力变框,解锁条件配置 x名次_x名次(区间)  4.特定日期内解锁yyyy-mm-dd hh:mm:ss_yyyy-mm-dd hh:mm
+-->
+
+<root>
+  <item framId="1" framType="1" unLock=""/>
+  <item framId="2" framType="2" unLock="4_15"/>
+  <item framId="3" framType="3" unLock="3_3"/>
+  <item framId="4" framType="3" unLock="2_2"/>
+  <item framId="5" framType="3" unLock="1_1"/>
+  <item framId="6" framType="4" unLock="2015-02-18 00:00:00_2015-02-24 23:59:59"/>
+  <item framId="7" framType="4" unLock="2015-02-14 00:00:00_2015-02-14 23:59:59"/>
+</root>

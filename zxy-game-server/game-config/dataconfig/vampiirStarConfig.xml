@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   star:仙人品质
+   proportion:经验保留百分比, 如果损耗为2%,则填写数值98
+   heroExp:仙人被吸收的时候会根据其星阶有一个经验值被添加的吸灵的仙人身上
+   heroSoulExp:仙人魂魄被吸收的时候会根据其星阶有一个经验值被添加的吸灵的仙人身上
+-->
+
+<root>
+  <item star="1" proportion="80" heroExp="100" heroSoulExp="50"/>
+  <item star="2" proportion="80" heroExp="750" heroSoulExp="75"/>
+  <item star="3" proportion="80" heroExp="2000" heroSoulExp="134"/>
+  <item star="4" proportion="80" heroExp="3750" heroSoulExp="125"/>
+  <item star="5" proportion="80" heroExp="6000" heroSoulExp="150"/>
+  <item star="6" proportion="80" heroExp="12000" heroSoulExp="150"/>
+</root>

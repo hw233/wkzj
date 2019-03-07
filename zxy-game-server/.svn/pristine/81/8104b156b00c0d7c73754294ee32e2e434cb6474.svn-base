@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   vipLevel:VIP等级
+   rechargeTicket:充值点券
+   needMoney:所需充值的人民币
+   giveHeros:赠送仙人（格式：仙人ID_仙人ID)
+   giveGold:赠送金币：格式：金币个数
+   giveEquips:赠送装备（格式：装备ID_装备ID)
+   giveGoods:赠送物品（格式：物品ID_物品数量|物品ID_物品数量）
+   vitNum:活力购买次数（-1为无限制）
+   snatchNum:斗法购买次数（-1为无限制）
+   goldNum:金币购买次数（-1为无限制）
+   VIPEntrance1TrialNum:妖邪之地VIP玩家可以试炼的次数（VIP1-VIP15）
+   VIPEntrance2TrialNum:魔灵地窖VIP玩家可以试炼的次数（VIP1-VIP15）
+   VIPResetTrialNum:VIP玩家可以重置试炼的次数
+   allyBattleReward:合作关卡奖励千分比
+   extValue:vip奖励  当vipLevel = 1时， extValue->;  当vipLevel = 2时， extValue->;  当vipLevel = 3时， extValue->;  当vipLevel = 4时， extValue->;  当vipLevel = 5时， extValue->;  当vipLevel = 6时， extValue->;  当vipLevel = 7时， extValue->;  当vipLevel = 8时， extValue->;  当vipLevel = 9时， extValue->;  当vipLevel = 10时， extValue->;  当vipLevel = 11时， extValue->;  当vipLevel = 12时， extValue->;  当vipLevel = 13时， extValue->;  当vipLevel = 14时， extValue->;  当vipLevel = 15时， extValue->;
+   mainHeroAttributePercent:主力仙人随机属性提高千分比
+   mainHeroAddExp:主力仙人增加经验公式
+   addComposeHeroNum:仙人合成次数
+   addComposeEquipNum:装备合成次数
+   addHeroEquipReset:装备仙人重置次数
+   returnGold:返还的金币(千分比<向上取整>)
+   returnGoods:返还的精炼、潜修石(千分比<向上取整>)
+   bableExtStar:通天塔额外的通天币
+   composeGoods:碎片合成减少的时间(千分比<向上取整>)
+   recruitTime:大聚仙减少的时间(千分比<向上取整>)
+   breakThrough:仙人突破返还精魄比例(千分比<向上取整>)
+-->
+
+<root>
+  <item vipLevel="1" rechargeTicket="10" needMoney="1" giveHeros="" giveGold="0" giveEquips="3007" giveGoods="2007_1|6001_20" vitNum="0" snatchNum="0" goldNum="10" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="0" allyBattleReward="100" extValue="" mainHeroAttributePercent="50" mainHeroAddExp="x1*200" addComposeHeroNum="1" addComposeEquipNum="1" addHeroEquipReset="1" returnGold="700" returnGoods="700" bableExtStar="0" composeGoods="0" recruitTime="0" breakThrough="500"/>
+  <item vipLevel="2" rechargeTicket="100" needMoney="10" giveHeros="" giveGold="0" giveEquips="" giveGoods="1000_5|2007_3" vitNum="1" snatchNum="0" goldNum="15" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="0" allyBattleReward="100" extValue="" mainHeroAttributePercent="50" mainHeroAddExp="x1*200" addComposeHeroNum="1" addComposeEquipNum="1" addHeroEquipReset="1" returnGold="700" returnGoods="700" bableExtStar="0" composeGoods="0" recruitTime="0" breakThrough="500"/>
+  <item vipLevel="3" rechargeTicket="200" needMoney="20" giveHeros="" giveGold="0" giveEquips="" giveGoods="5001_700|5002_300|30043_5" vitNum="1" snatchNum="0" goldNum="20" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="0" allyBattleReward="100" extValue="" mainHeroAttributePercent="50" mainHeroAddExp="x1*200" addComposeHeroNum="1" addComposeEquipNum="1" addHeroEquipReset="2" returnGold="700" returnGoods="700" bableExtStar="0" composeGoods="0" recruitTime="0" breakThrough="500"/>
+  <item vipLevel="4" rechargeTicket="450" needMoney="45" giveHeros="" giveGold="0" giveEquips="1027" giveGoods="5001_1200|5002_600|30043_5" vitNum="2" snatchNum="2" goldNum="25" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="1" allyBattleReward="100" extValue="" mainHeroAttributePercent="50" mainHeroAddExp="x1*200" addComposeHeroNum="1" addComposeEquipNum="1" addHeroEquipReset="3" returnGold="700" returnGoods="700" bableExtStar="0" composeGoods="0" recruitTime="0" breakThrough="500"/>
+  <item vipLevel="5" rechargeTicket="1000" needMoney="100" giveHeros="155" giveGold="0" giveEquips="" giveGoods="5001_1600|2007_10|30043_5" vitNum="2" snatchNum="2" goldNum="30" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="1" allyBattleReward="150" extValue="" mainHeroAttributePercent="100" mainHeroAddExp="x1*300" addComposeHeroNum="1" addComposeEquipNum="1" addHeroEquipReset="4" returnGold="700" returnGoods="700" bableExtStar="2" composeGoods="0" recruitTime="0" breakThrough="500"/>
+  <item vipLevel="6" rechargeTicket="2000" needMoney="200" giveHeros="" giveGold="0" giveEquips="3016" giveGoods="5002_1200|1000_10|30019_10" vitNum="2" snatchNum="2" goldNum="35" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="1" allyBattleReward="150" extValue="" mainHeroAttributePercent="100" mainHeroAddExp="x1*300" addComposeHeroNum="1" addComposeEquipNum="2" addHeroEquipReset="5" returnGold="700" returnGoods="700" bableExtStar="2" composeGoods="0" recruitTime="500" breakThrough="500"/>
+  <item vipLevel="7" rechargeTicket="3000" needMoney="300" giveHeros="" giveGold="0" giveEquips="2017" giveGoods="5001_3000|2007_15|30019_10" vitNum="3" snatchNum="3" goldNum="40" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="1" allyBattleReward="150" extValue="" mainHeroAttributePercent="100" mainHeroAddExp="x1*300" addComposeHeroNum="2" addComposeEquipNum="2" addHeroEquipReset="6" returnGold="700" returnGoods="700" bableExtStar="4" composeGoods="0" recruitTime="500" breakThrough="500"/>
+  <item vipLevel="8" rechargeTicket="5000" needMoney="500" giveHeros="158" giveGold="0" giveEquips="" giveGoods="5001_4000|2007_15|30019_10" vitNum="3" snatchNum="3" goldNum="45" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="1" allyBattleReward="200" extValue="" mainHeroAttributePercent="100" mainHeroAddExp="x1*300" addComposeHeroNum="2" addComposeEquipNum="2" addHeroEquipReset="7" returnGold="700" returnGoods="700" bableExtStar="4" composeGoods="0" recruitTime="500" breakThrough="600"/>
+  <item vipLevel="9" rechargeTicket="7000" needMoney="700" giveHeros="" giveGold="0" giveEquips="3010" giveGoods="5002_1800|2007_20|30074_10" vitNum="3" snatchNum="3" goldNum="50" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="1" allyBattleReward="200" extValue="" mainHeroAttributePercent="200" mainHeroAddExp="x1*400" addComposeHeroNum="2" addComposeEquipNum="3" addHeroEquipReset="8" returnGold="700" returnGoods="700" bableExtStar="4" composeGoods="0" recruitTime="500" breakThrough="600"/>
+  <item vipLevel="10" rechargeTicket="10000" needMoney="1000" giveHeros="" giveGold="0" giveEquips="2004" giveGoods="5002_3000|1002_50|30074_10" vitNum="4" snatchNum="4" goldNum="55" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="2" allyBattleReward="200" extValue="" mainHeroAttributePercent="200" mainHeroAddExp="x1*400" addComposeHeroNum="3" addComposeEquipNum="3" addHeroEquipReset="9" returnGold="700" returnGoods="700" bableExtStar="4" composeGoods="0" recruitTime="500" breakThrough="600"/>
+  <item vipLevel="11" rechargeTicket="15000" needMoney="1500" giveHeros="" giveGold="0" giveEquips="1000" giveGoods="5002_5000|1002_100|30074_10" vitNum="4" snatchNum="4" goldNum="60" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="2" allyBattleReward="250" extValue="" mainHeroAttributePercent="250" mainHeroAddExp="x1*400" addComposeHeroNum="3" addComposeEquipNum="3" addHeroEquipReset="9" returnGold="700" returnGoods="700" bableExtStar="4" composeGoods="0" recruitTime="500" breakThrough="600"/>
+  <item vipLevel="12" rechargeTicket="20000" needMoney="2000" giveHeros="" giveGold="0" giveEquips="3013" giveGoods="5001_10000|2007_25|30074_10" vitNum="4" snatchNum="4" goldNum="70" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="2" allyBattleReward="250" extValue="" mainHeroAttributePercent="250" mainHeroAddExp="x1*400" addComposeHeroNum="3" addComposeEquipNum="4" addHeroEquipReset="9" returnGold="700" returnGoods="700" bableExtStar="6" composeGoods="0" recruitTime="500" breakThrough="600"/>
+  <item vipLevel="13" rechargeTicket="50000" needMoney="5000" giveHeros="" giveGold="0" giveEquips="1047" giveGoods="5001_13000|2007_30|30500_20" vitNum="4" snatchNum="5" goldNum="80" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="2" allyBattleReward="250" extValue="" mainHeroAttributePercent="300" mainHeroAddExp="x1*500" addComposeHeroNum="4" addComposeEquipNum="4" addHeroEquipReset="9" returnGold="700" returnGoods="700" bableExtStar="6" composeGoods="500" recruitTime="500" breakThrough="600"/>
+  <item vipLevel="14" rechargeTicket="100000" needMoney="10000" giveHeros="" giveGold="0" giveEquips="3042" giveGoods="5002_10000|2007_30|30500_20" vitNum="5" snatchNum="5" goldNum="100" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="2" allyBattleReward="250" extValue="" mainHeroAttributePercent="300" mainHeroAddExp="x1*500" addComposeHeroNum="4" addComposeEquipNum="4" addHeroEquipReset="9" returnGold="700" returnGoods="700" bableExtStar="6" composeGoods="500" recruitTime="500" breakThrough="600"/>
+  <item vipLevel="15" rechargeTicket="200000" needMoney="20000" giveHeros="173" giveGold="0" giveEquips="" giveGoods="5001_20000|2007_50|30500_40" vitNum="5" snatchNum="6" goldNum="-1" VIPEntrance1TrialNum="2" VIPEntrance2TrialNum="2" VIPResetTrialNum="3" allyBattleReward="250" extValue="" mainHeroAttributePercent="300" mainHeroAddExp="x1*500" addComposeHeroNum="4" addComposeEquipNum="4" addHeroEquipReset="9" returnGold="700" returnGoods="700" bableExtStar="6" composeGoods="500" recruitTime="500" breakThrough="600"/>
+</root>

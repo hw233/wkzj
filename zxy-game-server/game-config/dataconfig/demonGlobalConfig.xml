@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   openDate:开放日期 格式:2013-12-25
+   openTimes:开放时间
+   defaultRankDifficult:默认查看排行榜难度
+   rankNum:查看的排行榜数量
+   exchangeWeek:兑换星期(1_2_3_4_5_6_7)
+   exchangeTime:兑换时间
+   actorLevel:需要角色等级
+-->
+
+<root>
+  <item openDate="2014-9-30" openTimes="20:30_21:00" defaultRankDifficult="1" rankNum="10" exchangeWeek="7" exchangeTime="22:00_23:59" actorLevel="15"/>
+</root>

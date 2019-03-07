@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:脚本ID
+   file:脚本文件
+-->
+
+<root>
+  <item id="1001" file="1001.js"/>
+</root>

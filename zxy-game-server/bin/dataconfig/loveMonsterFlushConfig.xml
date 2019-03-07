@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   flushNum:刷新次数(从1开始,最后填-1)
+   costTicket:刷新需要的元宝(x1表示已经使用次数<可填数值可填公式>)
+-->
+
+<root>
+  <item flushNum="1" costTicket="100"/>
+  <item flushNum="2" costTicket="200"/>
+  <item flushNum="3" costTicket="300"/>
+  <item flushNum="-1" costTicket="400"/>
+</root>

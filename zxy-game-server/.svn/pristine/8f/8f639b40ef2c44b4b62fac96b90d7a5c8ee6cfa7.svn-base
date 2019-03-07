@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   achieveId:成就的唯一标识Id
+   achieveType:成就分类：  1、掌教等级达到X  2、登天塔层数达到X  3、点券消耗达到X  4、充值达到X  5、累计得到过X品质的武器X数量  6、累计得到过X品质的防具X数量  7、累计得到过X品质的饰品X数量  8、累计得到过X品质仙人X数量  9、精炼X品质的装备X次  10、故事X章X关卡X星X次  11、气势达到X  12、任意装备强化到X级  13、任意仙人升到X级  14、精力上限达到X  15、活力上限达到X  16、单次抢夺金币X  17、修改过名字  18、抢夺X次  19、盟友数量X  20、精练X次  21、积分达到X  22、聊天达到x次  23、云游仙商购买shopID物品x次  24、连续登陆X天  25、登上X难度的塔,到达X层  26、最强势力排名,当角色等级大于等于x,小于等于x名  27、潜修x次  28、连续登陆x天  29、试炼洞通关x次  30、解锁阵容格子x个  31、封神榜挑战x次 不同的级别对应的完成条件值不同  级别也高，完成条件就越高
+   reaction:成就完成后触发的服务器动作     0、无     1、系统挑拨
+   conditions:成就达成条件
+   reward:奖励： 结构：(类型_id_数量|类型_id_数量,如果无id类似金币，就填类型_数量) 类型: 1.金币 2.点券 3.物品类（一般物品，道具物品，宝箱） 4.装备 5.仙人魂魄 6.仙人 7.聚仙免费次数 8.聚仙免费次数补满(补满填8或8_0都可以) 9.恢复精力 10.精力补满 11.恢复活力 12.活力补满 13.掌教经验
+-->
+
+<root>
+  <item achieveId="1000" achieveType="22" reaction="0" conditions="5" reward="1_100000"/>
+  <item achieveId="1001" achieveType="1" reaction="0" conditions="10" reward="2_50"/>
+  <item achieveId="1002" achieveType="1" reaction="0" conditions="20" reward="2_100"/>
+  <item achieveId="1014" achieveType="12" reaction="0" conditions="10" reward="3_5002_5"/>
+  <item achieveId="1015" achieveType="12" reaction="0" conditions="20" reward="3_5002_10"/>
+  <item achieveId="1022" achieveType="13" reaction="0" conditions="10" reward="3_2004_20"/>
+  <item achieveId="1023" achieveType="13" reaction="0" conditions="20" reward="3_5001_10"/>
+  <item achieveId="1029" achieveType="11" reaction="0" conditions="100" reward="3_5001_30"/>
+  <item achieveId="1030" achieveType="19" reaction="0" conditions="1" reward="4_2005_1"/>
+  <item achieveId="1032" achieveType="3" reaction="0" conditions="5000" reward="3_5001_500"/>
+  <item achieveId="1038" achieveType="1" reaction="0" conditions="15" reward="3_2007_2"/>
+  <item achieveId="1043" achieveType="25" reaction="0" conditions="1_15" reward="4_2010_1"/>
+  <item achieveId="1044" achieveType="25" reaction="0" conditions="1_45" reward="3_2007_4"/>
+  <item achieveId="1045" achieveType="25" reaction="0" conditions="1_75" reward="3_2007_7"/>
+  <item achieveId="1046" achieveType="25" reaction="0" conditions="1_100" reward="3_2007_10"/>
+  <item achieveId="1047" achieveType="25" reaction="0" conditions="2_15" reward="4_3009_1"/>
+  <item achieveId="1048" achieveType="25" reaction="0" conditions="2_45" reward="3_2007_20"/>
+  <item achieveId="1049" achieveType="25" reaction="0" conditions="2_75" reward="3_2007_30"/>
+  <item achieveId="1050" achieveType="25" reaction="0" conditions="2_100" reward="3_2007_40"/>
+  <item achieveId="1051" achieveType="25" reaction="0" conditions="3_15" reward="4_2013_1"/>
+  <item achieveId="1052" achieveType="25" reaction="0" conditions="3_45" reward="3_5002_400"/>
+  <item achieveId="1053" achieveType="25" reaction="0" conditions="3_75" reward="3_5002_700"/>
+  <item achieveId="1054" achieveType="25" reaction="0" conditions="3_100" reward="3_5002_1000"/>
+  <item achieveId="11002" achieveType="11" reaction="0" conditions="200" reward="3_5001_35"/>
+  <item achieveId="11003" achieveType="11" reaction="0" conditions="300" reward="3_5001_40"/>
+  <item achieveId="11004" achieveType="11" reaction="0" conditions="400" reward="3_5001_45"/>
+  <item achieveId="11005" achieveType="11" reaction="0" conditions="500" reward="3_5001_50"/>
+  <item achieveId="11006" achieveType="11" reaction="0" conditions="600" reward="3_5001_55"/>
+  <item achieveId="11007" achieveType="11" reaction="0" conditions="700" reward="3_5001_60"/>
+  <item achieveId="11008" achieveType="11" reaction="0" conditions="800" reward="3_5001_65"/>
+  <item achieveId="11009" achieveType="11" reaction="0" conditions="900" reward="3_5001_70"/>
+  <item achieveId="11010" achieveType="11" reaction="0" conditions="1000" reward="3_5001_75"/>
+  <item achieveId="11011" achieveType="11" reaction="0" conditions="1200" reward="3_5001_80"/>
+  <item achieveId="11012" achieveType="11" reaction="0" conditions="1400" reward="3_5001_85"/>
+  <item achieveId="11013" achieveType="11" reaction="0" conditions="1600" reward="3_5001_90"/>
+  <item achieveId="11014" achieveType="11" reaction="0" conditions="1800" reward="3_5001_95"/>
+  <item achieveId="11015" achieveType="11" reaction="0" conditions="2000" reward="3_5001_100"/>
+  <item achieveId="11016" achieveType="11" reaction="0" conditions="2200" reward="3_5001_105"/>
+  <item achieveId="11017" achieveType="11" reaction="0" conditions="2400" reward="3_5001_110"/>
+  <item achieveId="11018" achieveType="11" reaction="0" conditions="2600" reward="3_5001_115"/>
+  <item achieveId="11019" achieveType="11" reaction="0" conditions="2800" reward="3_5001_120"/>
+  <item achieveId="11020" achieveType="11" reaction="0" conditions="3000" reward="3_5001_125"/>
+  <item achieveId="11021" achieveType="11" reaction="0" conditions="3300" reward="3_5001_130"/>
+  <item achieveId="11022" achieveType="11" reaction="0" conditions="3600" reward="3_5001_135"/>
+  <item achieveId="11023" achieveType="11" reaction="0" conditions="3900" reward="3_5001_140"/>
+  <item achieveId="11024" achieveType="11" reaction="0" conditions="4200" reward="3_5001_145"/>
+  <item achieveId="11025" achieveType="11" reaction="0" conditions="4500" reward="3_5001_150"/>
+  <item achieveId="11026" achieveType="11" reaction="0" conditions="4800" reward="3_5001_155"/>
+  <item achieveId="11027" achieveType="11" reaction="0" conditions="5100" reward="3_5001_160"/>
+  <item achieveId="11028" achieveType="11" reaction="0" conditions="5400" reward="3_5001_165"/>
+  <item achieveId="11029" achieveType="11" reaction="0" conditions="5700" reward="3_5001_170"/>
+  <item achieveId="11030" achieveType="11" reaction="0" conditions="6000" reward="3_5001_175"/>
+  <item achieveId="11031" achieveType="11" reaction="0" conditions="6400" reward="3_5001_180"/>
+  <item achieveId="11032" achieveType="11" reaction="0" conditions="6800" reward="3_5001_185"/>
+  <item achieveId="11033" achieveType="11" reaction="0" conditions="7200" reward="3_5001_190"/>
+  <item achieveId="11034" achieveType="11" reaction="0" conditions="7600" reward="3_5001_195"/>
+  <item achieveId="11035" achieveType="11" reaction="0" conditions="8000" reward="3_5001_200"/>
+  <item achieveId="11036" achieveType="11" reaction="0" conditions="8400" reward="3_5001_205"/>
+  <item achieveId="11037" achieveType="11" reaction="0" conditions="8800" reward="3_5001_210"/>
+  <item achieveId="11038" achieveType="11" reaction="0" conditions="9200" reward="3_5001_215"/>
+  <item achieveId="11039" achieveType="11" reaction="0" conditions="9600" reward="3_5001_220"/>
+  <item achieveId="11040" achieveType="11" reaction="0" conditions="10000" reward="3_5001_225"/>
+  <item achieveId="11041" achieveType="11" reaction="0" conditions="10500" reward="3_5001_230"/>
+  <item achieveId="11042" achieveType="11" reaction="0" conditions="11000" reward="3_5001_235"/>
+  <item achieveId="11043" achieveType="11" reaction="0" conditions="11500" reward="3_5001_240"/>
+  <item achieveId="11044" achieveType="11" reaction="0" conditions="12000" reward="3_5001_245"/>
+  <item achieveId="11045" achieveType="11" reaction="0" conditions="12500" reward="3_5001_250"/>
+  <item achieveId="11046" achieveType="11" reaction="0" conditions="13000" reward="3_5001_255"/>
+  <item achieveId="11047" achieveType="11" reaction="0" conditions="13500" reward="3_5001_260"/>
+  <item achieveId="11048" achieveType="11" reaction="0" conditions="14000" reward="3_5001_265"/>
+  <item achieveId="11049" achieveType="11" reaction="0" conditions="14500" reward="3_5001_270"/>
+  <item achieveId="11050" achieveType="11" reaction="0" conditions="15000" reward="3_5001_275"/>
+  <item achieveId="11051" achieveType="11" reaction="0" conditions="15600" reward="3_5001_280"/>
+  <item achieveId="11052" achieveType="11" reaction="0" conditions="16200" reward="3_5001_285"/>
+  <item achieveId="11053" achieveType="11" reaction="0" conditions="16800" reward="3_5001_290"/>
+  <item achieveId="11054" achieveType="11" reaction="0" conditions="17400" reward="3_5001_295"/>
+  <item achieveId="11055" achieveType="11" reaction="0" conditions="18000" reward="3_5001_300"/>
+  <item achieveId="11056" achieveType="11" reaction="0" conditions="18600" reward="3_5001_305"/>
+  <item achieveId="11057" achieveType="11" reaction="0" conditions="19200" reward="3_5001_310"/>
+  <item achieveId="11058" achieveType="11" reaction="0" conditions="19800" reward="3_5001_315"/>
+  <item achieveId="11059" achieveType="11" reaction="0" conditions="20400" reward="3_5001_320"/>
+  <item achieveId="11060" achieveType="11" reaction="0" conditions="21000" reward="3_5001_325"/>
+  <item achieveId="11061" achieveType="11" reaction="0" conditions="21700" reward="3_5001_330"/>
+  <item achieveId="11062" achieveType="11" reaction="0" conditions="22400" reward="3_5001_335"/>
+  <item achieveId="11063" achieveType="11" reaction="0" conditions="23100" reward="3_5001_340"/>
+  <item achieveId="11064" achieveType="11" reaction="0" conditions="23800" reward="3_5001_345"/>
+  <item achieveId="11065" achieveType="11" reaction="0" conditions="24500" reward="3_5001_350"/>
+  <item achieveId="11066" achieveType="11" reaction="0" conditions="25200" reward="3_5001_355"/>
+  <item achieveId="11067" achieveType="11" reaction="0" conditions="25900" reward="3_5001_360"/>
+  <item achieveId="11068" achieveType="11" reaction="0" conditions="26600" reward="3_5001_365"/>
+  <item achieveId="11069" achieveType="11" reaction="0" conditions="27300" reward="3_5001_370"/>
+  <item achieveId="11070" achieveType="11" reaction="0" conditions="28000" reward="3_5001_375"/>
+  <item achieveId="11071" achieveType="11" reaction="0" conditions="28800" reward="3_5001_380"/>
+  <item achieveId="11072" achieveType="11" reaction="0" conditions="29600" reward="3_5001_385"/>
+  <item achieveId="11073" achieveType="11" reaction="0" conditions="30400" reward="3_5001_390"/>
+  <item achieveId="11074" achieveType="11" reaction="0" conditions="31200" reward="3_5001_395"/>
+  <item achieveId="11075" achieveType="11" reaction="0" conditions="32000" reward="3_5001_400"/>
+  <item achieveId="11076" achieveType="11" reaction="0" conditions="32800" reward="3_5001_405"/>
+  <item achieveId="11077" achieveType="11" reaction="0" conditions="33600" reward="3_5001_410"/>
+  <item achieveId="11078" achieveType="11" reaction="0" conditions="34400" reward="3_5001_415"/>
+  <item achieveId="11079" achieveType="11" reaction="0" conditions="35200" reward="3_5001_420"/>
+  <item achieveId="11080" achieveType="11" reaction="0" conditions="36000" reward="3_5001_425"/>
+  <item achieveId="11081" achieveType="11" reaction="0" conditions="36900" reward="3_5001_430"/>
+  <item achieveId="11082" achieveType="11" reaction="0" conditions="37800" reward="3_5001_435"/>
+  <item achieveId="11083" achieveType="11" reaction="0" conditions="38700" reward="3_5001_440"/>
+  <item achieveId="11084" achieveType="11" reaction="0" conditions="39600" reward="3_5001_445"/>
+  <item achieveId="11085" achieveType="11" reaction="0" conditions="40500" reward="3_5001_450"/>
+  <item achieveId="11086" achieveType="11" reaction="0" conditions="41400" reward="3_5001_455"/>
+  <item achieveId="11087" achieveType="11" reaction="0" conditions="42300" reward="3_5001_460"/>
+  <item achieveId="11088" achieveType="11" reaction="0" conditions="43200" reward="3_5001_465"/>
+  <item achieveId="11089" achieveType="11" reaction="0" conditions="44100" reward="3_5001_470"/>
+  <item achieveId="11090" achieveType="11" reaction="0" conditions="45000" reward="3_5001_475"/>
+  <item achieveId="11091" achieveType="11" reaction="0" conditions="46000" reward="3_5001_480"/>
+  <item achieveId="11092" achieveType="11" reaction="0" conditions="47000" reward="3_5001_485"/>
+  <item achieveId="11093" achieveType="11" reaction="0" conditions="48000" reward="3_5001_490"/>
+  <item achieveId="11094" achieveType="11" reaction="0" conditions="49000" reward="3_5001_495"/>
+  <item achieveId="11095" achieveType="11" reaction="0" conditions="50000" reward="3_5001_500"/>
+  <item achieveId="11096" achieveType="11" reaction="0" conditions="51000" reward="3_5001_505"/>
+  <item achieveId="11097" achieveType="11" reaction="0" conditions="52000" reward="3_5001_510"/>
+  <item achieveId="11098" achieveType="11" reaction="0" conditions="53000" reward="3_5001_515"/>
+  <item achieveId="11099" achieveType="11" reaction="0" conditions="54000" reward="3_5001_520"/>
+  <item achieveId="11100" achieveType="11" reaction="0" conditions="55000" reward="3_5001_525"/>
+  <item achieveId="13003" achieveType="13" reaction="0" conditions="30" reward="3_5001_30"/>
+  <item achieveId="13004" achieveType="13" reaction="0" conditions="40" reward="3_5001_50"/>
+  <item achieveId="13005" achieveType="13" reaction="0" conditions="50" reward="3_5001_80"/>
+  <item achieveId="13006" achieveType="13" reaction="0" conditions="60" reward="3_5001_110"/>
+  <item achieveId="13007" achieveType="13" reaction="0" conditions="70" reward="3_5001_150"/>
+  <item achieveId="13008" achieveType="13" reaction="0" conditions="80" reward="3_5001_190"/>
+  <item achieveId="13009" achieveType="13" reaction="0" conditions="90" reward="3_5001_240"/>
+  <item achieveId="13010" achieveType="13" reaction="0" conditions="100" reward="3_5001_290"/>
+  <item achieveId="13011" achieveType="13" reaction="0" conditions="110" reward="3_5001_350"/>
+  <item achieveId="13012" achieveType="13" reaction="0" conditions="120" reward="3_5001_410"/>
+  <item achieveId="13013" achieveType="13" reaction="0" conditions="130" reward="3_5001_480"/>
+  <item achieveId="13014" achieveType="13" reaction="0" conditions="140" reward="3_5001_550"/>
+  <item achieveId="13015" achieveType="13" reaction="0" conditions="150" reward="3_5001_630"/>
+  <item achieveId="13016" achieveType="13" reaction="0" conditions="160" reward="3_5001_710"/>
+  <item achieveId="13017" achieveType="13" reaction="0" conditions="170" reward="3_5001_800"/>
+  <item achieveId="13018" achieveType="13" reaction="0" conditions="180" reward="3_5001_890"/>
+  <item achieveId="13019" achieveType="13" reaction="0" conditions="190" reward="3_5001_990"/>
+  <item achieveId="13020" achieveType="13" reaction="0" conditions="200" reward="3_5001_1090"/>
+  <item achieveId="13021" achieveType="13" reaction="0" conditions="210" reward="3_5001_1200"/>
+  <item achieveId="13022" achieveType="13" reaction="0" conditions="220" reward="3_5001_1310"/>
+  <item achieveId="13023" achieveType="13" reaction="0" conditions="230" reward="3_5001_1430"/>
+  <item achieveId="13024" achieveType="13" reaction="0" conditions="240" reward="3_5001_1550"/>
+  <item achieveId="13025" achieveType="13" reaction="0" conditions="250" reward="3_5001_1680"/>
+  <item achieveId="13026" achieveType="13" reaction="0" conditions="260" reward="3_5001_1810"/>
+  <item achieveId="13027" achieveType="13" reaction="0" conditions="270" reward="3_5001_1950"/>
+  <item achieveId="13028" achieveType="13" reaction="0" conditions="280" reward="3_5001_2090"/>
+  <item achieveId="13029" achieveType="13" reaction="0" conditions="290" reward="3_5001_2240"/>
+  <item achieveId="13030" achieveType="13" reaction="0" conditions="300" reward="3_5001_2390"/>
+  <item achieveId="14004" achieveType="1" reaction="0" conditions="25" reward="3_2007_4"/>
+  <item achieveId="14005" achieveType="1" reaction="0" conditions="30" reward="2_150"/>
+  <item achieveId="14006" achieveType="1" reaction="0" conditions="35" reward="3_2007_8"/>
+  <item achieveId="14007" achieveType="1" reaction="0" conditions="40" reward="2_200"/>
+  <item achieveId="14008" achieveType="1" reaction="0" conditions="45" reward="3_2007_16"/>
+  <item achieveId="14009" achieveType="1" reaction="0" conditions="50" reward="2_250"/>
+  <item achieveId="14010" achieveType="1" reaction="0" conditions="55" reward="3_2007_24"/>
+  <item achieveId="14011" achieveType="1" reaction="0" conditions="60" reward="2_300"/>
+  <item achieveId="14012" achieveType="1" reaction="0" conditions="65" reward="3_2007_32"/>
+  <item achieveId="14013" achieveType="1" reaction="0" conditions="70" reward="2_350"/>
+  <item achieveId="14014" achieveType="1" reaction="0" conditions="75" reward="3_2007_40"/>
+  <item achieveId="14015" achieveType="1" reaction="0" conditions="80" reward="2_400"/>
+  <item achieveId="14016" achieveType="1" reaction="0" conditions="85" reward="3_2007_48"/>
+  <item achieveId="14017" achieveType="1" reaction="0" conditions="90" reward="2_450"/>
+  <item achieveId="14018" achieveType="1" reaction="0" conditions="95" reward="3_2007_56"/>
+  <item achieveId="14019" achieveType="1" reaction="0" conditions="100" reward="2_500"/>
+  <item achieveId="15003" achieveType="12" reaction="0" conditions="30" reward="3_5002_30"/>
+  <item achieveId="15004" achieveType="12" reaction="0" conditions="40" reward="3_5002_50"/>
+  <item achieveId="15005" achieveType="12" reaction="0" conditions="50" reward="3_5002_80"/>
+  <item achieveId="15006" achieveType="12" reaction="0" conditions="60" reward="3_5002_110"/>
+  <item achieveId="15007" achieveType="12" reaction="0" conditions="70" reward="3_5002_150"/>
+  <item achieveId="15008" achieveType="12" reaction="0" conditions="80" reward="3_5002_190"/>
+  <item achieveId="15009" achieveType="12" reaction="0" conditions="90" reward="3_5002_240"/>
+  <item achieveId="15010" achieveType="12" reaction="0" conditions="100" reward="3_5002_290"/>
+  <item achieveId="15011" achieveType="12" reaction="0" conditions="110" reward="3_5002_350"/>
+  <item achieveId="15012" achieveType="12" reaction="0" conditions="120" reward="3_5002_410"/>
+  <item achieveId="15013" achieveType="12" reaction="0" conditions="130" reward="3_5002_480"/>
+  <item achieveId="15014" achieveType="12" reaction="0" conditions="140" reward="3_5002_550"/>
+  <item achieveId="15015" achieveType="12" reaction="0" conditions="150" reward="3_5002_630"/>
+  <item achieveId="15016" achieveType="12" reaction="0" conditions="160" reward="3_5002_710"/>
+  <item achieveId="15017" achieveType="12" reaction="0" conditions="170" reward="3_5002_800"/>
+  <item achieveId="15018" achieveType="12" reaction="0" conditions="180" reward="3_5002_890"/>
+  <item achieveId="15019" achieveType="12" reaction="0" conditions="190" reward="3_5002_990"/>
+  <item achieveId="15020" achieveType="12" reaction="0" conditions="200" reward="3_5002_1090"/>
+  <item achieveId="15021" achieveType="12" reaction="0" conditions="210" reward="3_5002_1200"/>
+  <item achieveId="15022" achieveType="12" reaction="0" conditions="220" reward="3_5002_1310"/>
+  <item achieveId="15023" achieveType="12" reaction="0" conditions="230" reward="3_5002_1430"/>
+  <item achieveId="15024" achieveType="12" reaction="0" conditions="240" reward="3_5002_1550"/>
+  <item achieveId="15025" achieveType="12" reaction="0" conditions="250" reward="3_5002_1680"/>
+  <item achieveId="15026" achieveType="12" reaction="0" conditions="260" reward="3_5002_1810"/>
+  <item achieveId="15027" achieveType="12" reaction="0" conditions="270" reward="3_5002_1950"/>
+  <item achieveId="15028" achieveType="12" reaction="0" conditions="280" reward="3_5002_2090"/>
+  <item achieveId="15029" achieveType="12" reaction="0" conditions="290" reward="3_5002_2240"/>
+  <item achieveId="15030" achieveType="12" reaction="0" conditions="300" reward="3_5002_2390"/>
+  <item achieveId="16001" achieveType="26" reaction="0" conditions="10_500" reward="3_5001_60"/>
+  <item achieveId="16002" achieveType="26" reaction="0" conditions="10_470" reward="3_5001_70"/>
+  <item achieveId="16003" achieveType="26" reaction="0" conditions="10_440" reward="3_5001_80"/>
+  <item achieveId="16004" achieveType="26" reaction="0" conditions="10_410" reward="3_5001_90"/>
+  <item achieveId="16005" achieveType="26" reaction="0" conditions="10_380" reward="3_5001_100"/>
+  <item achieveId="16006" achieveType="26" reaction="0" conditions="10_350" reward="3_5001_110"/>
+  <item achieveId="16007" achieveType="26" reaction="0" conditions="10_320" reward="3_5001_120"/>
+  <item achieveId="16008" achieveType="26" reaction="0" conditions="10_290" reward="3_5001_130"/>
+  <item achieveId="16009" achieveType="26" reaction="0" conditions="10_260" reward="3_5001_140"/>
+  <item achieveId="16010" achieveType="26" reaction="0" conditions="10_230" reward="3_5001_150"/>
+  <item achieveId="16011" achieveType="26" reaction="0" conditions="10_200" reward="3_5001_160"/>
+  <item achieveId="16012" achieveType="26" reaction="0" conditions="10_170" reward="3_5001_170"/>
+  <item achieveId="16013" achieveType="26" reaction="0" conditions="10_140" reward="3_5001_180"/>
+  <item achieveId="16014" achieveType="26" reaction="0" conditions="10_110" reward="3_5001_190"/>
+  <item achieveId="16015" achieveType="26" reaction="0" conditions="10_100" reward="3_5001_200"/>
+  <item achieveId="16016" achieveType="26" reaction="0" conditions="10_90" reward="3_5001_210"/>
+  <item achieveId="16017" achieveType="26" reaction="0" conditions="10_80" reward="3_5001_220"/>
+  <item achieveId="16018" achieveType="26" reaction="0" conditions="10_70" reward="3_5001_230"/>
+  <item achieveId="16019" achieveType="26" reaction="0" conditions="10_60" reward="3_5001_240"/>
+  <item achieveId="16020" achieveType="26" reaction="0" conditions="10_50" reward="3_5001_250"/>
+  <item achieveId="16021" achieveType="26" reaction="0" conditions="10_40" reward="3_5001_260"/>
+  <item achieveId="16022" achieveType="26" reaction="0" conditions="10_30" reward="3_5001_270"/>
+  <item achieveId="16023" achieveType="26" reaction="0" conditions="10_20" reward="3_5001_280"/>
+  <item achieveId="16024" achieveType="26" reaction="0" conditions="10_10" reward="3_5001_290"/>
+  <item achieveId="16025" achieveType="26" reaction="0" conditions="10_3" reward="3_5001_300"/>
+  <item achieveId="16026" achieveType="26" reaction="0" conditions="10_2" reward="3_5001_310"/>
+  <item achieveId="16027" achieveType="26" reaction="0" conditions="10_1" reward="3_5001_320"/>
+  <item achieveId="201" achieveType="10" reaction="0" conditions="100103_1_1" reward="2_5"/>
+  <item achieveId="202" achieveType="10" reaction="0" conditions="100205_1_1" reward="2_10"/>
+  <item achieveId="203" achieveType="10" reaction="0" conditions="100307_1_1" reward="2_15"/>
+  <item achieveId="204" achieveType="10" reaction="0" conditions="100409_1_1" reward="2_20"/>
+  <item achieveId="205" achieveType="2" reaction="0" conditions="5" reward="1_5000"/>
+  <item achieveId="206" achieveType="10" reaction="0" conditions="100509_1_1" reward="2_25"/>
+  <item achieveId="207" achieveType="2" reaction="0" conditions="10" reward="4_1028_1"/>
+  <item achieveId="208" achieveType="10" reaction="0" conditions="100612_1_1" reward="2_30"/>
+  <item achieveId="209" achieveType="8" reaction="0" conditions="4_1" reward="3_5001_100"/>
+  <item achieveId="210" achieveType="10" reaction="0" conditions="100712_1_1" reward="2_35"/>
+  <item achieveId="211" achieveType="20" reaction="0" conditions="20" reward="3_5002_100"/>
+  <item achieveId="212" achieveType="10" reaction="0" conditions="100813_1_1" reward="2_40"/>
+  <item achieveId="213" achieveType="15" reaction="0" conditions="50" reward="3_6001_25"/>
+  <item achieveId="214" achieveType="10" reaction="0" conditions="100913_1_1" reward="2_45"/>
+  <item achieveId="215" achieveType="27" reaction="0" conditions="20" reward="3_5001_100"/>
+  <item achieveId="216" achieveType="10" reaction="0" conditions="101013_1_1" reward="2_50"/>
+  <item achieveId="217" achieveType="20" reaction="0" conditions="30" reward="3_5002_150"/>
+  <item achieveId="218" achieveType="10" reaction="0" conditions="101113_3_1" reward="2_55"/>
+  <item achieveId="219" achieveType="15" reaction="0" conditions="100" reward="1_150000"/>
+  <item achieveId="220" achieveType="10" reaction="0" conditions="101213_3_1" reward="2_60"/>
+  <item achieveId="221" achieveType="27" reaction="0" conditions="30" reward="3_5001_150"/>
+  <item achieveId="222" achieveType="10" reaction="0" conditions="101313_3_1" reward="2_65"/>
+  <item achieveId="223" achieveType="20" reaction="0" conditions="40" reward="3_5002_200"/>
+  <item achieveId="224" achieveType="10" reaction="0" conditions="101413_3_1" reward="2_70"/>
+  <item achieveId="225" achieveType="15" reaction="0" conditions="150" reward="1_200000"/>
+  <item achieveId="226" achieveType="10" reaction="0" conditions="101613_3_1" reward="2_80"/>
+  <item achieveId="227" achieveType="27" reaction="0" conditions="50" reward="3_5001_200"/>
+  <item achieveId="228" achieveType="10" reaction="0" conditions="101713_3_1" reward="2_85"/>
+  <item achieveId="229" achieveType="20" reaction="0" conditions="50" reward="3_5002_250"/>
+  <item achieveId="230" achieveType="10" reaction="0" conditions="101813_3_1" reward="2_90"/>
+  <item achieveId="231" achieveType="15" reaction="0" conditions="200" reward="3_7006_10"/>
+  <item achieveId="232" achieveType="10" reaction="0" conditions="101913_3_1" reward="2_95"/>
+  <item achieveId="233" achieveType="27" reaction="0" conditions="70" reward="3_5001_250"/>
+  <item achieveId="234" achieveType="10" reaction="0" conditions="102013_3_1" reward="2_100"/>
+  <item achieveId="235" achieveType="20" reaction="0" conditions="60" reward="3_5002_300"/>
+  <item achieveId="236" achieveType="10" reaction="0" conditions="102113_3_1" reward="2_100"/>
+  <item achieveId="237" achieveType="15" reaction="0" conditions="250" reward="3_7006_15"/>
+  <item achieveId="238" achieveType="10" reaction="0" conditions="102213_3_1" reward="2_100"/>
+  <item achieveId="239" achieveType="27" reaction="0" conditions="90" reward="3_5001_300"/>
+  <item achieveId="240" achieveType="10" reaction="0" conditions="102361_3_1" reward="2_100"/>
+  <item achieveId="241" achieveType="20" reaction="0" conditions="70" reward="3_5002_350"/>
+  <item achieveId="242" achieveType="10" reaction="0" conditions="102413_3_1" reward="2_100"/>
+  <item achieveId="243" achieveType="15" reaction="0" conditions="300" reward="3_7006_20"/>
+  <item achieveId="244" achieveType="10" reaction="0" conditions="102561_3_1" reward="2_100"/>
+  <item achieveId="245" achieveType="27" reaction="0" conditions="110" reward="3_5001_350"/>
+  <item achieveId="246" achieveType="10" reaction="0" conditions="102661_3_1" reward="2_100"/>
+  <item achieveId="247" achieveType="20" reaction="0" conditions="80" reward="3_5002_400"/>
+  <item achieveId="248" achieveType="10" reaction="0" conditions="102761_3_1" reward="2_100"/>
+  <item achieveId="249" achieveType="15" reaction="0" conditions="350" reward="3_7006_25"/>
+  <item achieveId="250" achieveType="10" reaction="0" conditions="102861_3_1" reward="2_100"/>
+  <item achieveId="251" achieveType="27" reaction="0" conditions="130" reward="3_5001_400"/>
+  <item achieveId="252" achieveType="10" reaction="0" conditions="102961_3_1" reward="2_100"/>
+  <item achieveId="253" achieveType="20" reaction="0" conditions="90" reward="3_5002_450"/>
+  <item achieveId="254" achieveType="10" reaction="0" conditions="103061_3_1" reward="2_100"/>
+  <item achieveId="255" achieveType="10" reaction="0" conditions="101513_3_1" reward="2_75"/>
+  <item achieveId="256" achieveType="29" reaction="0" conditions="3" reward="3_2007_8"/>
+  <item achieveId="257" achieveType="8" reaction="0" conditions="5_1" reward="3_5001_200"/>
+  <item achieveId="258" achieveType="8" reaction="0" conditions="6_1" reward="3_5001_600"/>
+  <item achieveId="259" achieveType="30" reaction="0" conditions="5" reward="3_1003_20|3_2007_2"/>
+  <item achieveId="260" achieveType="30" reaction="0" conditions="6" reward="3_1003_40|3_2007_3"/>
+  <item achieveId="261" achieveType="30" reaction="0" conditions="7" reward="3_1003_60|3_2007_4"/>
+  <item achieveId="262" achieveType="30" reaction="0" conditions="8" reward="3_1003_80|3_2007_5"/>
+  <item achieveId="263" achieveType="30" reaction="0" conditions="9" reward="3_1003_200|3_2007_6"/>
+  <item achieveId="1" achieveType="31" reaction="0" conditions="1" reward="2_1800"/>
+</root>

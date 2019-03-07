@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="get-new-dataconfig" default="svn-update" basedir="../">
+	<property name="src.dataconfig.dir" value="../../../design/branch/xml/Server" />
+	<property name="dest.dataconfig.dir" value="game-config/dataconfig" />
+
+	<target name="svn-update">
+		<delete dir="${src.dataconfig.dir}" includeemptydirs="true">
+			<include name="*.xml" />
+		</delete>
+		<exec executable="svn" dir="${src.dataconfig.dir}">
+			<arg line=" update " />
+		</exec>
+		<copy todir="${dest.dataconfig.dir}" overwrite="true">
+			<fileset dir="${src.dataconfig.dir}">
+				<include name="*.xml" />
+				<exclude name="crossBattleConfig.xml" />
+				<exclude name="crossBattleDayConfig.xml" />
+				<exclude name="crossBattleEndAwardConfig.xml" />
+				<exclude name="crossBattleExchangeConfig.xml" />
+				<exclude name="crossBattleRankConfig.xml" />
+				<exclude name="crossBattlePointConfig.xml" />
+			</fileset>
+		</copy>
+	</target>
+</project>

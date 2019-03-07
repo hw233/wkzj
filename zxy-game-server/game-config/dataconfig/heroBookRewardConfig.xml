@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   orderId:奖励序号（唯一）
+   heroStar:英雄星级
+   heroNum:英雄数量
+   reward:奖励列表 格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量
+   nextOrderId:下一个奖励序号(下一个填orderId,最后一个填0)
+   isStartNode:是否是第一个开始节点(1=是 0=否)
+-->
+
+<root>
+  <item orderId="1" heroStar="1" heroNum="3" reward="0_7102_5" nextOrderId="2" isStartNode="1"/>
+  <item orderId="2" heroStar="1" heroNum="6" reward="0_7102_10" nextOrderId="0" isStartNode="0"/>
+  <item orderId="3" heroStar="2" heroNum="8" reward="0_7102_10" nextOrderId="4" isStartNode="1"/>
+  <item orderId="4" heroStar="2" heroNum="17" reward="0_7102_15" nextOrderId="0" isStartNode="0"/>
+  <item orderId="5" heroStar="3" heroNum="8" reward="0_7102_20" nextOrderId="6" isStartNode="1"/>
+  <item orderId="6" heroStar="3" heroNum="16" reward="0_7102_25" nextOrderId="0" isStartNode="0"/>
+  <item orderId="7" heroStar="4" heroNum="8" reward="0_7102_30" nextOrderId="8" isStartNode="1"/>
+  <item orderId="8" heroStar="4" heroNum="16" reward="0_7102_35" nextOrderId="0" isStartNode="0"/>
+  <item orderId="9" heroStar="5" heroNum="10" reward="0_7102_50" nextOrderId="10" isStartNode="1"/>
+  <item orderId="10" heroStar="5" heroNum="20" reward="1_3006_1" nextOrderId="0" isStartNode="0"/>
+  <item orderId="11" heroStar="6" heroNum="3" reward="0_7102_70" nextOrderId="12" isStartNode="1"/>
+  <item orderId="12" heroStar="6" heroNum="8" reward="2_173_80" nextOrderId="0" isStartNode="0"/>
+</root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:配置id 唯一
+   goodsId:物品id
+   num:数量
+   type:类型 (0:物品，1：装备，2：仙人魂魄 ）
+   consumeScore:消耗降魔积分
+-->
+
+<root>
+  <item id="1" goodsId="5002" num="100" type="0" consumeScore="1500"/>
+  <item id="2" goodsId="5001" num="100" type="0" consumeScore="1500"/>
+  <item id="3" goodsId="30058" num="1" type="0" consumeScore="2500"/>
+  <item id="4" goodsId="30055" num="1" type="0" consumeScore="3500"/>
+  <item id="5" goodsId="106" num="1" type="2" consumeScore="3500"/>
+  <item id="6" goodsId="168" num="1" type="2" consumeScore="6000"/>
+</root>

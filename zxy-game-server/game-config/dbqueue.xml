@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+	<!-- 线程池中空闲最长的存活时间,默认:900ms  -->
+	<bean id="dbqueue.db_pool_keep_alive_time" class="java.lang.Integer" >
+		<constructor-arg value="900" />
+	</bean>
+	
+	<!-- 线程池中最大角色实体线程提交的阻塞时间,默认:60000ms -->
+	<bean id="dbqueue.max_block_time_of_actor_cache" class="java.lang.Integer" >
+		<constructor-arg value="500" />
+	</bean>
+	
+	<!-- 线程池中最大普通实体线程提交的阻塞时间,默认:60000ms -->
+	<bean id="dbqueue.max_block_time_of_normal_cache" class="java.lang.Integer" >
+		<constructor-arg value="500" />
+	</bean>
+	
+	<!-- 每次入库角色实体数量,默认:10个 -->
+	<bean id="dbqueue.actor_each_submit_num" class="java.lang.Integer" >
+		<constructor-arg value="10" />
+	</bean>
+	
+	<!-- 每次入库普通实体数量,默认:10个 -->
+	<bean id="dbqueue.normal_each_submit_num" class="java.lang.Integer" >
+		<constructor-arg value="100" />
+	</bean>
+	
+	<!-- 错误实体备份目录 -->
+	<bean id="dbqueue.backup_path" class="java.lang.String">
+		<constructor-arg value="backup/" />
+	</bean>
+	
+	<bean id="dbqueue.backup_extension" class="java.lang.String">
+		<constructor-arg value=".data" />
+	</bean>
+	<bean id="dbQueue" class="com.jtang.gameserver.dbproxy.GameDbQueueImpl"></bean>
+</beans>

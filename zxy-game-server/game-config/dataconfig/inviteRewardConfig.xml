@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   inviteLevel:被邀请人等级
+   reward:奖励(类型(详见RewardType)_id_数量|类型_id_数量|...)
+-->
+
+<root>
+  <item inviteLevel="0" reward="5_0_50|0_2007_2|0_6001_50"/>
+  <item inviteLevel="15" reward="5_0_50|0_2007_1|0_5001_300"/>
+  <item inviteLevel="20" reward="5_0_100|0_1003_50|0_5002_300"/>
+  <item inviteLevel="30" reward="5_0_200|0_5001_500|1_3051_1"/>
+  <item inviteLevel="40" reward="5_0_300|0_5002_500|1_2029_1"/>
+</root>

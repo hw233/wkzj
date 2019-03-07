@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   bableId:登天塔id  1.1-50角色等级  2.51-99角色等级      3.99级以上
+   useActorLevel:跳层角色等级
+   skipYesterdayFloor:跳层历史需要达到的层数
+   skipFloorNum:可到达楼层(x1:历史最高楼层)
+   rewardStarNum:跳层获得的通天币数  (x1:现在楼层;x2:跳层可到达楼层;x3:玩家达到后每层额外获得的通天币数)
+   rewardGoldNum:跳层获得的金币数   （x1:现在楼层;x2:跳层可到达楼层;x3:金币加成百分比）
+   useTicket:消耗点券
+   consumeGoodsId:使用物品id ，不使用填0
+   eachFloorConsumeGoodsNum:每层消耗的物品数量
+   eachFloorConsumeTime:每层消耗的时间(秒)
+-->
+
+<root>
+  <item bableId="1" useActorLevel="1" skipYesterdayFloor="10" skipFloorNum="x1*1" rewardStarNum="(x2-x1)*(x3+9)" rewardGoldNum="(300*(x2-x1)+((x2-x1)+1)*(x2-x1)/2*100)*(1+x3)*0" useTicket="0.2" consumeGoodsId="1002" eachFloorConsumeGoodsNum="0" eachFloorConsumeTime="10"/>
+  <item bableId="1" useActorLevel="1" skipYesterdayFloor="10" skipFloorNum="x1*0.5" rewardStarNum="(x2-x1)*(x3+9)" rewardGoldNum="(300*(x2-x1)+((x2-x1)+1)*(x2-x1)/2*100)*(1+x3)*0" useTicket="0" consumeGoodsId="0" eachFloorConsumeGoodsNum="0" eachFloorConsumeTime="10"/>
+  <item bableId="2" useActorLevel="1" skipYesterdayFloor="10" skipFloorNum="x1*1" rewardStarNum="(x2-x1)*(x3+9)" rewardGoldNum="(300*(x2-x1)+((x2-x1)+1)*(x2-x1)/2*300)*(1+x3)*0" useTicket="0.2" consumeGoodsId="1002" eachFloorConsumeGoodsNum="0" eachFloorConsumeTime="10"/>
+  <item bableId="2" useActorLevel="1" skipYesterdayFloor="10" skipFloorNum="x1*0.5" rewardStarNum="(x2-x1)*(x3+9)" rewardGoldNum="(300*(x2-x1)+((x2-x1)+1)*(x2-x1)/2*300)*(1+x3)*0" useTicket="0" consumeGoodsId="0" eachFloorConsumeGoodsNum="0" eachFloorConsumeTime="10"/>
+  <item bableId="3" useActorLevel="1" skipYesterdayFloor="10" skipFloorNum="x1*1" rewardStarNum="(x2-x1)*(x3+9)" rewardGoldNum="(1000*(x2-x1)+((x2-x1)+1)*(x2-x1)/2*600)*(1+x3)*0" useTicket="0.2" consumeGoodsId="1002" eachFloorConsumeGoodsNum="0" eachFloorConsumeTime="10"/>
+  <item bableId="3" useActorLevel="1" skipYesterdayFloor="10" skipFloorNum="x1*0.5" rewardStarNum="(x2-x1)*(x3+9)" rewardGoldNum="(1000*(x2-x1)+((x2-x1)+1)*(x2-x1)/2*600)*(1+x3)*0" useTicket="0" consumeGoodsId="0" eachFloorConsumeGoodsNum="0" eachFloorConsumeTime="10"/>
+</root>

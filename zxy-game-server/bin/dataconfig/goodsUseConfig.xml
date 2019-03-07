@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   useGoodsId:使用的物品id
+   rewardGoods:奖励类型(0:物品，1：装备，2：仙人魂魄，3：金币) 格式：奖励类型_物品id_物品数量_概率千分比|奖励类型_物品id_物品数量_概率千分比
+   numberOfUseMin:保底使用次数最小值
+   numberOfUseMax:保底使用次数最大值
+-->
+
+<root>
+  <item useGoodsId="9050" rewardGoods="1_3007_1_1000" numberOfUseMin="40" numberOfUseMax="40"/>
+  <item useGoodsId="9060" rewardGoods="1_1025_1_1000" numberOfUseMin="10" numberOfUseMax="10"/>
+  <item useGoodsId="9070" rewardGoods="1_1048_1_1000" numberOfUseMin="40" numberOfUseMax="40"/>
+</root>

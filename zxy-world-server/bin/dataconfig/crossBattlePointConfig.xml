@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   hurtRank:伤害排名
+   exchangePoint:伤害排名获得贡献点
+-->
+
+<root>
+  <item hurtRank="1" exchangePoint="10000"/>
+  <item hurtRank="2" exchangePoint="9000"/>
+  <item hurtRank="3" exchangePoint="8000"/>
+  <item hurtRank="4" exchangePoint="7500"/>
+  <item hurtRank="5" exchangePoint="7000"/>
+  <item hurtRank="6" exchangePoint="6500"/>
+  <item hurtRank="7" exchangePoint="6000"/>
+  <item hurtRank="8" exchangePoint="5500"/>
+  <item hurtRank="9" exchangePoint="5000"/>
+  <item hurtRank="10" exchangePoint="4500"/>
+  <item hurtRank="11" exchangePoint="4300"/>
+  <item hurtRank="12" exchangePoint="4100"/>
+  <item hurtRank="13" exchangePoint="3900"/>
+  <item hurtRank="14" exchangePoint="3700"/>
+  <item hurtRank="15" exchangePoint="3500"/>
+  <item hurtRank="16" exchangePoint="3300"/>
+  <item hurtRank="17" exchangePoint="3100"/>
+  <item hurtRank="18" exchangePoint="2900"/>
+  <item hurtRank="19" exchangePoint="2700"/>
+  <item hurtRank="20" exchangePoint="2500"/>
+  <item hurtRank="21" exchangePoint="2400"/>
+  <item hurtRank="22" exchangePoint="2300"/>
+  <item hurtRank="23" exchangePoint="2200"/>
+  <item hurtRank="24" exchangePoint="2100"/>
+  <item hurtRank="25" exchangePoint="2000"/>
+  <item hurtRank="26" exchangePoint="1900"/>
+  <item hurtRank="27" exchangePoint="1800"/>
+  <item hurtRank="28" exchangePoint="1700"/>
+  <item hurtRank="29" exchangePoint="1600"/>
+  <item hurtRank="30" exchangePoint="1500"/>
+  <item hurtRank="31" exchangePoint="1470"/>
+  <item hurtRank="32" exchangePoint="1440"/>
+  <item hurtRank="33" exchangePoint="1410"/>
+  <item hurtRank="34" exchangePoint="1380"/>
+  <item hurtRank="35" exchangePoint="1350"/>
+  <item hurtRank="36" exchangePoint="1320"/>
+  <item hurtRank="37" exchangePoint="1290"/>
+  <item hurtRank="38" exchangePoint="1260"/>
+  <item hurtRank="39" exchangePoint="1230"/>
+  <item hurtRank="40" exchangePoint="1200"/>
+  <item hurtRank="41" exchangePoint="1170"/>
+  <item hurtRank="42" exchangePoint="1140"/>
+  <item hurtRank="43" exchangePoint="1110"/>
+  <item hurtRank="44" exchangePoint="1080"/>
+  <item hurtRank="45" exchangePoint="1050"/>
+  <item hurtRank="46" exchangePoint="1020"/>
+  <item hurtRank="47" exchangePoint="990"/>
+  <item hurtRank="48" exchangePoint="960"/>
+  <item hurtRank="49" exchangePoint="930"/>
+  <item hurtRank="50" exchangePoint="900"/>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:id
+   rewardPool:奖励组成(类型(0:精炼石、潜修石，1：装备碎片，2.物品，3：魂魄，4：装备)_数量|...)
+   rate:几率(所有和为1000)
+-->
+
+<root>
+  <item id="1" rewardPool="0_2|1_1|2_1|3_2" rate="200"/>
+  <item id="2" rewardPool="0_2|2_1|3_2|4_1" rate="100"/>
+  <item id="3" rewardPool="0_1|1_2|2_1|3_2" rate="300"/>
+  <item id="4" rewardPool="0_1|1_1|2_1|3_3" rate="200"/>
+  <item id="5" rewardPool="0_4|2_1|3_1" rate="200"/>
+</root>

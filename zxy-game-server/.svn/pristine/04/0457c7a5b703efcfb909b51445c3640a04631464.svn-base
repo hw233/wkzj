@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   bableType:登天塔类型
+   exchangeId:兑换唯一id
+   type:0.物品 1.装备 2.魂魄
+   id:物品，装备，魂魄的ID，由type决定
+   num:每组数量
+   minNum:数量下限
+   maxNum:数量上限
+   proportion:几率(同类型的必出填1000,不为1000的合起来随机)
+   consumeStar:消耗星星数
+   startTime:开始兑换时间(没有就不填)  格式："2013-11-1 23:00:00"
+   endTime:结束兑换时间(没有就不填)  格式："2013-11-1 23:00:00"
+-->
+
+<root>
+  <item bableType="1" exchangeId="1" type="0" id="6004" num="1" minNum="100" maxNum="100" proportion="1000" consumeStar="1" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="1" exchangeId="2" type="0" id="1000" num="1" minNum="1" maxNum="1" proportion="1000" consumeStar="100" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="1" exchangeId="3" type="0" id="2003" num="1" minNum="120" maxNum="120" proportion="1000" consumeStar="6" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="1" exchangeId="4" type="0" id="5001" num="1" minNum="10000" maxNum="10000" proportion="1000" consumeStar="3" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="1" exchangeId="5" type="0" id="5002" num="1" minNum="10000" maxNum="10000" proportion="1000" consumeStar="3" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="1" exchangeId="6" type="0" id="30024" num="1" minNum="1" maxNum="1" proportion="1000" consumeStar="100" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="2" exchangeId="7" type="0" id="6001" num="1" minNum="100" maxNum="100" proportion="1000" consumeStar="4" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="2" exchangeId="8" type="0" id="1000" num="1" minNum="1" maxNum="1" proportion="1000" consumeStar="50" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="2" exchangeId="9" type="0" id="2009" num="1" minNum="120" maxNum="120" proportion="1000" consumeStar="4" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="2" exchangeId="10" type="0" id="5001" num="1" minNum="10000" maxNum="10000" proportion="1000" consumeStar="2" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="2" exchangeId="11" type="0" id="5002" num="1" minNum="10000" maxNum="10000" proportion="1000" consumeStar="2" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="2" exchangeId="12" type="0" id="30079" num="1" minNum="1" maxNum="1" proportion="1000" consumeStar="200" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="3" exchangeId="13" type="0" id="6002" num="1" minNum="50" maxNum="50" proportion="1000" consumeStar="10" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="3" exchangeId="14" type="0" id="1000" num="1" minNum="2" maxNum="2" proportion="1000" consumeStar="20" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="3" exchangeId="15" type="0" id="2010" num="1" minNum="100" maxNum="100" proportion="1000" consumeStar="3" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="3" exchangeId="16" type="0" id="5001" num="1" minNum="10000" maxNum="10000" proportion="1000" consumeStar="1" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="3" exchangeId="17" type="0" id="5002" num="1" minNum="10000" maxNum="10000" proportion="1000" consumeStar="1" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item bableType="3" exchangeId="18" type="0" id="30061" num="1" minNum="1" maxNum="1" proportion="1000" consumeStar="200" startTime="2013-11-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+</root>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   star:品质
+   breakOrder:第几次突破
+   soulCount:本次突破需要消耗的魂魄数
+   level:本次突破需要的掌教等级
+   addDelve:本次突破增加的可潜修次数
+   attack:本次突破增加的攻击
+   defense:本次突破增加的防御
+   hp:本次突破增加的血量
+-->
+
+<root>
+  <item star="1" breakOrder="1" soulCount="2" level="1" addDelve="2" attack="4" defense="4" hp="28"/>
+  <item star="1" breakOrder="2" soulCount="4" level="1" addDelve="4" attack="12" defense="12" hp="44"/>
+  <item star="1" breakOrder="3" soulCount="6" level="10" addDelve="6" attack="20" defense="20" hp="60"/>
+  <item star="1" breakOrder="4" soulCount="8" level="10" addDelve="8" attack="28" defense="28" hp="76"/>
+  <item star="1" breakOrder="5" soulCount="10" level="15" addDelve="9" attack="36" defense="36" hp="92"/>
+  <item star="1" breakOrder="6" soulCount="13" level="20" addDelve="10" attack="44" defense="44" hp="108"/>
+  <item star="1" breakOrder="7" soulCount="15" level="25" addDelve="12" attack="52" defense="52" hp="124"/>
+  <item star="1" breakOrder="8" soulCount="17" level="30" addDelve="14" attack="60" defense="60" hp="140"/>
+  <item star="1" breakOrder="9" soulCount="19" level="35" addDelve="16" attack="68" defense="68" hp="156"/>
+  <item star="1" breakOrder="10" soulCount="21" level="40" addDelve="19" attack="76" defense="76" hp="172"/>
+  <item star="2" breakOrder="1" soulCount="3" level="1" addDelve="2" attack="8" defense="8" hp="56"/>
+  <item star="2" breakOrder="2" soulCount="7" level="1" addDelve="4" attack="24" defense="24" hp="88"/>
+  <item star="2" breakOrder="3" soulCount="11" level="10" addDelve="6" attack="40" defense="40" hp="120"/>
+  <item star="2" breakOrder="4" soulCount="15" level="10" addDelve="8" attack="56" defense="56" hp="152"/>
+  <item star="2" breakOrder="5" soulCount="19" level="15" addDelve="9" attack="72" defense="72" hp="184"/>
+  <item star="2" breakOrder="6" soulCount="25" level="20" addDelve="10" attack="88" defense="88" hp="214"/>
+  <item star="2" breakOrder="7" soulCount="29" level="25" addDelve="12" attack="104" defense="104" hp="246"/>
+  <item star="2" breakOrder="8" soulCount="33" level="30" addDelve="14" attack="120" defense="120" hp="278"/>
+  <item star="2" breakOrder="9" soulCount="37" level="35" addDelve="16" attack="136" defense="136" hp="310"/>
+  <item star="2" breakOrder="10" soulCount="41" level="40" addDelve="19" attack="152" defense="152" hp="342"/>
+  <item star="3" breakOrder="1" soulCount="5" level="1" addDelve="4" attack="12" defense="12" hp="84"/>
+  <item star="3" breakOrder="2" soulCount="11" level="1" addDelve="8" attack="36" defense="36" hp="132"/>
+  <item star="3" breakOrder="3" soulCount="17" level="10" addDelve="12" attack="60" defense="60" hp="180"/>
+  <item star="3" breakOrder="4" soulCount="23" level="10" addDelve="16" attack="84" defense="84" hp="226"/>
+  <item star="3" breakOrder="5" soulCount="29" level="15" addDelve="18" attack="108" defense="108" hp="274"/>
+  <item star="3" breakOrder="6" soulCount="38" level="20" addDelve="20" attack="132" defense="132" hp="322"/>
+  <item star="3" breakOrder="7" soulCount="44" level="25" addDelve="24" attack="156" defense="156" hp="370"/>
+  <item star="3" breakOrder="8" soulCount="50" level="30" addDelve="28" attack="180" defense="180" hp="418"/>
+  <item star="3" breakOrder="9" soulCount="56" level="35" addDelve="32" attack="204" defense="204" hp="466"/>
+  <item star="3" breakOrder="10" soulCount="62" level="40" addDelve="38" attack="228" defense="228" hp="514"/>
+  <item star="4" breakOrder="1" soulCount="6" level="1" addDelve="4" attack="16" defense="16" hp="128"/>
+  <item star="4" breakOrder="2" soulCount="13" level="1" addDelve="8" attack="48" defense="48" hp="202"/>
+  <item star="4" breakOrder="3" soulCount="20" level="10" addDelve="12" attack="80" defense="80" hp="274"/>
+  <item star="4" breakOrder="4" soulCount="27" level="10" addDelve="16" attack="112" defense="112" hp="348"/>
+  <item star="4" breakOrder="5" soulCount="34" level="15" addDelve="18" attack="144" defense="144" hp="421"/>
+  <item star="4" breakOrder="6" soulCount="44" level="20" addDelve="20" attack="176" defense="176" hp="494"/>
+  <item star="4" breakOrder="7" soulCount="51" level="25" addDelve="24" attack="208" defense="208" hp="568"/>
+  <item star="4" breakOrder="8" soulCount="58" level="30" addDelve="28" attack="240" defense="240" hp="641"/>
+  <item star="4" breakOrder="9" soulCount="65" level="35" addDelve="32" attack="272" defense="272" hp="714"/>
+  <item star="4" breakOrder="10" soulCount="72" level="40" addDelve="38" attack="304" defense="304" hp="787"/>
+  <item star="5" breakOrder="1" soulCount="7" level="1" addDelve="6" attack="20" defense="20" hp="161"/>
+  <item star="5" breakOrder="2" soulCount="15" level="1" addDelve="12" attack="60" defense="60" hp="254"/>
+  <item star="5" breakOrder="3" soulCount="23" level="10" addDelve="18" attack="100" defense="100" hp="347"/>
+  <item star="5" breakOrder="4" soulCount="31" level="10" addDelve="24" attack="140" defense="140" hp="439"/>
+  <item star="5" breakOrder="5" soulCount="39" level="15" addDelve="27" attack="180" defense="180" hp="531"/>
+  <item star="5" breakOrder="6" soulCount="50" level="20" addDelve="30" attack="220" defense="220" hp="623"/>
+  <item star="5" breakOrder="7" soulCount="58" level="25" addDelve="36" attack="260" defense="260" hp="715"/>
+  <item star="5" breakOrder="8" soulCount="66" level="30" addDelve="42" attack="300" defense="300" hp="808"/>
+  <item star="5" breakOrder="9" soulCount="74" level="35" addDelve="48" attack="340" defense="340" hp="901"/>
+  <item star="5" breakOrder="10" soulCount="82" level="40" addDelve="57" attack="380" defense="380" hp="993"/>
+  <item star="6" breakOrder="1" soulCount="8" level="1" addDelve="6" attack="24" defense="24" hp="195"/>
+  <item star="6" breakOrder="2" soulCount="17" level="1" addDelve="12" attack="72" defense="72" hp="306"/>
+  <item star="6" breakOrder="3" soulCount="26" level="10" addDelve="18" attack="120" defense="120" hp="418"/>
+  <item star="6" breakOrder="4" soulCount="35" level="10" addDelve="24" attack="168" defense="168" hp="530"/>
+  <item star="6" breakOrder="5" soulCount="44" level="15" addDelve="27" attack="216" defense="216" hp="640"/>
+  <item star="6" breakOrder="6" soulCount="56" level="20" addDelve="30" attack="264" defense="264" hp="752"/>
+  <item star="6" breakOrder="7" soulCount="65" level="25" addDelve="36" attack="312" defense="312" hp="864"/>
+  <item star="6" breakOrder="8" soulCount="74" level="30" addDelve="42" attack="360" defense="360" hp="975"/>
+  <item star="6" breakOrder="9" soulCount="83" level="35" addDelve="48" attack="408" defense="408" hp="1086"/>
+  <item star="6" breakOrder="10" soulCount="92" level="40" addDelve="57" attack="456" defense="456" hp="1198"/>
+</root>

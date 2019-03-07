@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   convertType:转换类型 （1.仙人转换，2.魂魄转换）
+   star:仙人/魂魄星级
+   soul:精魄的数量
+   dust:尘的数量
+-->
+
+<root>
+  <item convertType="1" star="1" soul="2" dust="2"/>
+  <item convertType="1" star="2" soul="20" dust="20"/>
+  <item convertType="1" star="3" soul="45" dust="45"/>
+  <item convertType="1" star="4" soul="180" dust="120"/>
+  <item convertType="1" star="5" soul="480" dust="200"/>
+  <item convertType="1" star="6" soul="2000" dust="480"/>
+  <item convertType="2" star="1" soul="1" dust="1"/>
+  <item convertType="2" star="2" soul="2" dust="2"/>
+  <item convertType="2" star="3" soul="3" dust="3"/>
+  <item convertType="2" star="4" soul="6" dust="4"/>
+  <item convertType="2" star="5" soul="12" dust="5"/>
+  <item convertType="2" star="6" soul="25" dust="6"/>
+</root>

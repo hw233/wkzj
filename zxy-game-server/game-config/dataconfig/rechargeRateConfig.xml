@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   rechargeId:价格id
+   price:多少钱（人民币）
+   ticket:等于多少点卷
+   give:赠送多少点卷
+   rechargeType:充值类型(1:普通，2：月卡，3：终身卡，4：年卡)
+-->
+
+<root>
+  <item rechargeId="1" price="30" ticket="300" give="0" rechargeType="2"/>
+  <item rechargeId="2" price="6" ticket="60" give="0" rechargeType="1"/>
+  <item rechargeId="3" price="30" ticket="300" give="30" rechargeType="1"/>
+  <item rechargeId="4" price="98" ticket="980" give="100" rechargeType="1"/>
+  <item rechargeId="5" price="198" ticket="1980" give="300" rechargeType="1"/>
+  <item rechargeId="6" price="328" ticket="3280" give="700" rechargeType="1"/>
+  <item rechargeId="7" price="648" ticket="6480" give="1500" rechargeType="1"/>
+  <item rechargeId="8" price="1998" ticket="19980" give="5000" rechargeType="1"/>
+  <item rechargeId="9" price="300" ticket="3000" give="500" rechargeType="3"/>
+  <item rechargeId="1000" price="30" ticket="300" give="0" rechargeType="2"/>
+  <item rechargeId="1001" price="6" ticket="60" give="0" rechargeType="1"/>
+  <item rechargeId="1002" price="30" ticket="300" give="30" rechargeType="1"/>
+  <item rechargeId="1003" price="98" ticket="980" give="100" rechargeType="1"/>
+  <item rechargeId="1004" price="198" ticket="1980" give="300" rechargeType="1"/>
+  <item rechargeId="1005" price="328" ticket="3280" give="700" rechargeType="1"/>
+  <item rechargeId="1006" price="648" ticket="6480" give="1500" rechargeType="1"/>
+  <item rechargeId="1007" price="328" ticket="3280" give="0" rechargeType="4"/>
+</root>

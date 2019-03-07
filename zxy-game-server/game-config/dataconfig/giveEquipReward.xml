@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   equipId:装备id
+   num:数量
+   proportion:几率(总和    1000)
+-->
+
+<root>
+  <item equipId="1001" num="1" proportion="160"/>
+  <item equipId="1008" num="1" proportion="160"/>
+  <item equipId="1027" num="1" proportion="160"/>
+  <item equipId="1037" num="1" proportion="160"/>
+  <item equipId="2013" num="1" proportion="80"/>
+  <item equipId="2017" num="1" proportion="80"/>
+  <item equipId="2024" num="1" proportion="80"/>
+  <item equipId="3002" num="1" proportion="20"/>
+  <item equipId="3011" num="1" proportion="20"/>
+  <item equipId="3013" num="1" proportion="20"/>
+  <item equipId="3017" num="1" proportion="20"/>
+  <item equipId="3018" num="1" proportion="20"/>
+  <item equipId="3017" num="1" proportion="20"/>
+</root>

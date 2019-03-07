@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:id
+   discount:折扣(千分比)
+   rate:几率(千分比)
+-->
+
+<root>
+  <item id="1" discount="200" rate="10"/>
+  <item id="2" discount="300" rate="50"/>
+  <item id="3" discount="400" rate="100"/>
+  <item id="4" discount="500" rate="200"/>
+  <item id="5" discount="600" rate="400"/>
+  <item id="6" discount="700" rate="500"/>
+  <item id="7" discount="1000" rate="1000"/>
+</root>

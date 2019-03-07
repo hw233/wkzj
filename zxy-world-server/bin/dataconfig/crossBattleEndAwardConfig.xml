@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   awardId:日奖励唯一id
+   allowRank:允许前x名服务器 领取该条奖励
+   allowLevel:允许前x级的角色(allowRank为前置条件)
+   reward:胜利服的玩家奖励物品 格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量表达式(x1*1000, x1:表示等级)|后面多个奖励
+-->
+
+<root>
+  <item awardId="1" allowRank="1" allowLevel="15" reward="0_5001_x1*30|0_5002_x1*50|0_3005_x1*4"/>
+  <item awardId="2" allowRank="2" allowLevel="15" reward="0_5001_x1*20|0_5002_x1*40|0_3005_x1*3"/>
+  <item awardId="3" allowRank="3" allowLevel="15" reward="0_5001_x1*10|0_5002_x1*30|0_3005_x1*2"/>
+</root>

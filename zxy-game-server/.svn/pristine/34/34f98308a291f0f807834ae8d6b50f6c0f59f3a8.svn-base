@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="jt-server" default="default" basedir="../">
+	
+	<tstamp> 
+	<format property="create.time" pattern="yyyyMMdd_HHmm"/> 
+    <format property="package.time" pattern="yyyy/MM/dd HH:mm:ss" />  
+	</tstamp>
+	
+	<property name="Name" value="ztt-server" />
+	<property name="classes.dir" value="classes" />
+	<property name="lib.dir" value="lib" />
+	<property name="src.dir" value="src" />
+	<property name="resource.dir" value="resource" />
+	<property name="jarName" value="ztt-server.jar" />
+	<property name="target.dir" value="target" />
+	<property name="release.dir" value="../../publish/server/${create.time}" />
+	
+	<path id="compile.classpath">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<!-- 默认 -->
+	<target name="default" depends="package,clean" />
+
+	<!-- 编译 -->
+	<target name="compile">
+		<mkdir dir="${classes.dir}" />
+		<delete dir="${classes.dir}" includeemptydirs="true">
+			<include name="**/*.*" />
+		</delete>
+		<javac debug="true" deprecation="true" destdir="${classes.dir}" nowarn="true" optimize="on" target="1.7" encoding="utf-8" source="1.7" includeAntRuntime="false">
+			<classpath refid="compile.classpath" />
+			<src path="${src.dir}" />
+		</javac>
+	</target>
+
+
+	<!-- COPY -->
+	<target name="copy" depends="compile">
+		<delete dir="${target.dir}"></delete>
+		<copy todir="${target.dir}">
+			<fileset dir=".">
+				<include name="${resource.dir}/**/*.*" />
+				<include name="${lib.dir}/*.*" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- 打包 -->
+	<target name="package" depends="copy">
+		
+		<path id="target-classpath">
+		  <fileset dir="${lib.dir}" includes="**/*.jar" />
+		</path>
+		
+		<pathconvert property="mf.classpath" pathsep=" " description="把上面定义的path转换成property, path中jar包的路径用空格分开">
+		    <mapper>
+		        <chainedmapper>
+		          <!-- 移除绝对路径 -->
+		          <flattenmapper />
+		          <!-- 加上lib前缀 -->
+		          <globmapper from="*" to="lib/*" />
+		         </chainedmapper>
+		      </mapper>
+		    <path refid="target-classpath" description="path引用了上面定义的target-classpath" />
+		</pathconvert>
+		<mkdir dir="${target.dir}/" />
+		<jar destfile="${target.dir}/${jarName}">
+			<fileset dir="${classes.dir}">
+				<include name="**/*.*"/>
+			</fileset>
+			<!-- set mainfest information to manifest -->  
+            <manifest>
+                <attribute name="Manifest-Version" value="1.0" />
+                <attribute name="Build-Jdk" value="${java.version}" />
+                <attribute name="Built-By" value="${user.name}" />
+                <attribute name="Package-Time" value="${package.time}" />
+                <attribute name="Main-Class" value="com.jtang.Launcher" />
+                <attribute name="Class-Path" value=" resource/ ${mf.classpath} " >
+				</attribute>
+            </manifest>
+		</jar>
+		<!--
+		<delete dir="${classes.dir}" includeemptydirs="true" deleteonexit="true"/>
+		-->
+	</target>
+
+	<!-- 复制发布内容到发布目录, 需要使用 -Drelease.dir=路径 指定 -->
+	<target name="release" depends="package">
+		<delete dir= "${release.dir}" deleteonexit="true"/> 
+		<mkdir dir="${release.dir}" />
+		<copy todir="${release.dir}">
+			<fileset dir="${target.dir}">
+				<include name="**/*.*" />
+			</fileset>
+			<fileset dir=".">
+				<include name="dist/launcher.bat" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<!-- 清理 -->
+	<target name="clean" depends="release">
+		<delete dir= "${classes.dir}"/> 
+		<delete dir= "${target.dir}"/> 
+	</target>
+	
+</project>

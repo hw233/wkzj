@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   startData:开始时间 (yyyy-MM-dd hh:mm:ss)
+   endData:结束时间 (yyyy-MM-dd hh:mm:ss)
+   dayPlant:每日种植次数
+   extReward:额外奖励(类型_id_数量公式_几率|...) (类型 0.物品 1.装备 2.魂魄 3.金币)
+   count:保底收获次数(此字段不支持热刷) 格式（最小保底次数_最大保底次数）
+   reward:保底奖励(类型_id_数量公式_几率(加起来1000)|...) (类型 0.物品 1.装备 2.魂魄 3.金币)
+   costTicket:加速消耗的点券(x分钟_x点券)
+-->
+
+<root>
+  <item startData="2013-03-19 00:00:00" endData="2013-03-20 00:00:00" dayPlant="100" extReward="0_7101_1_5|0_7102_1_15|0_1000_1_15|0_6003_1_10|0_3003_1_5|1_3040_1_2" count="90_100" reward="1_3040_1_1000" costTicket="3_1"/>
+</root>

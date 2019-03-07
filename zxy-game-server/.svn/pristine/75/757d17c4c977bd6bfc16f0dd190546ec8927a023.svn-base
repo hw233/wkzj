@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<item name="ACTOR_INIT_LEVEL" value="1" desc="创建时的默认等级"/>
+	<item name="ACTOR_INIT_GOLD" value="50000" desc="角色创建时的默认金币" />
+	<item name="ACTOR_INIT_TICKET" value="0" desc="角色创建时的默认元宝数" />
+	<item name="ACTOR_INIT_VIT" value="10" desc="创建角色时默认活力值" />
+	<item name="ACTOR_INIT_ENERGY" value="5" desc="创建角色时默认的精力值" />
+	<item name="ACTOR_INIT_REPUTATION" value="0" desc="创建角色时默认声望" />
+	<item name="ACTOR_INIT_POWER" value="5" desc="创建角色时默认气势值" />
+	<item name="ACTOR_VIT_FIXED_TIME" value="3" desc="活力定时恢复时间(分)" />
+	<item name="ACTOR_X_MIN_ADD_VIT" value="1" desc="每x分钟回复的活力值" />
+	<item name="ACTOR_ENERGY_FIXED_TIME" value="5" desc="精力定时恢复时间(分)" />
+	<item name="ACTOR_X_MIN_ADD_ENERGY" value="1" desc="每x分钟回复的精力值" />
+	<item name="ACTOR_MAX_POWER" value="1000" desc="掌教的气势值上限" />
+	<item name="ACTOR_GUIDE_MAX_KEY" value="999" desc="新手引导的key最大值 99" />
+	<item name="ACTOR_GUIDE_MAX_VALUE" value="999" desc="新手引导的value最大值 99" />
+	<item name="ACTOR_CREATE_GIVE_GOODS_ID" value="0" desc="角色创建赠送的物品Id, 0则不赠送" />
+	<item name="RESET_USE_TIME" value="60" desc="使用重生功能时封号时间（秒）" />
+	
+	
+	<item name="BATTLE_BETWEEN_GRID_NUM" value="2" desc="战场上两支队伍之间的默认间距" />
+	<item name="BATTLE_ENEMY_TEAM_FACE" value="1" desc="敌方朝向(朝下)" />
+	<item name="BATTLE_MY_TEAM_FACE" value="2" desc="我方朝向(朝上)" />
+	<item name="BATTLE_MAX_ROUND" value="10" desc="战斗最大回合数" />
+	<item name="BATTLE_DEF_FACTOR" value="2" desc="防御系数" />
+	<item name="BATTLE_EXPAND_TIME" value="10000" desc="每场战斗的最大耗时,单位:毫秒" />
+	
+	<item name="HERO_MAX_COUNT" value="300" desc="单个玩家可以获得的最大仙人数" />
+	<item name="HERO_SOUL_MAX_COUNT" value="300" desc="单个玩家可以获得的最大仙人魂魄数" />
+	<item name="HERO_BREAKOUT_NEED_SOUL_EXPR" value="x1*2" desc="通过突破获取经验时:需要的魂魄数量表达式, x1:星级"/>
+	<item name="HERO_BREAKOUT_OUTPUT_EXP_EXPR" value="x1*x2" desc="通过突破获取经验时:产出的经验数量表达式,x1:星级  x2:英雄等级"/>
+	<item name="HERO_LEVEL_MAX_EXPR" value="x1*2" desc="当前掌教等级最大仙人等级，x1:掌教等级"/>
+	
+	<item name="DELVE_USE_GOODS_MIN_STAR" value="1" desc="可使用潜修石最小星级" />
+	<item name="DELVE_USE_GOODS_MIN_LEVEL" value="5" desc="可使用潜修石最小等级" />
+	
+	<item name="VAMPIIR_MAX_LEVEL" value="100" desc="吸灵室可达到的最高等级" />
+	<item name="VAMPIIR_MAX_SELECTED_HEROS" value="100" desc="最多可吸收的仙人数" />
+	<item name="VAMPIIR_CONSUME_GOLDS_EXPR" value="x2*4" desc="吸灵时消耗的金币表达式，x1代表英雄等级，x2代表吸收的经验，x3代表英雄品质" />
+	<item name="VAMPIIR_MAX_USE_GOODS" value="100" desc="最多可使用物品的ID数" />
+	
+	<item name="RECRUIT_INIT_TODAY_CHANGE" value="5" desc="初始化角色。每日默认4次机会(升级后会永久累加)" />
+	
+	<item name="EQUIP_MAX_NUM" value="300" desc="装备最大上限数" />
+	
+	<item name="REFINE_STONE" value="5002" desc="精炼石配置id" />
+	<item name="REFINE_USE_GOODS_MIN_STAR" value="1" desc="装备可使用精炼石的最小星级" />
+	<item name="REFINE_USE_GOODS_MIN_LEVEL" value="5" desc="装备可使用精炼石的最小等级" />
+	
+	<item name="LINEUP_GRID_COUNT_EACH_ROW" value="3" desc="阵型中每一行可以放置多少个仙人" />
+	<item name="LINEUP_GRID_COUNT_EACH_COL" value="3" desc="阵型中每一列可以放置多少个仙人" />
+	<item name="LINEUP_INIT_ACTIVED_GRID_COUNT" value="2" desc="初始开放的阵型格子数" />
+	
+	<item name="GOODS_ID_GOLD" value="10" desc="金币物品id" />
+	<item name="GOODS_ID_TICKET" value="11" desc="元宝物品id" />
+	
+		
+	<item name="SNATCH_AWARD_VOUCHER_TIME" value="60" desc="排行榜的刷新时间,单位:分" />
+	<item name="SNATCH_ROBOT_MAINTAIN_TIME" value="1" desc="机器人维护金币时间:分钟" />
+	<item name="SNATCH_LOGIN_DAY_4_CACHE" value="10" desc="系统启动时根据该参数查询DB里面最近N天登陆的玩家, 然后构建被抢夺玩家缓存列表,单位:天, 备注:系统参数,策划勿改" />
+	<item name="SNATCH_ACTOR_NUM_4_CACHE" value="3000" desc="系统启动时加载到抢夺缓存的玩家id的数量, 备注:系统参数,策划勿改" />
+	<item name="SNATCH_ROBOT_GOLD_LOWER_LIMIT" value="80" desc="机器人金币的下限(百分比,分母为100),少于这个阀值机器人的金币就会自动恢复" />
+	<item name="SNATCH_ROBOT_GOLD_EACH_RECOER" value="10" desc="机器人金币每次恢复量(百分比,分母为100)" />
+	<item name="SNATCH_ONLY_ROBOT_GOLD_MIN_LEVEL" value="1" desc="特定等级范围内的掌教抢夺金币时只会遇到机器人" />
+	<item name="SNATCH_ONLY_ROBOT_GOLD_MAX_LEVEL" value="5" desc="特定等级范围内的掌教抢夺金币时只会遇到机器人" />	
+	<item name="SNATCH_RESERVE_ENEMY_COUNT" value="5" desc="抢夺排行榜上面保留最近抢/被抢敌人的数量" />
+	<item name="SNATCH_RESERVE_ENEMY_DAY" value="5" desc="抢夺排行榜上面保留最近抢/被抢敌人的最长时间(单位天)" />
+	<item name="SNATCH_ENEMY_DISPLAY_NUM" value="3" desc="切换对手列表显示敌人数量" />
+	<item name="SNATCH_ENEMY_LEAST_ROBOT_NUM" value="1" desc="切换对手时至少出现的机器人个数" />
+	<item name="SNTACH_ENEMY_REAL_ACTOR_PERCENT" value="20" desc="切换对手时出现真实玩家的百分比(1-100)" />
+
+	<item name="SNATCH_EXCEED_LEVEL_PASS_BATTLE" value="30" desc="角色超过多少等级则可以开战跳过战斗" />
+	
+	
+	
+	
+	
+	<item name="BABLE_DAY_ENTER_NUM" value="2" desc=" 每日进入登天塔次数 dayEnterNum:每日可进入次数(每天cleanTime重置)" />
+	<item name="BABLE_CLEAN_TIME" value="0" desc="清零时间 3点 cleanTime:清零时间(24小时制) 例：3代表三点 23代表二十三点" />
+	<item name="BABLE_RANK_NUM" value="20" desc="登天塔排行榜显示名次数" />
+	
+	<item name="CHAT_CONSUME_GOLDS_EXPR" value="5000" desc="世界聊天消耗的金币计算公式，x1代表角色等级" />
+	<item name="CHAT_HISTORY_NUM" value="40" desc="世界聊天历史记录存储条数" />
+	<item name="TREASURE_LIMIT_LEVEL" value="50" desc="天财地宝可见等级" />
+	
+	<item name="TRIAL_RESET_HOUR" value="0" desc="试炼洞试炼次数重置时间点，(24小时制) 例：3代表三点 23代表二十三点" />
+	
+	<item name="ALLY_ALLIES_LIMIT" value="15" desc="可加盟友数量上限" />
+	<item name="ALLY_REPEAT_BEYOND_TIME" value="86400" desc="重复加盟友的时间限制" />
+	<item name="ALLY_FIGHT_NEED_ENERGY" value="0" desc="切磋需要消耗的精力" />
+	<item name="ALLY_FIGHT_NUM_LIMIT" value="100" desc="每天与单个盟友可切磋次数上限" />
+	<item name="ALLY_FIGHT_MAP_ID" value="1" desc="切磋战场ID" />
+	<item name="ALLY_FIGHT_DAY_NUM_LIMIT" value="15" desc="与所有盟友每日可切磋总次数" />
+	<item name="ALLY_FIGHT_COUNT_RESET_TIME" value="0" desc="与所有盟友每日可切磋总次数的刷新时间" />
+    <item name="ALLY_FIGHT_REWARD_MIN_LEVEL_DIFFER" value="150" desc="切磋奖励的最低等级差" />
+	<item name="ALLY_FIGHT_REWARD_EXPR" value="1_6|2_6|3_6|4_6|5_6|6_6" desc="大败1_气势值|失败2_气势值|惜败3_气势值|小胜4_气势值|中胜5_气势值|大胜6_气势值" />
+	
+		
+	<item name="GIFT_ACCEPT_NUM_4_PACKAGE" value="5" desc="达到指定收礼次数可领取大礼包"/>
+	<item name="GIFT_MAX_GIVE_NUM" value="15" desc="每天最大送礼次数"/>
+	<item name="GIFT_RESET_HOUR" value="0" desc="每天几点重置"/>
+	<item name="ACCEPT_GIFT_CAP" value="20" desc="每天最大收礼限制"/>
+	
+	<item name="MSG_LENGTH_LIMIT" value="60" desc="聊天消息长度限制" />
+	<item name="MSG_MAX_NUM_LIMIT" value="30" desc="可接收的最大消息条数"/>	
+	<item name="MSG_INTERVAL_TIME_LIMIT" value="10" desc="消息发送时间间隔限制：单位为妙"/>	
+	<item name="NOTIFICATION_MAX_NUM_LIMIT" value="100" desc="可接收的最大信息条数"/>	
+	
+	
+	<item name="SIGN_ACCUMULATE_CIRCLE_DAYS" value="5" desc="月累计签到奖励第一种类型循环的天数"/>	
+	<item name="SIGN_ACCUMULATE_DAYS" value="20" desc="月累计签到奖励第二种类型配置的天数"/>	
+	
+	<item name="CITY_WAR_UNLOCK_LEVEL" value="10" desc="城战的解锁等级" />
+	<item name="CITY_WAR_TIME_OUT" value="3600" desc="城战战斗的超时时间,单位秒" />
+	<item name="CITY_RANK_AWARD_CYCLE" value="60" desc="每两次发放排名奖励的时间间隔,单位:分" />
+	
+	<item name="STORY_REWARD_RULE" value="-1000_6_100|5_10_50|9_1000_0" desc="故事的声望奖励规则:玩家掌教等级-故事标准等级小于等于5时，获得100%声望;10大于玩家掌教等级-故事标准等级大于5时，获得50%声望;玩家掌教等级-故事标准等级大于等于10时，获得0%声望" />
+	
+	
+	
+	<item name="POWER_RANK_BATTLE_1V1_MAP_ID" value="4" desc="最强势力排行挑战的战斗地图Id，此地图为小地图" />
+	<item name="POWER_MAX_NUM_LIMIT" value="100" desc="最强势力排行的名次数量限制" />
+	<item name="POWER_REWARD_HERO_SOUL_POOL" value="126_147_156_157_158_160_178" desc="前三名获得的仙人魂魄奖励池，每次发放奖励时，程序在其中随机出一个魂魄Id" />
+	<item name="POWER_AWARD_TIME" value="20" desc="最强势力排行发放奖励的时间，填写1-24小时的数值" />
+	<item name="POWER_FIGHT_COST_ENERGY" value="1" desc="每次挑战需要消耗精力数" />
+		
+	
+	<item name="NOTICE_SEND_NUM_LIMIT" value="3" desc="每日可广播次数" />
+	
+	
+	<item name="MAIN_HERO_VIP_LEVEL" value="3" desc="主力仙人要求的vip等级" />
+	<item name="EQUIP_COMPOSE_VIP_LEVEL" value="3" desc="炼器宗师要求的vip等级" />
+	<item name="HERO_COMPOSE_VIP_LEVEL" value="3" desc="仙人合成要求的vip等级" />
+	<item name="TSHOP_VIP_SHOP_VIP_LEVEL" value="4" desc="vip商城要求的vip等级" />
+	<item name="RESET_USE_VIP_LEVEL" value="3" desc="使用重置功能vip等级" />
+
+	<item name="MAIN_HERO_ATTRIBUTE_PERCENT" value="50" desc="主力仙人的属性增加百分比(1-100)" />
+	<item name="MAIN_HERO_FLUSH_TIME" value="50" desc="主力仙人的属性增加百分比(0-23)" />
+	
+	<item name="UNLOCK_SHOP_LEVEL" value="1" desc="解锁云游仙商的等级" />
+	
+	<item name="SHOP_CLEAN_BUY_TIME" value="0" desc="清除云游仙商购买数据时间(24小时制)" />
+	
+	<item name="FAVOR_REFRESH_TIME" value="0" desc="福神眷顾刷新时间"></item>
+	<item name="FAVOR_PERMANET_NEED_TOTAL_TICKET" value="6" desc="福神眷顾永久特权最低充值元宝数"></item>
+	<item name="FAVOR_CONTAIN_TIME" value="12" desc="福神眷顾持续时间（单位小时）"></item>
+	
+	<item name="SIGN_FLUSH_TIME" value="0" desc="签到每天零点刷新时间点，(24小时制) " />
+	
+	<item name="HOLE_ALLY_COUNT" value="3" desc="洞府盟友通关大礼包需要盟友的数量" />
+	<item name="HOLE_TRIGGER_SELF_COUNT" value="3" desc="自己主动触发洞府的次数 " />
+	<item name="HOLE_TRIGGER_ALLY_COUNT" value="5" desc="盟友邀请的洞府次数" />
+	
+	<item name="DEMON_MAP_ID" value="1" desc="集众降魔地图id" />
+	
+	<item name="SUPPLY_OPEN_CHANNEL_ID" value="" desc="补给开放的平台id(id1_id2_id3)" />
+	<item name="SUPPLY_OPEN_LEVEL" value="11" desc="补给开放的等级" />
+	
+	<item name="HERO_BOOK_OPEN_ACTOR_LEVEL" value="30" desc="图鉴开放的等级" />
+	<item name="APP_LEVEL_LIMIT" value="20" desc="一元礼包等级购买限制" />
+	<item name="APP_RECARGE_MONEY_LIMIT" value="5000" desc="首次充值8小时再冲翻倍限制金额" />
+	<item name="APP_LOW_VIP_LEVEL_LIMIT" value="20" desc="小V活动礼包等级购买限制,如appid:1049" />
+	<item name="APP_MIDDLE_VIP_LEVEL_LIMIT" value="20" desc="中V活动礼包等级购买限制,如种植id" />
+	<item name="CROSS_BATTLE_REWARD_LEVEL" value="15" desc="跨服战赛季结束可领取奖励等级" />
+	<item name="APP_RECHARGE_REWARD_TIME" value="300" desc="充值前三名活动发奖提前时间(分钟)" />
+	
+	<item name="ACTOR_ENERGY_SUPER_MAX" value="9999" desc="精力超过上限最大值" />
+	<item name="ACTOR_VIT_SUPER_MAX" value="9999" desc="活力超过上限最大值" />
+	<item name="FLUSH_ALLYS_LIST" value="3" desc="刷新加好友列表人数" />
+	<item name="FLUSH_ALLYS_LEVEL_LIMIT" value="5" desc="刷新加好友列表等级区间" />
+	<item name="RENAME_COST_TICKET" value="ternary(x1&gt;10,500,(x1+1)*20)" desc="修改掌教名称需要消耗的元宝" />
+	<item name="RESEX_COST_TICKET" value="ternary(x1&gt;10,500,(x1+1)*20)" desc="修改掌教性别需要消耗的元宝" />
+	<item name="FULL_ENERGY" value="5" desc="补满精力需要的元宝" />
+	<item name="FULL_VIT" value="5" desc="补满活力需要的元宝" />
+	<tiem name="STORY_FIGHT_STAR" value="2" desc="故事扫荡需要该关卡的星级" />
+	<item name="BABLE_REFIGHT_NUM" value="2" desc="登天塔重试登塔次数" />
+	<item name="BABLE_REFIGHT_NUM" value="2" desc="登天塔重试登塔次数" />
+	<item name="SIGN_RECHARGE_NUM" value="6" desc="使用高级签到需要充值的金额" />
+	<item name="BUY_GOLD_ID" value="10" desc="主界面购买金币的id" />
+	<item name="BUY_GOLD_NUM" value="100000" desc="主界面购买金币数量" />
+	<item name="GOLD_BUY" value="5" desc="购买金币需要的元宝(公式)" />
+	<item name="MIN_RANK" value="1" desc="排行榜发奖最小名次" />
+	<item name="MAX_RANK" value="20000" desc="排行榜发奖最大名次" />
+	<item name="POWER_UP_LEVEL" value="15" desc="掌教进入排行榜的最小等级" />
+	<item name="MUTI_FIGHT_STORY_ID" value="2" desc="扫荡开启章节" />
+	<item name="ALLY_BATTLE_LEVEL_LIMIT" value="5" desc="合作关卡盟友与自身等级间隔" />
+	<item name="RANDOM_REWARD_OPEN_LEVEL" value="10" desc="主页面小人奖励开放最小等级" />
+	<item name="SOUL_GOODS_ID" value="1003" desc="魄的物品id" />
+	<item name="DUST_GOODS_ID" value="1004" desc="尘的物品id" />
+	<item name="ADD_ALLY_STORY_LOCK" value="100307" desc="加好友与被加好友关卡限制" />
+	<item name="POWER_VALUE_COUNT" value="x1/10+x2/20+x3/10" desc="战斗力公式" />
+	<item name="RESET_MAX_REWARD_LEVEL" value="30" desc="重置仙人装备全部返还等级" />
+	<item name="AVD_RESET_BUFF_VIP_LEVEL" value="8" desc="vip8或vip等级更高级获取更多的重置返还"/>
+	<item name="ALLY_FIGHT_REWARD_NUM" value="10" desc="合作关卡邀请盟友有奖励次数限制"/>
+	<item name="ONE_KEY_DELVE_FAIL" value="7" desc="一键潜修失败多少次进行保底一次" />
+	<item name="ONLINE_GIFTS_MIN_LEVEL" value="5" desc="领取在线礼包需要角色最小等级" />
+	<item name="ATK_EQUIP_COMPOSE" value="1" desc="武器合成等级" />
+	<item name="DEF_EQUIP_COMPOSE" value="1" desc="防具合成等级" />
+	<item name="HP_EQUIP_COMPOSE" value="30" desc="饰品合成等级" />
+	<item name="GOODS_ID_IPHONE6" value="21027" desc="iPhone 6礼包 id" />
+	<item name="GOODS_ID_BILL" value="21028" desc="20元话费" />
+	<item name="HOLE_OPEN_LEVEL" value="30" desc="洞府开放等级" />
+</root>

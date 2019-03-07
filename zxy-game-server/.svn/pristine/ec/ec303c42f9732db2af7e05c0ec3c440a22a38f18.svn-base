@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   star:装备品质,决定装备强化时所增加的属性值多少
+   type:装备类型,决定装备的属性
+   attributeValue:装备强化时增加的属性值
+   goldExpr:装备强化时消耗的金币计算公式,程序变量包括装备类型，装备等级，装备品质，表达式中用x1表示装备类型/x2-装备等级/x3-装备品质，策划只需填其他变量
+-->
+
+<root>
+  <item star="1" type="1" attributeValue="2" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*2*100"/>
+  <item star="1" type="2" attributeValue="2" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*2*100"/>
+  <item star="1" type="3" attributeValue="5" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*2*100"/>
+  <item star="2" type="1" attributeValue="4" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*4*100"/>
+  <item star="2" type="2" attributeValue="4" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*4*100"/>
+  <item star="2" type="3" attributeValue="10" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*4*100"/>
+  <item star="3" type="1" attributeValue="6" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*6*100"/>
+  <item star="3" type="2" attributeValue="6" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*6*100"/>
+  <item star="3" type="3" attributeValue="15" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*6*100"/>
+  <item star="4" type="1" attributeValue="8" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*8*100"/>
+  <item star="4" type="2" attributeValue="8" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*8*100"/>
+  <item star="4" type="3" attributeValue="20" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*8*100"/>
+  <item star="5" type="1" attributeValue="10" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*10*100"/>
+  <item star="5" type="2" attributeValue="10" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*10*100"/>
+  <item star="5" type="3" attributeValue="25" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*10*100"/>
+  <item star="6" type="1" attributeValue="20" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*12*100"/>
+  <item star="6" type="2" attributeValue="20" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*12*100"/>
+  <item star="6" type="3" attributeValue="30" goldExpr="((x2-1)*0.2+1)*(1+(x3-1)*0.2)*12*100"/>
+</root>

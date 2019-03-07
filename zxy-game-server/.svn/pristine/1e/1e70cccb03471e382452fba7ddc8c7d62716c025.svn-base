@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+ 	
+ 	<!-- 配置文件扩展名 -->
+	<bean id="dataconfig.format" class="java.lang.String">
+		<constructor-arg value="xml"/>
+	</bean>
+	
+	<!-- 配置文件路径 -->
+	<bean id="dataconfig.path" class="java.lang.String">
+		<constructor-arg value="dataconfig/"/>
+	</bean>
+	
+	<!-- 配置文件映射包 -->
+	<bean id="dataconfig.package_scan" class="java.lang.String">
+		<constructor-arg value="com.jtang.gameserver.dataconfig.model"/>
+	</bean>
+	
+	<!-- 配置文件扩展名 -->
+	<bean id="dataconfig.extension" class="java.lang.String">
+		<constructor-arg value=".xml"/>
+	</bean>
+		
+	<!-- js脚本文件路径 -->
+	<bean id="dataconfig.script_path" class="java.lang.String">
+		<constructor-arg value="script/"/>
+	</bean>
+	
+	<!-- 配置文件扫描间隔(毫秒) -->
+	<bean id="dataconfig.flush_time" class="java.lang.Long">
+		<constructor-arg value="10000" />
+	</bean>
+	
+	<!-- 配置文件重新加载间隔(毫秒) -->
+	<bean id="dataconfig.reload_time" class="java.lang.Long">
+		<constructor-arg value="10000" />
+	</bean>
+	
+	<!-- 新配置文件路径 -->
+	<bean id="dataconfig.newconfig" class="java.lang.String">
+		<constructor-arg value="newconfig/" />
+	</bean>
+</beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="get-new-dataconfig" default="svn-update" basedir="../">
+	<property name="src.dataconfig.dir" value="../../../resource/branches/out/Server" />
+	<property name="dest.dataconfig.dir" value="world-config/dataconfig" />
+
+	<target name="svn-update">
+		<delete dir="${src.dataconfig.dir}" includeemptydirs="true">
+			<include name="crossBattleConfig.xml" />
+			<include name="crossBattleDayConfig.xml" />
+			<include name="crossBattleEndAwardConfig.xml" />
+			<include name="crossBattleExchangeConfig.xml" />
+			<include name="crossBattleRankConfig.xml" />
+			<include name="crossBattlePointConfig.xml" />
+		</delete>
+		<exec executable="svn" dir="${src.dataconfig.dir}">
+			<arg line=" update " />
+		</exec>
+		<copy todir="${dest.dataconfig.dir}" overwrite="true">
+			<fileset dir="${src.dataconfig.dir}">
+				<include name="crossBattleConfig.xml" />
+				<include name="crossBattleDayConfig.xml" />
+				<include name="crossBattleEndAwardConfig.xml" />
+				<include name="crossBattleExchangeConfig.xml" />
+				<include name="crossBattleRankConfig.xml" />
+				<include name="crossBattlePointConfig.xml" />
+			</fileset>
+		</copy>
+	</target>
+</project>

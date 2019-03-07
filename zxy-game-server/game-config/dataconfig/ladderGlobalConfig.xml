@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   openLevel:开放等级
+   baseScore:赛季开始时基础积分
+   sportDay:一个赛季天数
+   maxFightNum:战斗次数回复上限
+   flushTime:回复一次战斗次数需要时间(秒)
+   fightInfo:战斗信息存储条数
+   costTicket:补满战斗次数消耗的点券(公式x1表示当天使用次数)
+   targetLevel1:高排名1个敌人的排名区间(排名公式<x1表示自己排名>_排名公式)
+   targetLevel2:相近排名2个敌人的排名区间(排名公式<x1表示自己排名>_排名公式)
+   targetNum:刷新敌人的个数
+   costGolds:刷新消耗的金币(公式x1表示当天刷新次数)
+   map:地图id
+   endTime:赛季结束发奖时间(24小时制)
+   rewardRank:赛季发奖人数
+   rankView:排行榜显示人数
+   sendChat:连胜发送世界公告 场次_公告类型|
+   winExponent:胜利指数   x1被攻击方的积分  x2攻击方的积分
+   loseExponent:失败指数   x1被攻击方的积分  x2攻击方的积分
+   bottomNumber:底数
+   calcScore:计算公式 x1是根据胜利或者失败公式计算出来的幂
+-->
+
+<root>
+  <item openLevel="15" baseScore="1000" sportDay="5" maxFightNum="20" flushTime="720" fightInfo="10" costTicket="(x1+1)*100" targetLevel1="x1-20_x1-5" targetLevel2="x1-5_x1+5" targetNum="3" costGolds="(x1*2+1)*200" map="4" endTime="23" rewardRank="2000" rankView="50" sendChat="15_1|20_2|30_3" winExponent="(x1-x2)/400" loseExponent="(x2-x1)/400" bottomNumber="10" calcScore="20*(1-(1/(1+x1)))"/>
+</root>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   heroId:仙人Id
+   convertNum:当前仙人可转换的魂魄数量
+   hitReward:每次砸蛋奖励物品(格式:物品类型_物品Id_数量_概率|物品类型_物品Id_数量_概率)
+   hitProb:砸蛋点亮字的概率(四个字1234格式:XX1_XX2_XX3_XX4顺序对应四个字)
+   hitUseNum:砸蛋保底次数(四个字1234格式:XX1_XX2_XX3_XX4顺序对应四个字)
+   price1:砸蛋一次价格
+   price10:砸蛋十次价格
+-->
+
+<root>
+  <item heroId="169" convertNum="40" hitReward="0_5001_100_300|0_5002_50_300|0_2007_2_200|0_1002_10_100|0_6003_1_50|2_169_1_50" hitProb="200_50_10_1" hitUseNum="20_100_150_300" price1="18" price10="168"/>
+</root>

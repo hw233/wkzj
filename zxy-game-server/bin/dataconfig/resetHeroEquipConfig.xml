@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   type:类型    1.仙人    2.装备
+   costTicket:消耗的点券 格式:1星品质_点券数|2星品质_点券数
+   returnGoodsId:返还物品id
+-->
+
+<root>
+  <item type="1" costTicket="1_1|2_1|3_10|4_100|5_200|6_500" returnGoodsId="5001"/>
+  <item type="2" costTicket="1_1|2_1|3_10|4_100|5_200|6_500" returnGoodsId="5002"/>
+</root>

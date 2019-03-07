@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   bableType:登天塔类型
+   rank:名次
+   rewardType:奖励类型(0:物品，1：装备，2：仙人魂魄)
+   rewardId:奖励id
+   rewardNum:奖励数量
+-->
+
+<root>
+  <item bableType="1" rank="1" rewardType="0" rewardId="5002" rewardNum="200"/>
+  <item bableType="1" rank="2" rewardType="0" rewardId="5002" rewardNum="195"/>
+  <item bableType="1" rank="3" rewardType="0" rewardId="5002" rewardNum="190"/>
+  <item bableType="1" rank="4" rewardType="0" rewardId="5002" rewardNum="185"/>
+  <item bableType="1" rank="5" rewardType="0" rewardId="5002" rewardNum="180"/>
+  <item bableType="1" rank="6" rewardType="0" rewardId="5002" rewardNum="175"/>
+  <item bableType="1" rank="7" rewardType="0" rewardId="5002" rewardNum="170"/>
+  <item bableType="1" rank="8" rewardType="0" rewardId="5002" rewardNum="165"/>
+  <item bableType="1" rank="9" rewardType="0" rewardId="5002" rewardNum="160"/>
+  <item bableType="1" rank="10" rewardType="0" rewardId="5002" rewardNum="155"/>
+  <item bableType="1" rank="11" rewardType="0" rewardId="5002" rewardNum="150"/>
+  <item bableType="1" rank="12" rewardType="0" rewardId="5002" rewardNum="145"/>
+  <item bableType="1" rank="13" rewardType="0" rewardId="5002" rewardNum="140"/>
+  <item bableType="1" rank="14" rewardType="0" rewardId="5002" rewardNum="135"/>
+  <item bableType="1" rank="15" rewardType="0" rewardId="5002" rewardNum="130"/>
+  <item bableType="1" rank="16" rewardType="0" rewardId="5002" rewardNum="125"/>
+  <item bableType="1" rank="17" rewardType="0" rewardId="5002" rewardNum="120"/>
+  <item bableType="1" rank="18" rewardType="0" rewardId="5002" rewardNum="115"/>
+  <item bableType="1" rank="19" rewardType="0" rewardId="5002" rewardNum="110"/>
+  <item bableType="1" rank="20" rewardType="0" rewardId="5002" rewardNum="105"/>
+  <item bableType="2" rank="1" rewardType="0" rewardId="5002" rewardNum="600"/>
+  <item bableType="2" rank="2" rewardType="0" rewardId="5002" rewardNum="580"/>
+  <item bableType="2" rank="3" rewardType="0" rewardId="5002" rewardNum="560"/>
+  <item bableType="2" rank="4" rewardType="0" rewardId="5002" rewardNum="540"/>
+  <item bableType="2" rank="5" rewardType="0" rewardId="5002" rewardNum="520"/>
+  <item bableType="2" rank="6" rewardType="0" rewardId="5002" rewardNum="500"/>
+  <item bableType="2" rank="7" rewardType="0" rewardId="5002" rewardNum="480"/>
+  <item bableType="2" rank="8" rewardType="0" rewardId="5002" rewardNum="460"/>
+  <item bableType="2" rank="9" rewardType="0" rewardId="5002" rewardNum="440"/>
+  <item bableType="2" rank="10" rewardType="0" rewardId="5002" rewardNum="420"/>
+  <item bableType="2" rank="11" rewardType="0" rewardId="5002" rewardNum="400"/>
+  <item bableType="2" rank="12" rewardType="0" rewardId="5002" rewardNum="380"/>
+  <item bableType="2" rank="13" rewardType="0" rewardId="5002" rewardNum="360"/>
+  <item bableType="2" rank="14" rewardType="0" rewardId="5002" rewardNum="340"/>
+  <item bableType="2" rank="15" rewardType="0" rewardId="5002" rewardNum="320"/>
+  <item bableType="2" rank="16" rewardType="0" rewardId="5002" rewardNum="300"/>
+  <item bableType="2" rank="17" rewardType="0" rewardId="5002" rewardNum="280"/>
+  <item bableType="2" rank="18" rewardType="0" rewardId="5002" rewardNum="260"/>
+  <item bableType="2" rank="19" rewardType="0" rewardId="5002" rewardNum="240"/>
+  <item bableType="2" rank="20" rewardType="0" rewardId="5002" rewardNum="220"/>
+  <item bableType="3" rank="1" rewardType="0" rewardId="5002" rewardNum="1000"/>
+  <item bableType="3" rank="2" rewardType="0" rewardId="5002" rewardNum="980"/>
+  <item bableType="3" rank="3" rewardType="0" rewardId="5002" rewardNum="960"/>
+  <item bableType="3" rank="4" rewardType="0" rewardId="5002" rewardNum="940"/>
+  <item bableType="3" rank="5" rewardType="0" rewardId="5002" rewardNum="920"/>
+  <item bableType="3" rank="6" rewardType="0" rewardId="5002" rewardNum="900"/>
+  <item bableType="3" rank="7" rewardType="0" rewardId="5002" rewardNum="880"/>
+  <item bableType="3" rank="8" rewardType="0" rewardId="5002" rewardNum="860"/>
+  <item bableType="3" rank="9" rewardType="0" rewardId="5002" rewardNum="840"/>
+  <item bableType="3" rank="10" rewardType="0" rewardId="5002" rewardNum="820"/>
+  <item bableType="3" rank="11" rewardType="0" rewardId="5002" rewardNum="800"/>
+  <item bableType="3" rank="12" rewardType="0" rewardId="5002" rewardNum="780"/>
+  <item bableType="3" rank="13" rewardType="0" rewardId="5002" rewardNum="760"/>
+  <item bableType="3" rank="14" rewardType="0" rewardId="5002" rewardNum="740"/>
+  <item bableType="3" rank="15" rewardType="0" rewardId="5002" rewardNum="720"/>
+  <item bableType="3" rank="16" rewardType="0" rewardId="5002" rewardNum="700"/>
+  <item bableType="3" rank="17" rewardType="0" rewardId="5002" rewardNum="680"/>
+  <item bableType="3" rank="18" rewardType="0" rewardId="5002" rewardNum="660"/>
+  <item bableType="3" rank="19" rewardType="0" rewardId="5002" rewardNum="640"/>
+  <item bableType="3" rank="20" rewardType="0" rewardId="5002" rewardNum="620"/>
+</root>

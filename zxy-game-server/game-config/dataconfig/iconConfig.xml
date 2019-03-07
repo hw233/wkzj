@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   star:头像星级
+   heroId:仙人id
+   unLockType:解锁类型 1:潜修解锁 2:获取解锁
+   unLockNum:1.潜修解锁,解锁需要潜修次数 2.获取即解锁,填0
+-->
+
+<root>
+  <item star="1" heroId="112" unLockType="1" unLockNum="0"/>
+  <item star="1" heroId="138" unLockType="1" unLockNum="0"/>
+  <item star="2" heroId="104" unLockType="1" unLockNum="0"/>
+  <item star="2" heroId="107" unLockType="1" unLockNum="0"/>
+  <item star="2" heroId="118" unLockType="1" unLockNum="0"/>
+  <item star="2" heroId="119" unLockType="1" unLockNum="0"/>
+  <item star="2" heroId="120" unLockType="1" unLockNum="0"/>
+  <item star="2" heroId="141" unLockType="1" unLockNum="0"/>
+  <item star="2" heroId="144" unLockType="1" unLockNum="0"/>
+  <item star="2" heroId="145" unLockType="1" unLockNum="0"/>
+  <item star="3" heroId="101" unLockType="1" unLockNum="50"/>
+  <item star="3" heroId="102" unLockType="1" unLockNum="50"/>
+  <item star="3" heroId="103" unLockType="1" unLockNum="50"/>
+  <item star="3" heroId="105" unLockType="1" unLockNum="50"/>
+  <item star="3" heroId="109" unLockType="1" unLockNum="50"/>
+  <item star="3" heroId="135" unLockType="1" unLockNum="50"/>
+  <item star="4" heroId="129" unLockType="1" unLockNum="50"/>
+  <item star="4" heroId="152" unLockType="1" unLockNum="50"/>
+  <item star="4" heroId="155" unLockType="1" unLockNum="50"/>
+  <item star="4" heroId="165" unLockType="1" unLockNum="50"/>
+  <item star="5" heroId="100" unLockType="1" unLockNum="100"/>
+  <item star="5" heroId="110" unLockType="1" unLockNum="100"/>
+  <item star="5" heroId="126" unLockType="1" unLockNum="100"/>
+  <item star="5" heroId="147" unLockType="1" unLockNum="100"/>
+  <item star="5" heroId="148" unLockType="1" unLockNum="100"/>
+  <item star="5" heroId="149" unLockType="1" unLockNum="100"/>
+  <item star="5" heroId="156" unLockType="1" unLockNum="100"/>
+  <item star="5" heroId="188" unLockType="1" unLockNum="100"/>
+  <item star="5" heroId="176" unLockType="1" unLockNum="100"/>
+  <item star="5" heroId="180" unLockType="1" unLockNum="100"/>
+  <item star="6" heroId="166" unLockType="1" unLockNum="200"/>
+  <item star="6" heroId="167" unLockType="1" unLockNum="200"/>
+  <item star="6" heroId="168" unLockType="1" unLockNum="200"/>
+  <item star="6" heroId="173" unLockType="1" unLockNum="200"/>
+  <item star="6" heroId="183" unLockType="1" unLockNum="200"/>
+  <item star="0" heroId="40001" unLockType="" unLockNum="10000"/>
+  <item star="0" heroId="40003" unLockType="" unLockNum="10000"/>
+  <item star="0" heroId="40004" unLockType="" unLockNum="10000"/>
+  <item star="0" heroId="50001" unLockType="" unLockNum="10000"/>
+  <item star="0" heroId="50002" unLockType="" unLockNum="10000"/>
+  <item star="5" heroId="189" unLockType="2" unLockNum="10000"/>
+</root>

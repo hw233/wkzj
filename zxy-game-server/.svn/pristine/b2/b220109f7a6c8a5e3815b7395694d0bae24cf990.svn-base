@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   rank:排名 名次开始_名次结束
+   reward:奖励 type(详见rewardType)_id_num|…
+   unLockIcon:解锁的头像 x_x
+-->
+
+<root>
+  <item rank="1_1" reward="0_9070_10|0_1003_100|0_5001_5000|0_5002_1500" unLockIcon="40001_40003_40004"/>
+  <item rank="2_2" reward="0_9070_8|0_1003_80|0_5001_4000|0_5002_1000" unLockIcon="40003_40004"/>
+  <item rank="3_3" reward="0_9070_6|0_1003_60|0_5001_3000|0_5002_800" unLockIcon="40004"/>
+  <item rank="4_10" reward="0_9070_3|0_1003_40|0_5001_2000|0_5002_600" unLockIcon=""/>
+  <item rank="11_100" reward="0_1003_30|0_5001_1500|0_5002_400" unLockIcon=""/>
+  <item rank="101_500" reward="0_1003_10|0_5001_800|0_5002_200" unLockIcon=""/>
+  <item rank="501_2000" reward="0_5001_500|0_5002_100" unLockIcon=""/>
+</root>

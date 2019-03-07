@@ -1,0 +1,361 @@
+package com.jtang.gameserver.module.equip.facade.impl;
+
+import static com.jiatang.common.GameStatusCodeConstant.EQUIP_ADD_FAIL;
+import static com.jiatang.common.GameStatusCodeConstant.EQUIP_ADD_IS_MAX;
+import static com.jiatang.common.GameStatusCodeConstant.EQUIP_ATTRIBUTE_NULL;
+import static com.jiatang.common.GameStatusCodeConstant.EQUIP_DEL_FAIL;
+import static com.jiatang.common.GameStatusCodeConstant.EQUIP_IN_LINEUP_NOT_DELETE;
+import static com.jiatang.common.GameStatusCodeConstant.EQUIP_NOT_EXISTS;
+import static com.jiatang.common.GameStatusCodeConstant.EQUIP_NOT_FOUND;
+import static com.jtang.core.protocol.StatusCode.SUCCESS;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.jiatang.common.model.EquipVO;
+import com.jtang.core.event.EventBus;
+import com.jtang.core.model.RewardObject;
+import com.jtang.core.model.RewardType;
+import com.jtang.core.protocol.StatusCode;
+import com.jtang.core.result.Result;
+import com.jtang.core.result.TResult;
+import com.jtang.core.utility.DateUtils;
+import com.jtang.gameserver.component.Game;
+import com.jtang.gameserver.component.event.AddEquipEvent;
+import com.jtang.gameserver.component.oss.GameOssLogger;
+import com.jtang.gameserver.dataconfig.model.EquipConfig;
+import com.jtang.gameserver.dataconfig.model.RefineEquipConfig;
+import com.jtang.gameserver.dataconfig.service.EquipService;
+import com.jtang.gameserver.dataconfig.service.RefineEquipService;
+import com.jtang.gameserver.dbproxy.entity.Actor;
+import com.jtang.gameserver.dbproxy.entity.Equips;
+import com.jtang.gameserver.module.enhanced.facade.EnhancedFacade;
+import com.jtang.gameserver.module.equip.constant.EquipRule;
+import com.jtang.gameserver.module.equip.dao.EquipDao;
+import com.jtang.gameserver.module.equip.facade.EquipFacade;
+import com.jtang.gameserver.module.equip.helper.EquipPushHelper;
+import com.jtang.gameserver.module.equip.type.EquipAddType;
+import com.jtang.gameserver.module.equip.type.EquipAttributeKey;
+import com.jtang.gameserver.module.equip.type.EquipDecreaseType;
+import com.jtang.gameserver.module.lineup.constant.LineupRule;
+import com.jtang.gameserver.module.lineup.facade.LineupFacade;
+import com.jtang.gameserver.module.refine.facade.RefineFacade;
+import com.jtang.gameserver.module.refine.type.RefineType;
+import com.jtang.gameserver.module.sysmail.facade.SysmailFacade;
+import com.jtang.gameserver.module.sysmail.type.SysmailType;
+import com.jtang.gameserver.module.user.facade.ActorFacade;
+import com.jtang.gameserver.module.user.facade.VipFacade;
+import com.jtang.gameserver.module.user.type.GoldAddType;
+import com.jtang.gameserver.module.user.type.TicketAddType;
+
+@Component
+public class EquipFacadeImpl implements EquipFacade {
+	private static final Logger LOGGER = LoggerFactory.getLogger(EquipFacadeImpl.class);
+		
+	@Autowired
+	private EquipDao equipDao;
+	
+	@Autowired
+	private ActorFacade actorFacade;
+	
+	@Autowired
+	private VipFacade vipFacade;
+	
+	@Autowired
+	private LineupFacade lineupFacade;
+	@Autowired
+	EventBus eventBus;
+	@Autowired
+	private EnhancedFacade enhancedFacade;
+	@Autowired
+	private RefineFacade refineFacade;
+	@Autowired
+	private SysmailFacade sysmailFacade;
+	
+	@Override
+	public EquipVO get(long actorId, long uuid) {
+		return equipDao.get(actorId, uuid);
+	}
+	
+	@Override
+	public Collection<EquipVO> getList(long actorId) {
+		return equipDao.getList(actorId);
+	}
+
+	@Override
+	public TResult<Long> addEquip(long actorId, EquipAddType addType, int equipId) {
+		int size = equipDao.getCount(actorId);
+		if (size >= EquipRule.EQUIP_MAX_NUM) {
+			List<RewardObject> list = new ArrayList<>();
+			RewardObject rewardObject = new RewardObject(RewardType.EQUIP,equipId,1);
+			list.add(rewardObject);
+			sysmailFacade.sendSysmail(actorId, SysmailType.EQUIP_MAX, list,"");
+			return TResult.valueOf(EQUIP_ADD_IS_MAX);
+		}
+		
+		EquipConfig cfg = EquipService.get(equipId);
+		if (cfg == null) {
+			return TResult.valueOf(EQUIP_ADD_FAIL);
+		}
+		RefineEquipConfig refineEquipCfg = RefineEquipService.get(cfg.getStar(), cfg.getType());
+		if (cfg == null || refineEquipCfg == null) {
+			return TResult.valueOf(EQUIP_ADD_FAIL);
+		}
+
+		int type = cfg.getType();
+		int atk = cfg.getAttack();
+		int maxAtk = cfg.getMaxAttack();
+		int defense = cfg.getDefense();
+		int maxDefense = cfg.getMaxDefense();
+		int hp = cfg.getHp();
+		int maxHP = cfg.getMaxHp();
+		int atkScope = cfg.getAttackScope();
+		int refineNum = refineEquipCfg.getRefineNum();
+		EquipVO equipVo = EquipVO.valueOf(equipId, type, atk, maxAtk, defense, maxDefense, hp, maxHP, atkScope, refineNum, Game.getServerId());
+		
+		if (equipVo == null) {
+			LOGGER.error(String.format("创建装备失败！配置id为：[%s], 角色id：[%s]", equipId, actorId));
+			return TResult.valueOf(EQUIP_ADD_FAIL);
+		}
+		
+//		int vipLevel = vipFacade.getVipLevel(actorId);
+//		VipHelper.getInstance().addRefineEquipNum(equipVo, vipLevel);
+
+		equipDao.add(actorId, equipVo);
+		int num = getComposeNum(actorId);
+		EquipPushHelper.pushAddEquip(actorId, equipVo, num);
+		
+		//oss
+		Actor actor = actorFacade.getActor(actorId);
+		GameOssLogger.equipAdd(actor.uid, actor.platformType, actor.channelId, actor.serverId, actorId, addType, equipId, equipVo.uuid);
+		
+		//添加装备事件
+		eventBus.post(new AddEquipEvent(actorId, equipId, addType, cfg));
+		
+		return TResult.sucess(equipVo.uuid);
+	}
+	
+	@Override
+	public TResult<Long[]> addEquip(long actorId, EquipAddType addType, Set<Integer> equipIds) {
+		int size = equipDao.getCount(actorId);
+		if (size >= EquipRule.EQUIP_MAX_NUM) {
+			List<RewardObject> list = new ArrayList<>();
+			for(Integer equipId : equipIds){
+				RewardObject rewardObject = new RewardObject(RewardType.EQUIP,equipId,1);
+				list.add(rewardObject);
+			}
+			sysmailFacade.sendSysmail(actorId, SysmailType.EQUIP_MAX, list,"");
+			return TResult.valueOf(EQUIP_ADD_IS_MAX);
+		}
+
+		List<EquipVO> list = new ArrayList<>();
+		List<Long> uuids = new ArrayList<>();
+		for (Integer equipId : equipIds) {
+			TResult<Long> uuidResult = addEquip(actorId, addType, equipId);
+			if (uuidResult.isOk()) {
+				list.add(get(actorId, uuidResult.item));
+				uuids.add(uuidResult.item);
+			}
+		}
+
+		int num = getComposeNum(actorId);
+		EquipPushHelper.pushAddEquip(actorId, list, num);
+		Long[] uuidsArray = new Long[uuids.size()];
+		uuids.toArray(uuidsArray);
+
+		return TResult.sucess(uuidsArray);
+	}
+
+	@Override
+	public short sellEquip(long actorId, EquipDecreaseType type, long uuid) {
+		EquipVO equipVo = get(actorId, uuid);
+		if(equipVo == null) {
+			return EQUIP_DEL_FAIL;
+		}
+				
+		//判断装备是否穿上
+		int gridIndex = lineupFacade.isEquipInLineup(actorId, uuid);
+		if (gridIndex > 0) {
+			return EQUIP_DEL_FAIL;
+		}
+		
+		EquipConfig equipConfig = EquipService.get(equipVo.equipId);
+		if(equipConfig == null) {
+			return EQUIP_DEL_FAIL;	
+		}
+		boolean result = equipDao.remove(actorId, uuid);
+		if (result == false) {
+			return EQUIP_DEL_FAIL;
+		}
+		int sellValue = equipConfig.getSellPrice(equipVo.level, equipVo.refineNum);
+		
+		if (equipConfig.getSellType() == 1) { // 以后改为枚举
+			actorFacade.addGold(actorId, GoldAddType.SELL, sellValue);
+		} else if (equipConfig.getSellType() == 2) {
+			vipFacade.addTicket(actorId, TicketAddType.SELL_EQUIP, sellValue);
+		}
+		
+		//oss
+		Actor actor = actorFacade.getActor(actorId);
+		GameOssLogger.equipDecrease(actor.uid, actor.platformType, actor.channelId, actor.serverId, actorId, type, equipVo.equipId, uuid);
+		
+		EquipPushHelper.pushDelEquip(actorId, uuid);
+		return SUCCESS;
+	}
+	
+	@Override
+	public short delEquip(long actorId, EquipDecreaseType type, List<Long> uuidList) {
+		short canDelete = canDelete(actorId, uuidList);
+		if (canDelete != SUCCESS) {
+			return canDelete;
+		}
+
+		for (long uuid : uuidList) {
+			EquipVO equipVo = get(actorId, uuid);
+			boolean result = equipDao.remove(actorId, uuid);
+			if (result == false) {
+				LOGGER.warn(String.format("batch del equip error. actorid:[%s] uuid:[%s]", actorId, uuid));
+				return EQUIP_DEL_FAIL;
+			}
+			
+			Actor actor = actorFacade.getActor(actorId);
+			
+			GameOssLogger.equipDecrease(actor.uid, actor.platformType, actor.channelId, actor.serverId, actorId, type, equipVo.equipId, uuid);
+			
+			EquipPushHelper.pushDelEquip(actorId, uuid);
+		}
+
+		return SUCCESS;
+	}
+
+	@Override
+	public short updateAttribute(long actorId, long uuid, Map<EquipAttributeKey, Number> attributeMaps) {
+		EquipVO vo = get(actorId, uuid);
+		if(vo == null) {
+			return EQUIP_NOT_FOUND;
+		}
+		if(attributeMaps == null || attributeMaps.size() < 1) {
+			return EQUIP_ATTRIBUTE_NULL;
+		}
+		
+		for(Entry<EquipAttributeKey, Number> entry : attributeMaps.entrySet()) {
+			updateEquipVo(vo,entry.getKey(),entry.getValue());
+		}
+		equipDao.update(actorId, vo);
+		EquipPushHelper.pushEquipAttribute(actorId, uuid, attributeMaps);
+		return SUCCESS; 
+	}
+	
+	private void updateEquipVo(EquipVO equipVo, EquipAttributeKey attribute, Number value) {
+		switch (attribute) {
+		case HP:
+			equipVo.hp = value.intValue();
+			break;
+		case ATK:
+			equipVo.atk = value.intValue();
+			break;
+		case DEFENSE:
+			equipVo.defense = value.intValue();
+			break;
+		case LEVEL:
+			equipVo.level = value.intValue();
+			break;
+		case ATTACK_SCOPE:
+			equipVo.attackScope = value.intValue();
+			break;
+		case REFINE_NUM:
+			equipVo.refineNum = value.intValue();
+			break;
+		case ENHANCED_NUM:
+			equipVo.enhancedNum = value.intValue();
+			break;
+		case MAX_REFINE_NUM:
+			equipVo.maxRefineNum = value.intValue();
+			break;
+		case DEVELOP_NUM:
+			equipVo.developNum = value.intValue();
+			break;
+		default:
+				break;
+		}
+	}
+
+	@Override
+	public boolean canCompose(long actorId, int times) {
+		return equipDao.canCompose(actorId, times);
+	}
+
+	@Override
+	public void recordCompose(long actorId) {
+		equipDao.recordCompose(actorId);
+	}
+
+	@Override
+	public void chechAndResetCompose(long actorId) {
+		equipDao.chechAndResetCompose(actorId);
+	}
+
+	@Override
+	public int getComposeNum(long actorId) {
+		return equipDao.getComposeNum(actorId);
+	}
+
+	@Override
+	public short canDelete(long actorId, List<Long> uuidList) {
+		
+		for (long uuid : uuidList) {
+			EquipVO equipVO = get(actorId, uuid);
+			if (equipVO == null) {
+				return EQUIP_NOT_EXISTS;
+			}
+			
+			int gridIndex = lineupFacade.isEquipInLineup(actorId, uuid);// 是否在阵型中
+			if (gridIndex > 0) {
+				return EQUIP_IN_LINEUP_NOT_DELETE;
+			}
+
+		}
+		return SUCCESS;
+	}
+
+	@Override
+	public int getResetNum(long actorId) {
+		return equipDao.get(actorId).resetNum;
+	}
+
+	@Override
+	public void addResetNum(long actorId) {
+		equipDao.upResetNum(actorId);
+	}
+
+	@Override
+	public void flushResetNum(Long actorId) {
+		Equips equips = equipDao.get(actorId);
+			if(DateUtils.isToday(equips.resetTime) == false){
+				equips.resetNum = 0;
+				equips.resetTime = 0;
+				equipDao.update(equips);
+			}
+	}
+
+	@Override
+	public Result upEquip(long actorId, List<Long> equipList) {
+		if(equipList.size() > LineupRule.MAX_GRID_COUNT * 3){
+			return Result.valueOf(StatusCode.DATA_VALUE_ERROR);
+		}
+		for(Long uuid : equipList){
+			enhancedFacade.enhanceEquip(actorId, uuid, 1000);
+			refineFacade.refineEquip(actorId, uuid, RefineType.TYPE_3.getCode(), 1000);
+		}
+		return Result.valueOf();
+	}
+}

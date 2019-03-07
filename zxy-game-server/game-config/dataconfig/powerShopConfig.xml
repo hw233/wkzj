@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:商品id
+   itemId:物品id
+   type:类型(0.物品 1.装备 2.仙人魂魄)
+   num:数量
+   costGoods:消耗的物品数量
+-->
+
+<root>
+  <item id="1" itemId="150" type="2" num="5" costGoods="10"/>
+  <item id="2" itemId="151" type="2" num="5" costGoods="10"/>
+  <item id="3" itemId="149" type="2" num="5" costGoods="10"/>
+  <item id="4" itemId="117" type="2" num="5" costGoods="10"/>
+  <item id="5" itemId="176" type="2" num="5" costGoods="10"/>
+  <item id="6" itemId="178" type="2" num="5" costGoods="10"/>
+  <item id="7" itemId="157" type="2" num="5" costGoods="10"/>
+  <item id="8" itemId="166" type="2" num="5" costGoods="50"/>
+</root>

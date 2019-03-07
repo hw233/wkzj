@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   taskId:任务Id
+   npcId:npc
+   nextTaskId:下一任务Id
+   taskType:任务类型 1故事通关：在X关达到X星评价X次 2角色等级：达到X等级 3当前仙人数量达x 4解锁的格子数达x 5仙人等级达x 6仙人品质达x 8抢夺金币：接取该任务后累计抢夺x金币 9达到登天塔层数:达到登天塔x层 10抢夺积分：接取该任务后累计抢夺积分x。 11抢夺次数：接取该任务后累计抢夺大胜x次
+   conditions:达成条件的值 比如在100106关卡达到3星1次，则值为100105_3_1 如果是抢夺胜利分胜利条件，格式1_1|2_2|3_3|4_4|5_5|6_6 注意（任务条件中战斗的胜利类型为：大败1、失败2、惜败3、险胜4、胜利5、大胜6 故事通关中的胜利类型为：1星、2星、3星）
+   rewards:奖励的结构"金币数量|点券数量|仙人魂魄id_数量|物品id_数量|装备id_数量|免费聚仙次数补满(大于0表示给予的聚仙次数、0表示免费聚仙补满，小于0表示无此奖励)|精力点数|活力点数" 格式goldsNum|ticketNum|heroId_heroNum,heroID_heroNum|goodsId_goodsNum,goodsId_goodsNum...."
+-->
+
+<root>
+  <item taskId="10001" npcId="1" nextTaskId="10002" taskType="1" conditions="100106_1_1" rewards="1000|0|0|0|0|-1|0|0"/>
+  <item taskId="10002" npcId="1" nextTaskId="10003" taskType="1" conditions="100209_1_1" rewards="0|0|0|7004_2|0|-1|0|0"/>
+  <item taskId="10003" npcId="1" nextTaskId="10004" taskType="8" conditions="300" rewards="0|0|0|1000_1|0|-1|0|0"/>
+  <item taskId="10004" npcId="1" nextTaskId="10005" taskType="1" conditions="100311_1_1" rewards="2000|0|0|0|0|-1|0|0"/>
+  <item taskId="10005" npcId="1" nextTaskId="10006" taskType="1" conditions="100409_1_1" rewards="0|0|0|5001_10|0|-1|0|0"/>
+  <item taskId="10006" npcId="1" nextTaskId="10007" taskType="9" conditions="5" rewards="5000|0|0|0|0|-1|0|0"/>
+  <item taskId="10007" npcId="1" nextTaskId="10008" taskType="11" conditions="6_8" rewards="0|0|0|7002_1|0|-1|0|0"/>
+  <item taskId="10008" npcId="1" nextTaskId="10009" taskType="1" conditions="100509_1_1" rewards="0|0|0|7100_2|0|-1|0|0"/>
+  <item taskId="10009" npcId="1" nextTaskId="10010" taskType="9" conditions="10" rewards="1000|0|0|0|1028_1|-1|0|0"/>
+  <item taskId="10010" npcId="1" nextTaskId="0" taskType="1" conditions="100612_1_1" rewards="0|0|0|1000_3|0|-1|0|0"/>
+</root>

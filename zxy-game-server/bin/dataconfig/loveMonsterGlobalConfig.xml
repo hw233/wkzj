@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   difficultId:难度
+   map:地图Id
+   costGoods:解锁扣除物品id
+   costNum:解锁扣除物品数量
+   costTicket:解锁扣除元宝
+   fightNum:每天可挑战次数
+   reward:boss死亡掉落(类型(详见RewardType)_id_数量|...)
+   mustReward:每次攻击boss必出(类型_id_数量)
+-->
+
+<root>
+  <item difficultId="1" map="5" costGoods="1007" costNum="8" costTicket="300" fightNum="10" reward="0_9080_1" mustReward="0_5001_10"/>
+  <item difficultId="2" map="5" costGoods="1007" costNum="30" costTicket="600" fightNum="10" reward="0_9081_1" mustReward="0_5002_10"/>
+  <item difficultId="3" map="5" costGoods="1007" costNum="60" costTicket="1000" fightNum="10" reward="0_9082_1" mustReward="0_5001_20"/>
+</root>

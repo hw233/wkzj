@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   boxId:宝箱id
+   equipStar:装备星级<类型0>(x星_概率|...[概率和1000])
+   equipType:装备类型(装备类型<1.武器 2.防具 3.饰品>_几率|...[概率和1000]);
+   fragmentStar:碎片星级<类型1>(x星_概率|...[概率和1000])
+   fragmentType:碎片类型(装备类型<1.武器 2.防具 3.饰品>_几率|...[概率和1000]);
+   goods:物品类型<类型2>(物品1id_概率|物品2id_概率...[概率和1000])
+   gold:金币公式<类型3>(x1代表等级)
+   proportion:出产几率(0_10|1_300|2_300|3_390[概率和1000])
+-->
+
+<root>
+  <item boxId="9020" equipStar="2_750|3_250" equipType="1_500|2_400|3_100" fragmentStar="3_1000" fragmentType="1_450|2_320|3_230" goods="5002_1000" gold="x1*500" proportion="0_40|1_710|3_125|2_125"/>
+  <item boxId="9030" equipStar="3_750|4_250" equipType="1_500|2_400|3_100" fragmentStar="3_850|4_150" fragmentType="1_450|2_320|3_230" goods="5002_1000" gold="x1*1000" proportion="0_60|1_690|3_125|2_125"/>
+  <item boxId="9040" equipStar="4_750|5_250" equipType="1_500|2_400|3_100" fragmentStar="4_850|5_150" fragmentType="1_450|2_320|3_230" goods="5002_1000" gold="x1*1500" proportion="0_40|1_710|3_125|2_125"/>
+</root>

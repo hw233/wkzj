@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   flushNum:刷新次数(从1开始,最后填-1)
+   costTicket:刷新需要的点券(x1表示已经使用次数<可填数值可填公式>)
+-->
+
+<root>
+  <item flushNum="1" costTicket="10"/>
+  <item flushNum="2" costTicket="20"/>
+  <item flushNum="3" costTicket="30"/>
+  <item flushNum="4" costTicket="40"/>
+  <item flushNum="5" costTicket="50"/>
+  <item flushNum="6" costTicket="60"/>
+  <item flushNum="7" costTicket="70"/>
+  <item flushNum="8" costTicket="80"/>
+  <item flushNum="9" costTicket="160"/>
+  <item flushNum="10" costTicket="320"/>
+  <item flushNum="11" costTicket="640"/>
+  <item flushNum="12" costTicket="1280"/>
+  <item flushNum="13" costTicket="2560"/>
+  <item flushNum="14" costTicket="5120"/>
+  <item flushNum="15" costTicket="10240"/>
+  <item flushNum="-1" costTicket="20480"/>
+</root>

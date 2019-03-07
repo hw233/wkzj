@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   startTime:开始时间
+   endTime:结束时间
+   useGoldCount:免费消耗金币次数
+   goldNum:每次消耗多少金币
+   rankCount:排行统计最小使用次数
+   rank:排行榜显示多少名
+   rankReward:排行发奖名次
+-->
+
+<root>
+  <item startTime="2014-04-14 00:00:00" endTime="2014-04-16 23:59:59" useGoldCount="15" goldNum="50000" rankCount="30" rank="50" rankReward="10"/>
+</root>

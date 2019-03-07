@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+ 	
+ 	<!-- 活动存储结构目录 -->
+	<bean id="appconfig.record" class="java.lang.String">
+		<constructor-arg value="com.jtang.gameserver.module.app.model.extension.record"/>
+	</bean>
+	
+	<!-- 活动全局存储目录 -->
+	<bean id="appconfig.global" class="java.lang.String">
+		<constructor-arg value="com.jtang.gameserver.module.app.model.extension.global"/>
+	</bean>
+	
+	<!-- 活动配置结构目录 -->
+	<bean id="appconfig.rule" class="java.lang.String">
+		<constructor-arg value="com.jtang.gameserver.module.app.model.extension.rule"/>
+	</bean>
+	
+</beans>

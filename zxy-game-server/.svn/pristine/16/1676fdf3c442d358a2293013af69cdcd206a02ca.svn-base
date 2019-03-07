@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   openLv:开放等级
+   intervalTime:战斗间隔时间（秒）
+   failRewardPrecent:战斗失败奖励百分比
+   entrance1Reward:关卡1（妖邪之地）产出物品 (格式:  物品类型_物品id_数量或者产出公式|物品类型_物品id_数量或者产出公式x1:玩家等级)
+   entrance2Reward:关卡2（魔灵地窖）产出物品 （格式 : 物品类型_物品id_数量或者产出公式|物品类型_物品id_数量或者产出公式x1:玩家等级）
+   entrance1TrialNum:妖邪之地非V玩家可以试炼的次数
+   entrance2TrialNum:魔灵地窖非V玩家可以试炼的次数
+   resetTrialNum:非V玩家可以重置试炼的次数
+   resetTrialPrice:重置试炼次数需要的价格
+   lineupMonster:怪物阵容的随机 x_x
+   hpExpr:血量加成(公式 x1玩家等级)
+   defenseExpr:防御加成(公式 x1玩家等级)
+   attackExpr:攻击加成(公式 x1玩家等级)
+   entrance1MapId:关卡1地图id
+   entrance2MapId:关卡2地图id
+   activityOpenDate:试炼洞日常活动开启日期(一周中的某天  ,1 周一....7 周日)如：6_7
+   activityRatio:试炼洞日常活动物品奖励倍数(如果需要不翻倍填1, 翻倍则填相应的倍数,不能为0)
+   extraReward:试炼洞日常活动额外奖励物品
+   extraRewardTimes:额外奖励次数(活动期内可以获得指定次数的额外奖励,超过此次数不再获得额外奖励)
+   openDate:活动开始时间
+   closeDate:活动结束时间
+-->
+
+<root>
+  <item openLv="13" intervalTime="300" failRewardPrecent="30" entrance1Reward="0_5001_x1*15.5+25|0_2011_x1*1.2+1|0_6002_x1*0.24" entrance2Reward="0_5002_x1*13.8+21|0_2011_x1*1.2+1|0_6002_x1*0.24" entrance1TrialNum="2" entrance2TrialNum="2" resetTrialNum="0" resetTrialPrice="70_140_400" lineupMonster="1_2_3_4_5_6_7_8_9_10" hpExpr="x1*1" defenseExpr="x1*0.3" attackExpr="x1*0.3" entrance1MapId="14" entrance2MapId="14" activityOpenDate="7" activityRatio="2" extraReward="0_1003_50|0_1001_1" extraRewardTimes="4" openDate="2015-02-09 00:00:00" closeDate="2015-02-09 23:59:59"/>
+</root>

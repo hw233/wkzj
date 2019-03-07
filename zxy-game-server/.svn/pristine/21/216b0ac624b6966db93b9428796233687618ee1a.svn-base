@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   battleId:关卡id
+   rewardGoods:奖励类型(详见rewardType) 格式：奖励类型_物品id_物品数量|奖励类型_物品id_物品数量
+   numberOfUseMin:保底使用次数最小值
+   numberOfUseMax:保底使用次数最大值
+-->
+
+<root>
+  <item battleId="101705" rewardGoods="0_30007_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101710" rewardGoods="0_30007_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101713" rewardGoods="0_30007_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101805" rewardGoods="0_30014_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101810" rewardGoods="0_30014_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101813" rewardGoods="0_30014_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101905" rewardGoods="0_30005_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101910" rewardGoods="0_30005_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101913" rewardGoods="0_30005_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102005" rewardGoods="0_30004_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102010" rewardGoods="0_30004_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102013" rewardGoods="0_30004_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102105" rewardGoods="0_30012_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102110" rewardGoods="0_30012_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102113" rewardGoods="0_30012_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102205" rewardGoods="0_30059_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102210" rewardGoods="0_30059_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102213" rewardGoods="0_30059_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102305" rewardGoods="0_30009_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102310" rewardGoods="0_30009_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102313" rewardGoods="0_30009_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102405" rewardGoods="0_30951_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102410" rewardGoods="0_30951_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102413" rewardGoods="0_30951_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102505" rewardGoods="0_30070_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102510" rewardGoods="0_30070_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102513" rewardGoods="0_30070_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102605" rewardGoods="0_30080_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102610" rewardGoods="0_30080_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102613" rewardGoods="0_30080_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102705" rewardGoods="0_30091_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102710" rewardGoods="0_30091_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102713" rewardGoods="0_30091_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102805" rewardGoods="0_30071_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102810" rewardGoods="0_30071_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102813" rewardGoods="0_30071_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102905" rewardGoods="0_30052_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102910" rewardGoods="0_30052_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102913" rewardGoods="0_30052_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="103005" rewardGoods="0_30066_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="103010" rewardGoods="0_30066_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="103013" rewardGoods="0_30066_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110106" rewardGoods="0_31101_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110209" rewardGoods="0_30060_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110311" rewardGoods="0_30057_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110409" rewardGoods="0_30086_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110509" rewardGoods="0_30085_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110612" rewardGoods="0_30072_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110712" rewardGoods="0_30069_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110813" rewardGoods="0_30050_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110913" rewardGoods="0_30078_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="111013" rewardGoods="0_30076_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101161" rewardGoods="2_172_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101261" rewardGoods="2_164_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101361" rewardGoods="2_162_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101461" rewardGoods="2_163_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101561" rewardGoods="2_127_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101661" rewardGoods="2_153_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101761" rewardGoods="2_186_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101861" rewardGoods="2_154_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="101961" rewardGoods="2_125_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102061" rewardGoods="2_161_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102161" rewardGoods="2_148_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102261" rewardGoods="2_185_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102361" rewardGoods="2_156_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102461" rewardGoods="2_184_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102561" rewardGoods="2_159_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102661" rewardGoods="2_181_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102761" rewardGoods="2_182_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102861" rewardGoods="2_147_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="102961" rewardGoods="2_126_1" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="103061" rewardGoods="2_126_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110161" rewardGoods="2_188_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110261" rewardGoods="2_149_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110361" rewardGoods="2_108_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110461" rewardGoods="2_117_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110561" rewardGoods="2_176_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110661" rewardGoods="2_178_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110761" rewardGoods="2_157_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110861" rewardGoods="2_160_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="110961" rewardGoods="2_169_2" numberOfUseMin="9" numberOfUseMax="10"/>
+  <item battleId="111061" rewardGoods="2_180_2" numberOfUseMin="9" numberOfUseMax="10"/>
+</root>

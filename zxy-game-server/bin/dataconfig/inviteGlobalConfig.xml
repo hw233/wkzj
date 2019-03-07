@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   openLevel:开放等级
+   minInviteLevel:出现邀请码等级
+   resetCost:重置被邀请人花费点券
+-->
+
+<root>
+  <item openLevel="1" minInviteLevel="20" resetCost="100"/>
+</root>

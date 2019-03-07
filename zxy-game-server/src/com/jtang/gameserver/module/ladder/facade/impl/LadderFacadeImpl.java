@@ -1,0 +1,1044 @@
+package com.jtang.gameserver.module.ladder.facade.impl;
+
+import static com.jiatang.common.GameStatusCodeConstant.POWER_UN_ABLE_CHALLENGE_SELF;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.stereotype.Component;
+
+import com.jiatang.common.GameStatusCodeConstant;
+import com.jiatang.common.model.HeroVO;
+import com.jiatang.common.model.LineupFightModel;
+import com.jtang.core.lock.ChainLock;
+import com.jtang.core.lock.LockUtils;
+import com.jtang.core.model.RewardObject;
+import com.jtang.core.protocol.StatusCode;
+import com.jtang.core.result.Result;
+import com.jtang.core.result.TResult;
+import com.jtang.core.rhino.FormulaHelper;
+import com.jtang.core.schedule.Schedule;
+import com.jtang.core.schedule.ZeroListener;
+import com.jtang.core.utility.DateUtils;
+import com.jtang.core.utility.RandomUtils;
+import com.jtang.core.utility.TimeUtils;
+import com.jtang.gameserver.component.Game;
+import com.jtang.gameserver.component.event.EventKey;
+import com.jtang.gameserver.component.listener.ActorLoginListener;
+import com.jtang.gameserver.component.oss.GameOssLogger;
+import com.jtang.gameserver.dataconfig.model.LadderAttributeConfig;
+import com.jtang.gameserver.dataconfig.model.LadderFightConfig;
+import com.jtang.gameserver.dataconfig.model.LadderGlobalConfig;
+import com.jtang.gameserver.dataconfig.model.LadderRankRewardConfig;
+import com.jtang.gameserver.dataconfig.model.MapConfig;
+import com.jtang.gameserver.dataconfig.service.IconService;
+import com.jtang.gameserver.dataconfig.service.LadderService;
+import com.jtang.gameserver.dataconfig.service.MapService;
+import com.jtang.gameserver.dataconfig.service.SnatchRobotService;
+import com.jtang.gameserver.dbproxy.entity.Actor;
+import com.jtang.gameserver.dbproxy.entity.Ladder;
+import com.jtang.gameserver.dbproxy.entity.LadderGlobal;
+import com.jtang.gameserver.module.battle.constant.BattleSkipPlayType;
+import com.jtang.gameserver.module.battle.constant.WinLevel;
+import com.jtang.gameserver.module.battle.facade.BattleCallBack;
+import com.jtang.gameserver.module.battle.facade.BattleFacade;
+import com.jtang.gameserver.module.battle.model.AttackPlayerRequest;
+import com.jtang.gameserver.module.battle.model.BattleResult;
+import com.jtang.gameserver.module.battle.model.FightData;
+import com.jtang.gameserver.module.battle.type.BattleType;
+import com.jtang.gameserver.module.chat.facade.ChatFacade;
+import com.jtang.gameserver.module.goods.facade.GoodsFacade;
+import com.jtang.gameserver.module.goods.type.GoodsAddType;
+import com.jtang.gameserver.module.hero.facade.HeroSoulFacade;
+import com.jtang.gameserver.module.icon.facade.IconFacade;
+import com.jtang.gameserver.module.ladder.dao.LadderDao;
+import com.jtang.gameserver.module.ladder.facade.LadderFacade;
+import com.jtang.gameserver.module.ladder.handler.response.BuyFightNumResponse;
+import com.jtang.gameserver.module.ladder.handler.response.FightVideoResponse;
+import com.jtang.gameserver.module.ladder.handler.response.LadderActorResponse;
+import com.jtang.gameserver.module.ladder.handler.response.LadderFightInfoResponse;
+import com.jtang.gameserver.module.ladder.handler.response.LadderFightResponse;
+import com.jtang.gameserver.module.ladder.handler.response.LadderPushResponse;
+import com.jtang.gameserver.module.ladder.handler.response.LadderRankResponse;
+import com.jtang.gameserver.module.ladder.handler.response.LadderResponse;
+import com.jtang.gameserver.module.ladder.handler.response.LadderRewardResponse;
+import com.jtang.gameserver.module.ladder.helper.LadderPushHelper;
+import com.jtang.gameserver.module.ladder.model.FightInfoVO;
+import com.jtang.gameserver.module.ladder.model.LadderActorVO;
+import com.jtang.gameserver.module.ladder.model.LadderFightVO;
+import com.jtang.gameserver.module.ladder.type.FightType;
+import com.jtang.gameserver.module.lineup.helper.LineupHelper;
+import com.jtang.gameserver.module.notify.dao.FightVideoDao;
+import com.jtang.gameserver.module.notify.type.FightVideoRemoveType;
+import com.jtang.gameserver.module.snatch.facade.SnatchActorFacade;
+import com.jtang.gameserver.module.snatch.facade.SnatchRobotFacade;
+import com.jtang.gameserver.module.snatch.helper.SnatchHelper;
+import com.jtang.gameserver.module.snatch.model.SnatchEnemyVO;
+import com.jtang.gameserver.module.snatch.type.SnatchEnemyType;
+import com.jtang.gameserver.module.user.facade.ActorFacade;
+import com.jtang.gameserver.module.user.facade.VipFacade;
+import com.jtang.gameserver.module.user.helper.ActorHelper;
+import com.jtang.gameserver.module.user.type.GoldDecreaseType;
+import com.jtang.gameserver.module.user.type.TicketAddType;
+import com.jtang.gameserver.module.user.type.TicketDecreaseType;
+import com.jtang.gameserver.server.session.PlayerSession;
+
+@Component
+public class LadderFacadeImpl implements LadderFacade,BattleCallBack,ApplicationListener<ContextRefreshedEvent>,ZeroListener,ActorLoginListener {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(LadderFacadeImpl.class);
+
+	@Autowired
+	private LadderDao ladderDao;
+	@Autowired
+	private IconFacade iconFacade;
+	@Autowired
+	private SnatchActorFacade snatchActorFacade;
+	@Autowired
+	private ActorFacade actorFacade;
+	@Autowired
+	private VipFacade vipFacade;
+	@Autowired
+	private BattleFacade battleFacade;
+	@Autowired
+	private FightVideoDao fightVideoDao;
+	@Autowired
+	private GoodsFacade goodsFacade;
+	@Autowired
+	private HeroSoulFacade heroSoulFacade;
+	@Autowired
+	private Schedule schedule;
+	@Autowired
+	private PlayerSession playerSession;
+	@Autowired
+	private ChatFacade chatFacade;
+	@Autowired
+	private SnatchRobotFacade snatchRobotFacade;
+	
+	private volatile static boolean IS_OPEN = true;
+	
+	private volatile static long NOW_SPORT = 0;
+	
+	private volatile static SortedMap<Integer, ArrayList<Long>> SORTED_RANK_CACHE = new TreeMap<Integer, ArrayList<Long>>();
+	
+	@Override
+	public TResult<LadderResponse> getInfo(long actorId) {
+		if(IS_OPEN == false){
+			return TResult.valueOf(GameStatusCodeConstant.LADDER_NOT_OPEN);
+		}
+		
+		LadderGlobalConfig config = LadderService.getGlobalConfig();
+		int level = ActorHelper.getActorLevel(actorId);
+		if(config.openLevel > level){
+			return TResult.valueOf(GameStatusCodeConstant.LADDER_LEVEL_NOT_ENOUGHT);
+		}
+		Ladder ladder = ladderDao.get(actorId);
+		if(ladder.sportId != NOW_SPORT){
+			ladder.cleanLastSport(NOW_SPORT);
+			ladderDao.update(ladder);
+		}
+		if (isInRankCache(ladder) == false) {
+			ChainLock lock = LockUtils.getLock(SORTED_RANK_CACHE);
+			try{
+				lock.lock();
+				ArrayList<Long> sameList = SORTED_RANK_CACHE.get(ladder.score);
+				if (sameList == null) {
+					sameList = new ArrayList<Long>();
+					sameList.add(ladder.actorId);
+					SORTED_RANK_CACHE.put(ladder.score, sameList);
+				} else {
+					sameList.add(ladder.actorId);
+				}
+			}catch(Exception e){
+				LOGGER.error("{}",e);
+			}finally{
+				lock.unlock();
+			}
+		}
+		//获取玩家
+		getActorList(actorId,false);
+		List<LadderActorVO> actorList = new ArrayList<>();
+		for(Long targetId:ladder.actorList){
+			actorList.add(getLadderActorVO(targetId));
+		}
+		LadderResponse ladderResponse = new LadderResponse(ladder,getLadderActorVO(actorId),config,actorList);
+		LadderGlobal ladderGlobal = ladderDao.getLadderGlobal();
+		int endTime = config.sportDay * 3600 * 24 + ladderGlobal.startTime;
+		ladderResponse.sportEndTime = endTime;
+		return TResult.sucess(ladderResponse);
+	}
+
+	@Override
+	public Result startFight(long actorId, long targetActorId) {
+		if(IS_OPEN == false){
+			return Result.valueOf(GameStatusCodeConstant.LADDER_NOT_OPEN);
+		}
+		Ladder ladder = ladderDao.get(actorId);
+		if (actorId == targetActorId) {
+			return Result.valueOf(POWER_UN_ABLE_CHALLENGE_SELF);
+		}
+		if(ladder.fightNum <= 0){//战斗次数不足
+			return Result.valueOf(GameStatusCodeConstant.LADDER_FIGHT_NUM_NOT_ENOUGHT);
+		}
+		if(ladder.actorList.contains(targetActorId) == false){
+			return Result.valueOf(GameStatusCodeConstant.ACTOR_NOT_IN_FIGHT_LIST);
+		}
+		LadderGlobalConfig config = LadderService.getGlobalConfig();
+		ChainLock lock = LockUtils.getLock(ladder);
+		try{
+			lock.lock();
+			if(ladder.fightNum == config.maxFightNum){//当角色战斗次数满值,开始战斗才进行恢复计时。
+				ladder.flushFightTime = TimeUtils.getNow();
+			}
+			ladder.lastFightTime = TimeUtils.getNow();
+			ladder.fightNum -= 1;
+			ladderDao.update(ladder);
+			LadderPushHelper.pushFightNum(actorId,ladder);
+		}catch(Exception e){
+			LOGGER.error("{}",e);
+		}finally{
+			lock.unlock();
+		}
+		Actor actor = actorFacade.getActor(actorId);
+		Actor targetActor = actorFacade.getActor(targetActorId);
+		LineupFightModel defTeam = null;
+		int targetMorale = 0;
+		if(targetActor == null){//如果机器人,获取机器人阵容
+			LineupFightModel team = SnatchHelper.getTargetLineUp(targetActorId, SnatchEnemyType.ROBOT);
+			int level = ActorHelper.getActorLevel(actorId);
+			LadderAttributeConfig attrConfig = LadderService.getAttriBute(level);
+			Map<Integer,HeroVO> heroMap = new HashMap<>();
+			try {
+				for(Entry<Integer,HeroVO> entry:team.getHeros().entrySet()){
+					heroMap.put(entry.getKey(), entry.getValue().clone());
+					heroMap.get(entry.getKey()).atk *= attrConfig.atk;
+					heroMap.get(entry.getKey()).defense *= attrConfig.defense;
+					heroMap.get(entry.getKey()).hp *= attrConfig.hp;
+				}
+			} catch (CloneNotSupportedException e) {
+				LOGGER.error("{}",e);
+			}
+			defTeam = new LineupFightModel();
+			defTeam.setHeros(heroMap);
+			int targetLevel = snatchRobotFacade.getSnatchEnemy(targetActorId).actorLevel;
+			targetMorale = SnatchRobotService.randomMorale(targetLevel);
+		}else{
+			defTeam = LineupHelper.getLineupFight(targetActorId);
+			targetMorale = targetActor.morale;
+		}
+		LineupFightModel atkTeam = LineupHelper.getLineupFight(actorId);
+		MapConfig map = MapService.get(config.map);
+
+		AttackPlayerRequest attackReq = new AttackPlayerRequest(EventKey.LADDER, map, actorId, atkTeam, targetActorId, defTeam, actor.morale,
+				targetMorale, null, BattleType.LADDER);
+		Result result = battleFacade.submitAtkPlayerRequest(attackReq, this);
+		// 战斗没有开打,前期检查没有通过.
+		if (result.isFail()) {
+			return Result.valueOf(result.statusCode);
+		}
+		return result;
+	}
+
+	@Override
+	public void execute(BattleResult result) {
+		AttackPlayerRequest attackReq = (AttackPlayerRequest) result.battleReq;
+		Actor actor = actorFacade.getActor(attackReq.targetActorId);
+		if(actor == null){
+			robotFight(result);
+		}else{
+			actorFight(result);
+		}
+	}
+	
+	@Override
+	public TResult<LadderRewardResponse> getLadderReward(long actorId) {
+		if(IS_OPEN == false){
+			return TResult.valueOf(GameStatusCodeConstant.LADDER_NOT_OPEN);
+		}
+		List<RewardObject> list = new ArrayList<>();
+		Ladder ladder = ladderDao.get(actorId);
+		ChainLock lock = LockUtils.getLock(ladder);
+		try{
+			lock.lock();
+			if(ladder.rewardList.isEmpty()){
+				return TResult.valueOf(GameStatusCodeConstant.LADDER_NOT_REWARD);
+			}
+			list.addAll(ladder.rewardList);
+			sendReward(actorId, ladder.rewardList);
+			ladder.rewardList.clear();
+			ladderDao.update(ladder);
+		}catch(Exception e){
+			LOGGER.error("{}",e);
+		}finally{
+			lock.unlock();
+		}
+		LadderRewardResponse response = new LadderRewardResponse();
+		response.historyRank = ladder.historyRank;
+		response.rank = ladder.rank;
+		response.rewardList = list;
+		return TResult.sucess(response);
+	}
+	
+	@Override
+	public TResult<BuyFightNumResponse> buyFightNum(long actorId) {
+		if(IS_OPEN == false){
+			return TResult.valueOf(GameStatusCodeConstant.LADDER_NOT_OPEN);
+		}
+		LadderGlobalConfig globalConfig = LadderService.getGlobalConfig();
+		Ladder ladder = ladderDao.get(actorId);
+		if(ladder.fightNum > 0){
+			return TResult.valueOf(GameStatusCodeConstant.LADDER_FIGHT_NUM_NOT_UESD);
+		}
+		int ticket = globalConfig.getCostTicket(ladder.costTicketNum);
+		boolean isOk = vipFacade.decreaseTicket(actorId, TicketDecreaseType.LADDER, ticket, 0, 0);
+		if(isOk == false){
+			return TResult.valueOf(StatusCode.TICKET_NOT_ENOUGH);
+		}
+		ChainLock lock = LockUtils.getLock(ladder);
+		try{
+			lock.lock();
+			ladder.costTicketNum += 1;
+			ladder.fightNum = globalConfig.maxFightNum;
+			ladderDao.update(ladder);
+		}catch(Exception e){
+			LOGGER.debug("{}",e);
+		}finally{
+			lock.unlock();
+		}
+		ticket = globalConfig.getCostTicket(ladder.costTicketNum);
+		BuyFightNumResponse repsonse = new BuyFightNumResponse(ticket);
+		return TResult.sucess(repsonse);
+	}
+	
+	@Override
+	public TResult<LadderRankResponse> getRank(long actorId) {
+		LadderRankResponse response = new LadderRankResponse();
+		LadderGlobalConfig globalConfig = LadderService.getGlobalConfig();
+		List<LadderActorVO> rankList = new ArrayList<>();
+		for(Long actorIds:ladderDao.getRank(NOW_SPORT,globalConfig.rankView)){
+			rankList.add(getLadderActorVO(actorIds));
+		}
+		response.rankList = rankList;
+		response.rank = getActorRank(actorId);
+		return TResult.sucess(response);
+	}
+	
+	@Override
+	public TResult<LadderFightInfoResponse> getFightInfo(long actorId) {
+		Ladder ladder = ladderDao.get(actorId);
+		LadderFightInfoResponse response = new LadderFightInfoResponse();
+		for(FightInfoVO vo:ladder.fightList){
+			getFightInfoVO(response, vo);
+		}
+		return TResult.sucess(response);
+	}
+
+	@Override
+	public TResult<LadderActorResponse> flushActor(long actorId) {
+		Ladder ladder = ladderDao.get(actorId);
+		LadderGlobalConfig config = LadderService.getGlobalConfig();
+		int goldNum = config.getCostGold(ladder.flushActor);
+		boolean isOk = actorFacade.decreaseGold(actorId, GoldDecreaseType.LADDER, goldNum);
+		if(isOk == false){
+			return TResult.valueOf(GameStatusCodeConstant.LADDER_GOLD_NOT_ENOUGH);
+		}
+		ChainLock lock = LockUtils.getLock(ladder, SORTED_RANK_CACHE);
+		try{
+			lock.lock();
+			
+//			int level = ActorHelper.getActorLevel(actorId);
+//			Set<Long> set = new HashSet<>();
+//			int minLevel = Math.max(config.getMinLevel(level),config.openLevel);
+//			set = snatchActorFacade.randomActorIds(minLevel, config.getMaxLevel(level), config.targetNum,actorId);
+//			//玩家不够,填充机器人
+//			if(config.targetNum > set.size()){
+//				int robotNum = config.targetNum - set.size();
+//				List<SnatchEnemyVO> list= snatchRobotFacade.randomRobotList(minLevel, config.getMaxLevel(level), robotNum);
+//				for(SnatchEnemyVO enemyVO : list){
+//					set.add(enemyVO.actorId);
+//				}
+//			}
+			ladder.actorList.clear();
+			ArrayList<Long> fighterIds = getActorRankFromCache(ladder);
+			fighterIds.remove(fighterIds.size() - 1);
+			ladder.actorList = fighterIds;
+			//-----------------------------
+			ladder.flushActor += 1;
+			ladderDao.update(ladder);
+		}catch(Exception e){
+			LOGGER.error("{}",e);
+		}finally{
+			lock.unlock();
+		}
+		List<LadderActorVO> actorList = new ArrayList<>();
+		for(Long targetId:ladder.actorList){
+			actorList.add(getLadderActorVO(targetId));
+		}
+		LadderActorResponse response = new LadderActorResponse();
+		response.actorList = actorList;
+		response.costGold = config.getCostGold(ladder.flushActor);
+		return TResult.sucess(response);
+	}
+	
+	
+	@Override
+	public TResult<FightVideoResponse> getFightVideo(long actorId,long fightVideoId) {
+		Ladder ladder = ladderDao.get(actorId);
+		List<FightInfoVO> list = new ArrayList<>();
+		list.addAll(ladder.fightList);
+		byte[] bytes = null;
+		for(FightInfoVO fightInfo:ladder.fightList){
+			if(fightInfo.fightVideoId == fightVideoId){
+				bytes = fightVideoDao.get(fightVideoId);
+			}
+		}
+		if(bytes == null){
+			return TResult.valueOf(GameStatusCodeConstant.FIGHT_VIDEO_NOT_FIND);
+		}
+		FightVideoResponse response = new FightVideoResponse();
+		response.fightData = bytes;
+		return TResult.sucess(response);
+	}
+	
+	@Override
+	public void onApplicationEvent(ContextRefreshedEvent arg0) {
+		LadderGlobal ladderGlobal = ladderDao.getLadderGlobal();
+		LadderGlobalConfig globalConfig = LadderService.getGlobalConfig();
+		if(ladderGlobal == null){//服务器启动,没有赛季数据,赛季初始化
+			NOW_SPORT = ladderDao.save(TimeUtils.getNow());
+		}else{//服务器启动当赛季过了更到新赛季数据
+			int now = TimeUtils.getNow();
+			int endTime = globalConfig.sportDay * 3600 * 24 + ladderGlobal.startTime;
+			if(DateUtils.isToday(endTime) == false && now > endTime){
+				ladderGlobal.startTime = now;
+				NOW_SPORT = ladderDao.save(now);
+			}else{
+				NOW_SPORT = ladderGlobal.getPkId();//服务器启动将赛季ID缓存
+			}
+		}
+		
+		SORTED_RANK_CACHE = ladderDao.getAllRank(NOW_SPORT);
+		SORTED_RANK_CACHE = Collections.synchronizedSortedMap(SORTED_RANK_CACHE);
+		
+		// 每晚x点定时触发
+		schedule.addFixedTime(new Runnable(){
+			@Override
+			public void run() {
+				if(IS_OPEN){
+					LadderGlobalConfig config = LadderService.getGlobalConfig();
+					LadderGlobal ladderGlobal = ladderDao.getLadderGlobal();
+					int endTime = config.sportDay * 3600 * 24 + ladderGlobal.startTime;
+					if(DateUtils.isToday(endTime)){//赛季结束时间是今天,开始统计发奖
+						IS_OPEN = false;//开始发奖,锁定所有功能不能使用
+						for(long actorId:playerSession.onlineActorList()){//推送给在线玩家,赛季开始发奖
+							LadderPushHelper.pushSportEnd(actorId);
+						}
+						List<Long> list = ladderDao.getRank(NOW_SPORT,config.rewardRank);//将符合发奖条件的玩家取出
+						int now = TimeUtils.getNow();
+						NOW_SPORT = ladderDao.save(now);
+						for (int i = 1; i <= list.size(); i++) {
+							Ladder ladder = ladderDao.get(list.get(i - 1));
+							ChainLock lock = LockUtils.getLock(ladder,ladderGlobal);
+							try{
+								lock.lock();
+								LadderRankRewardConfig reward = LadderService.getRankConfig(i);
+								if(reward == null){
+									continue;
+								}
+								ladder.rewardList = new ArrayList<>(reward.rewardList);
+								ladder.rank = i;
+								if(ladder.rank < ladder.historyRank){//比较存储历史最高排行
+									ladder.historyRank = ladder.rank;
+								}
+								if(reward.unLockList.isEmpty() == false){
+									for(Integer icon:reward.unLockList){//解锁奖励的头像
+										iconFacade.unLock(ladder.actorId,icon);
+									}
+								}
+								ladder.cleanLastSport(NOW_SPORT);//清除上赛季数据
+								ladderDao.update(ladder);
+								Actor actor = actorFacade.getActor(ladder.actorId);
+								GameOssLogger.ladderSportRank(actor.uid, actor.platformType, actor.channelId, Game.getServerId(), ladder.actorId, i);
+							}catch(Exception e){
+								LOGGER.error("{}",e);
+							}finally{
+								lock.unlock();
+							}
+						}
+						IS_OPEN = true;
+					}
+				}
+			}
+		}, globalConfig.endTime);
+		
+		schedule.addEverySecond(new Runnable() {//恢复战斗次数调度
+			@Override
+			public void run() {
+				LadderGlobalConfig config = LadderService.getGlobalConfig();
+				Set<Long> actors = playerSession.onlineActorList();
+				for (Long actorId : actors) {
+					int level = ActorHelper.getActorLevel(actorId);
+					if(level < config.openLevel){
+						continue;
+					}
+					flushFightNum(actorId);
+				}
+			}
+
+		}, 1);
+	}
+	
+	@Override
+	public void onLogin(long actorId) {
+		LadderGlobalConfig config = LadderService.getGlobalConfig();
+		int level = ActorHelper.getActorLevel(actorId);
+		if(level < config.openLevel){
+			return;
+		}
+		Ladder ladder = ladderDao.get(actorId);
+		ChainLock lock = LockUtils.getLock(ladder);
+		try{
+			lock.lock();
+			if(ladder.sportId != NOW_SPORT){
+				ladder.cleanLastSport(NOW_SPORT);
+				ladderDao.update(ladder);
+			}
+			if(DateUtils.isToday(ladder.flushActorTime) == false){
+				ladder.flushActor = 0;
+				ladder.flushActorTime = TimeUtils.getNow();
+				ladderDao.update(ladder);
+			}
+			if(DateUtils.isToday(ladder.ticketFlushTime) == false){
+				ladder.costTicketNum = 0;
+				ladder.ticketFlushTime = TimeUtils.getNow();
+				getActorList(actorId,true);
+				ladderDao.update(ladder);
+			}
+			flushFightNum(actorId);
+		}catch(Exception e){
+			LOGGER.debug("{}",e);
+		}finally{
+			lock.unlock();
+		}
+	}
+
+	@Override
+	public void onZero() {
+		LadderGlobalConfig config = LadderService.getGlobalConfig();
+		for(long actorId:playerSession.onlineActorList()){
+			int level = ActorHelper.getActorLevel(actorId);
+			if(level < config.openLevel){
+				continue;
+			}
+			Ladder ladder = ladderDao.get(actorId);
+			ChainLock lock = LockUtils.getLock(ladder);
+			try{
+				lock.lock();
+				if(ladder.sportId != NOW_SPORT){
+					ladder.cleanLastSport(NOW_SPORT);
+					ladderDao.update(ladder);
+				}
+				ladder.flushActor = 0;
+				ladder.flushActorTime = TimeUtils.getNow();
+				//ladder.fightNum = config.maxFightNum;
+				ladder.ticketFlushTime = TimeUtils.getNow();
+				ladder.costTicketNum = 0;
+				//ladder.flushFightTime = 0;
+				ladderDao.update(ladder);
+				LadderPushResponse response = new LadderPushResponse();
+				response.costGold = config.getCostGold(0);
+				response.costTicket = config.getCostTicket(0);
+				LadderPushHelper.push(actorId,response);
+			}catch(Exception e){
+				LOGGER.debug("{}",e);
+			}finally{
+				lock.unlock();
+			}
+		}
+		List<Long> list = ladderDao.getRank(NOW_SPORT, config.rewardRank);
+		int rank = 1;
+		for(Long actorId : list){
+			Actor actor = actorFacade.getActor(actorId);
+			GameOssLogger.ladderDayRank(actor.uid, actor.platformType, actor.channelId, Game.getServerId(), actorId, rank);
+			rank ++;
+		}
+	}
+	
+	private void robotFight(BattleResult result) {
+		AttackPlayerRequest attackReq = (AttackPlayerRequest) result.battleReq;
+		LadderFightResponse response = new LadderFightResponse();
+		FightData data = result.fightData;
+		response.fightData = data;
+		data.setCanSkipPlay(BattleSkipPlayType.PVP_CLIENT_DECIDE);
+		WinLevel winLevel = data.result;
+		Ladder ladder = ladderDao.get(attackReq.actorId);
+		LadderGlobalConfig globalConfig = LadderService.getGlobalConfig();
+		ChainLock lock = LockUtils.getLock(ladder, SORTED_RANK_CACHE);
+		try{
+			lock.lock();
+			if(winLevel.isWin()){//赢了增加自己的胜场、连胜场次,增加对方的负场,清空对方的连胜场次,给对方推送战斗消息
+				ladder.win += 1;
+				ladder.winStreak += 1;
+			}else{//输了清空自己的连胜场次,增加自己的负场
+				ladder.winStreak = 0;
+				ladder.lost += 1;
+			}
+			
+			int scoreChange = calcScoreChange(ladder.score, LadderService.getGlobalConfig().baseScore, winLevel.isWin());
+			changeRank(ladder, scoreChange);
+			response.score = scoreChange;
+			Actor actor = actorFacade.getActor(attackReq.actorId);
+			GameOssLogger.ladderFight(actor.uid, actor.platformType, actor.channelId, Game.getServerId(), attackReq.actorId, winLevel.isWin()?1:0);
+			//每次战斗后刷新对手列表
+			getActorList(ladder.actorId,true);
+//			response.winNum = ladder.win;
+//			response.lostNum = ladder.lost;
+			Integer type = globalConfig.chatMap.get(ladder.winStreak);
+			if(type != null){//连胜到达一定场次发送世界公告
+				chatFacade.sendLadderChat(ladder.actorId,type,ladder.winStreak);
+			}
+		}catch(Exception e){
+			LOGGER.error("{}",e);
+		}finally{
+			lock.unlock();
+		}
+		if(winLevel.isWin()){//按挑战类型发放奖励
+			int actorLevel = ActorHelper.getActorLevel(ladder.actorId);
+			SnatchEnemyVO snatchEnemyVO = snatchRobotFacade.getSnatchEnemy(attackReq.targetActorId);
+			int fightType = actorLevel > snatchEnemyVO.actorLevel ? 0:1;
+			LadderFightConfig config = LadderService.getFightConfig(fightType);
+			sendReward(ladder.actorId,config.rewardList);
+			response.rewardList = config.rewardList;
+		}
+		List<LadderActorVO> actorList = new ArrayList<>();
+		for(Long targetId:ladder.actorList){
+			actorList.add(getLadderActorVO(targetId));
+		}
+		response.actorList = actorList;
+		response.rank = getActorRank(ladder.actorId);
+		LadderPushHelper.pushBattleResult(ladder.actorId, response);
+	}
+
+	private void actorFight(BattleResult result) {
+		AttackPlayerRequest attackReq = (AttackPlayerRequest) result.battleReq;
+		LadderFightResponse response = new LadderFightResponse();
+		FightData data = result.fightData;
+		response.fightData = data;
+		data.setCanSkipPlay(BattleSkipPlayType.PVP_CLIENT_DECIDE);
+		WinLevel winLevel = data.result;
+		Ladder ladder = ladderDao.get(attackReq.actorId);
+		Ladder targetLadder = ladderDao.get(attackReq.targetActorId);
+		LadderGlobalConfig globalConfig = LadderService.getGlobalConfig();
+		ChainLock lock = LockUtils.getLock(ladder,targetLadder, SORTED_RANK_CACHE);
+		try{
+			lock.lock();
+			//每次战斗增加对方的战斗信息,增加对方的战斗录像
+			int isWin = 0;
+			if(winLevel.isWin()){//赢了增加自己的胜场、连胜场次,增加对方的负场,清空对方的连胜场次,给对方推送战斗消息
+				isWin = FightType.WIN.getCode();
+				ladder.win += 1;
+				targetLadder.lost +=1;
+				ladder.winStreak += 1;
+				targetLadder.winStreak = 0;
+			}else{//输了清空自己的连胜场次,增加自己的负场
+				ladder.winStreak = 0;
+				isWin = FightType.LOST.getCode();
+				ladder.lost += 1;
+			}
+			
+			int scoreChange = calcScoreChange(ladder.score, targetLadder.score, winLevel.isWin());
+			changeRank(ladder, scoreChange);
+			changeRank(targetLadder, -scoreChange);
+			response.score = scoreChange;
+			Actor actor = actorFacade.getActor(attackReq.actorId);
+			GameOssLogger.ladderFight(actor.uid, actor.platformType, actor.channelId, Game.getServerId(), attackReq.actorId, winLevel.isWin()?1:0);
+			//每次战斗后刷新对手列表
+			getActorList(ladder.actorId,true);
+			long videoId = fightVideoDao.create(ladder.actorId, targetLadder.actorId, data.getBytes());
+			FightInfoVO fightInfoVO = new FightInfoVO();
+			fightInfoVO.actorId = ladder.actorId;
+			fightInfoVO.fightResult = isWin;
+			fightInfoVO.fightVideoId = videoId;
+			fightInfoVO.fightTime = TimeUtils.getNow();
+			//战斗记录满了新增条数替换最旧条数
+			if(targetLadder.fightList.size() >= globalConfig.fightInfo){
+				FightInfoVO info = targetLadder.fightList.remove();
+				fightVideoDao.remove(info.actorId, info.fightVideoId, FightVideoRemoveType.TYPE1);
+			}
+			targetLadder.fightList.add(fightInfoVO);
+			ladderDao.update(ladder);
+			ladderDao.update(targetLadder);
+//			response.winNum = ladder.win;
+//			response.lostNum = ladder.lost;
+			Integer type = globalConfig.chatMap.get(ladder.winStreak);
+			if(type != null){//连胜到达一定场次发送世界公告
+				chatFacade.sendLadderChat(ladder.actorId,type,ladder.winStreak);
+			}
+			//推送对方战斗消息变更
+			LadderPushHelper.pushLadderFightInfo(targetLadder.actorId, getFightInfo(targetLadder.actorId).item);
+		}catch(Exception e){
+			LOGGER.error("{}",e);
+		}finally{
+			lock.unlock();
+		}
+		if(winLevel.isWin()){//按挑战类型发放奖励
+			int actorLevel = ActorHelper.getActorLevel(ladder.actorId);
+			int targetLevel = ActorHelper.getActorLevel(targetLadder.actorId);
+			int fightType = actorLevel > targetLevel ? 0:1;
+			LadderFightConfig config = LadderService.getFightConfig(fightType);
+			sendReward(ladder.actorId,config.rewardList);
+			response.rewardList = config.rewardList;
+		}
+		List<LadderActorVO> actorList = new ArrayList<>();
+		for(Long targetId:ladder.actorList){
+			actorList.add(getLadderActorVO(targetId));
+		}
+		response.actorList = actorList;
+		response.rank = getActorRank(ladder.actorId);
+		LadderPushHelper.pushBattleResult(ladder.actorId, response);
+	}
+	
+	private void flushFightNum(Long actorId) {
+		Ladder ladder = ladderDao.get(actorId);
+		LadderGlobalConfig config = LadderService.getGlobalConfig();
+		ChainLock lock = LockUtils.getLock(ladder);
+		try {
+			lock.lock();
+			if(ladder.isAddUseNum(config.flushTime, config.maxFightNum)){
+				ladderDao.update(ladder);
+				LadderPushHelper.pushFightNum(actorId,ladder);
+			}
+		} catch (Exception e) {
+			LOGGER.error("{}", e);
+		} finally {
+			lock.unlock();
+		}
+	}
+	
+	private LadderActorVO getLadderActorVO(Long actorId) {
+		Actor actor = actorFacade.getActor(actorId);
+		LadderActorVO ladderActorVO = new LadderActorVO();
+		if(actor == null){//机器人
+			SnatchEnemyVO snatchEnemyVO = snatchRobotFacade.getSnatchEnemy(actorId);
+			ladderActorVO.actorId = actorId;
+			ladderActorVO.rank = getActorRank(actorId);
+			ladderActorVO.iconVO = IconService.getdefIconVO();
+			ladderActorVO.actorName = snatchEnemyVO.actorName;
+			ladderActorVO.vipLevel = 0;
+			ladderActorVO.actorLevel = snatchEnemyVO.actorLevel;
+			ladderActorVO.winNum = 0;
+			ladderActorVO.lostNum = 0;
+			ladderActorVO.score = LadderService.getGlobalConfig().baseScore;
+		}else{
+			int vipLevel = vipFacade.getVipLevel(actorId);
+			Ladder ladder = ladderDao.get(actorId);
+			ladderActorVO.actorId = actorId;
+			ladderActorVO.rank = getActorRank(actorId);
+			ladderActorVO.iconVO = iconFacade.getIconVO(actorId);
+			ladderActorVO.actorName = actor.actorName;
+			ladderActorVO.vipLevel = vipLevel;
+			ladderActorVO.actorLevel = actor.level;
+			ladderActorVO.winNum = ladder.win;
+			ladderActorVO.lostNum = ladder.lost;
+			ladderActorVO.score = ladder.score;
+		}
+		return ladderActorVO;
+	}
+
+	private void sendReward(long actorId, List<RewardObject> rewardList) {
+		for(RewardObject reward:rewardList){
+			sendReward(actorId, reward);
+		}
+	}
+	
+	private void sendReward(long actorId,RewardObject rewardObject){
+		switch(rewardObject.rewardType){
+		case GOODS:
+			goodsFacade.addGoodsVO(actorId, GoodsAddType.LADDER, rewardObject.id ,rewardObject.num);
+			break;
+		case TICKET:
+			vipFacade.addTicket(actorId, TicketAddType.LADDER, rewardObject.num);
+			break;
+		default:
+			break;
+		
+		}
+	}
+	
+	private void getFightInfoVO(LadderFightInfoResponse response, FightInfoVO vo) {
+		LadderFightVO ladderFightVO = new LadderFightVO();
+		ladderFightVO.iconVO = iconFacade.getIconVO(vo.actorId);
+		ladderFightVO.actorId = vo.actorId;
+		ladderFightVO.actorName = actorFacade.getActor(vo.actorId).actorName;
+		ladderFightVO.vipLevel = vipFacade.getVipLevel(vo.actorId);
+		ladderFightVO.actorLevel = ActorHelper.getActorLevel(vo.actorId);
+		ladderFightVO.fightResult = vo.fightResult;
+		ladderFightVO.fightVideoId = vo.fightVideoId;
+		ladderFightVO.fightTime = vo.fightTime;
+		response.fightInfo.add(ladderFightVO);
+	}
+	
+	private int getActorRank(long actorId){
+		LadderGlobalConfig config = LadderService.getGlobalConfig();
+		List<Long> list = ladderDao.getRank(NOW_SPORT,config.rewardRank);
+		for(int i = 1;i <= list.size();i++){
+			Ladder ladder = ladderDao.get(list.get(i - 1));
+			if(ladder.actorId == actorId){
+				return i;
+			}
+		}
+		return RandomUtils.nextInt(config.rewardRank + 1, 10000);
+	}
+	
+	public ArrayList<Long> getAllRankFromCache(int rankView) {
+		ArrayList<Long> actorIds = new ArrayList<Long>();
+		Set<Integer> scores = SORTED_RANK_CACHE.keySet();
+		List<Integer> lists = new LinkedList<Integer>();
+		for (Integer integer : scores) {
+			lists.add(integer);
+		}
+		Collections.reverse(lists);
+		for (Integer score : lists) {
+			ArrayList<Long> perScores = SORTED_RANK_CACHE.get(score);
+			actorIds.addAll(perScores);
+			if (rankView < actorIds.size()) {
+				List<Long> subList = actorIds.subList(0, rankView);
+				return new ArrayList<Long>(subList);
+			}
+		}
+		actorIds.trimToSize();
+		return actorIds;
+	}
+	
+	private boolean isInRankCache(Ladder ladder) {
+		List<Long> actors = SORTED_RANK_CACHE.get(ladder.score);
+		if (actors == null) {
+			return false;
+		}
+		if (actors.isEmpty()) {
+			return false;
+		}
+		if (actors.contains(ladder.actorId)) {
+			return true;
+		}
+		return false;
+	}
+	
+	private ArrayList<Long> getActorRankFromCache(Ladder myself) {
+		ArrayList<Long> fighterIds = new ArrayList<Long>();
+		ArrayList<Long> actorIds = new ArrayList<Long>();
+		int selfScore = myself.score;
+		Set<Integer> scores = SORTED_RANK_CACHE.keySet();
+		List<Integer> lists = new LinkedList<Integer>();
+		for (Integer integer : scores) {
+			lists.add(integer);
+		}
+		Collections.reverse(lists);
+		int beforeRank = 0;
+		for (Integer score : lists) {
+			ArrayList<Long> perScores = SORTED_RANK_CACHE.get(score);
+			if (score > selfScore) {
+				beforeRank += perScores.size();
+			}
+			for(Long id : perScores){
+				if(!actorIds.contains(id)){
+					actorIds.add(id);
+				}
+			}
+		}
+		ArrayList<Long> sameList = SORTED_RANK_CACHE.get(selfScore);
+		if (sameList == null) {
+			sameList = new ArrayList<Long>();
+			sameList.add(myself.actorId);
+		}
+		int sameScoreRank = sameList.indexOf(myself.actorId) + 1;
+		Integer myRealRank = beforeRank + sameScoreRank;
+		
+		actorIds.remove(myself.actorId);
+		int rankLenth = actorIds.size();
+//		Collections.reverse(actorIds);
+		
+		LadderGlobalConfig config = LadderService.getGlobalConfig();
+		int strongStart = config.getStrongMinRank(myRealRank);
+		int strongEnd = config.getStrongMaxRank(myRealRank);
+		int weakStart = config.getWeakMinRank(myRealRank);
+		int weakEnd = config.getWeakMaxRank(myRealRank, rankLenth);
+		int targetNum = config.targetNum;
+		
+		int level = ActorHelper.getActorLevel(myself.actorId);
+		
+		if (rankLenth < targetNum) {
+			//玩家不够,填充机器人
+			int robotNum = targetNum - rankLenth;
+			List<SnatchEnemyVO> list= snatchRobotFacade.randomRobotList(level, level + 5, robotNum);
+			for(SnatchEnemyVO enemyVO : list){
+				fighterIds.add(enemyVO.actorId);
+			}
+			fighterIds.addAll(actorIds);
+			fighterIds.add(myRealRank.longValue());
+			return fighterIds;
+		}
+		
+		//真实排名是第一位
+//		if (myRealRank <= 1) {
+//			int[] indexs = RandomUtils.uniqueRandom(targetNum, strongStart, strongEnd);
+//			for (int index : indexs) {
+//				fighterIds.add(actorIds.get(index - 1));
+//			}
+//			if (fighterIds.size() < targetNum) {
+//				int robotNum = targetNum - fighterIds.size();
+//				List<SnatchEnemyVO> list= snatchRobotFacade.randomRobotList(level, level + 5, robotNum);
+//				for(SnatchEnemyVO enemyVO : list){
+//					fighterIds.add(enemyVO.actorId);
+//				}
+//			}
+//			fighterIds.add(myRealRank.longValue());
+//			return fighterIds;
+//		}
+		
+		//排名末位
+		if (myRealRank >= rankLenth) {
+			int[] indexs = RandomUtils.uniqueRandom(targetNum, weakStart, weakEnd);
+			for (int index : indexs) {
+				fighterIds.add(actorIds.get(index - 1));
+			}
+			if (fighterIds.size() < targetNum) {
+				int robotNum = targetNum - fighterIds.size();
+				List<SnatchEnemyVO> list= snatchRobotFacade.randomRobotList(level, level + 5, robotNum);
+				for(SnatchEnemyVO enemyVO : list){
+					fighterIds.add(enemyVO.actorId);
+				}
+			}
+			fighterIds.add(myRealRank.longValue());
+			return fighterIds;
+		}
+		
+		
+		int[] strongIndexs = RandomUtils.uniqueRandom(1, strongStart, strongEnd);
+		for (int index : strongIndexs) {
+			long actorId = actorIds.get(index - 1);
+			fighterIds.add(actorId);
+		}
+		int weakNum = targetNum - fighterIds.size();
+		int[] weakIndexs = RandomUtils.uniqueRandom(weakNum, weakStart, weakEnd);
+		if (weakNum > 1) {
+			Arrays.sort(weakIndexs);
+		}
+		long fristActor = fighterIds.get(0);
+		for (int index : weakIndexs) {
+			long actorId = actorIds.get(index - 1);
+			if (fristActor == actorId) {
+				continue;
+			}
+//			while (fristActor == actorId) {
+//				int tp = index;
+//				if (tp >= weakStart && tp <= weakEnd) {
+//					tp++;
+//					if (tp >= rankLenth) {
+//						break;
+//					}
+//					actorId = actorIds.get(tp - 1);
+//				}
+//			}
+			fighterIds.add(actorId);
+		}
+		
+		if (fighterIds.size() < targetNum) {
+			int robotNum = targetNum - fighterIds.size();
+			List<SnatchEnemyVO> list= snatchRobotFacade.randomRobotList(level, level + 5, robotNum);
+			for(SnatchEnemyVO enemyVO : list){
+				fighterIds.add(enemyVO.actorId);
+			}
+		}
+		fighterIds.add(myRealRank.longValue());
+		return fighterIds;
+	}
+	
+	private void getActorList(long actorId,boolean isFlush) {
+		Ladder ladder = ladderDao.get(actorId);
+		LadderGlobalConfig config = LadderService.getGlobalConfig();
+//		int level = ActorHelper.getActorLevel(actorId);
+//		Set<Long> set = new HashSet<>();
+		ChainLock lock = LockUtils.getLock(ladder, SORTED_RANK_CACHE);
+		try{
+			lock.lock();
+			if(ladder.actorList.isEmpty() == false && isFlush == false){
+//				set = ladder.actorList;
+			}else{
+				ArrayList<Long> fighterIds = getActorRankFromCache(ladder);
+//				int myRankInCache = fighterIds.remove(fighterIds.size() - 1).intValue();
+//				//fighterIds不能搜索
+//				int myRank = Collections.binarySearch(fighterIds, actorId);
+				fighterIds.remove(fighterIds.size() - 1);
+				ladder.actorList = fighterIds;
+			}
+			ladderDao.update(ladder);
+		}catch(Exception e){
+			LOGGER.error("{}",e);
+		}finally{
+			lock.unlock();
+		}
+	}
+	
+	private void changeRank(Ladder ladder, int scoreChange) {
+		long actorId = ladder.actorId;
+		
+		int oldScore = ladder.score;
+		ArrayList<Long> sameList = SORTED_RANK_CACHE.get(oldScore);
+		if (sameList != null && sameList.isEmpty() == false) {
+			if (sameList.contains(actorId)) {
+				sameList.remove(actorId);
+			}
+		}
+		
+		int newScore = Math.max(oldScore + scoreChange, 0);
+		ArrayList<Long> newList = SORTED_RANK_CACHE.get(newScore);
+		if (newList == null) {
+			newList = new ArrayList<Long>();
+			newList.add(actorId);
+			SORTED_RANK_CACHE.put(newScore, newList);
+		} else {
+			newList.add(actorId);
+		}
+		ladder.score = newScore;
+	}
+	
+	
+	private int calcScoreChange(int attScore, int defScore, boolean isWin) {
+		int scoreChange = 0;
+		float power = 0;
+		String powerString = null;
+		String calcString = LadderService.getGlobalConfig().calcScore;
+		int bottomNumber = LadderService.getGlobalConfig().bottomNumber;
+		if (isWin == true) {
+			powerString = LadderService.getGlobalConfig().winExponent;
+			power = FormulaHelper.executeFloat(powerString, defScore, attScore);
+		} else {
+			powerString = LadderService.getGlobalConfig().loseExponent;
+			power = FormulaHelper.executeFloat(powerString, defScore, attScore);
+		}
+		double calcResult = Math.pow(bottomNumber, power);
+		float change = FormulaHelper.executeFloat(calcString, calcResult);
+		Double double1 = Math.ceil(change);
+		scoreChange = double1.intValue();
+		scoreChange = isWin? scoreChange : -scoreChange;
+		return scoreChange;
+	}
+	
+	
+	
+}

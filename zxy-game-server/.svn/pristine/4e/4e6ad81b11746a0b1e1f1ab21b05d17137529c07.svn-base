@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   flushNum:刷新次数(从1开始,最后填-1)
+   costGoods:刷新需要的物品数量(x1表示已经使用次数<可填数值可填公式>)
+-->
+
+<root>
+  <item flushNum="1" costGoods="10"/>
+  <item flushNum="2" costGoods="20"/>
+  <item flushNum="3" costGoods="40"/>
+  <item flushNum="-1" costGoods="80"/>
+</root>

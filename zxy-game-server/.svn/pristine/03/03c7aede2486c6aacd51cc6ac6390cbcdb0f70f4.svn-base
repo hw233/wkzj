@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:商品唯一id
+   vipLevel:需要vip等级
+   costTicket:需要的点券
+   rewardId:物品id
+   rewardType:奖励类型(0：物品,1：装备,2：仙人魂魄)
+   rewardNum:物品数量
+   dayMaxNum:物品每天购买上限
+   maxNum:物品总共购买上限(-1为无限制)
+-->
+
+<root>
+  <item id="1" vipLevel="4" costTicket="90" rewardId="6003" rewardType="0" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="2" vipLevel="5" costTicket="20" rewardId="164" rewardType="2" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="3" vipLevel="6" costTicket="450" rewardId="21006" rewardType="0" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="4" vipLevel="7" costTicket="560" rewardId="21008" rewardType="0" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="5" vipLevel="8" costTicket="75" rewardId="158" rewardType="2" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="6" vipLevel="9" costTicket="100" rewardId="30057" rewardType="0" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="7" vipLevel="10" costTicket="1400" rewardId="21007" rewardType="0" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="8" vipLevel="11" costTicket="134" rewardId="31052" rewardType="0" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="9" vipLevel="12" costTicket="75" rewardId="121" rewardType="2" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="10" vipLevel="13" costTicket="75" rewardId="110" rewardType="2" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="11" vipLevel="14" costTicket="150" rewardId="30062" rewardType="0" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="12" vipLevel="15" costTicket="320" rewardId="173" rewardType="2" rewardNum="0" dayMaxNum="0" maxNum="0"/>
+  <item id="13" vipLevel="4" costTicket="45" rewardId="6003" rewardType="0" rewardNum="1" dayMaxNum="10" maxNum="-1"/>
+  <item id="14" vipLevel="5" costTicket="20" rewardId="1000" rewardType="0" rewardNum="1" dayMaxNum="5" maxNum="-1"/>
+  <item id="15" vipLevel="6" costTicket="10" rewardId="164" rewardType="2" rewardNum="1" dayMaxNum="20" maxNum="400"/>
+  <item id="16" vipLevel="7" costTicket="5" rewardId="1003" rewardType="0" rewardNum="1" dayMaxNum="100" maxNum="-1"/>
+  <item id="17" vipLevel="8" costTicket="134" rewardId="30048" rewardType="0" rewardNum="1" dayMaxNum="6" maxNum="30"/>
+  <item id="18" vipLevel="9" costTicket="100" rewardId="30057" rewardType="0" rewardNum="1" dayMaxNum="8" maxNum="40"/>
+  <item id="19" vipLevel="10" costTicket="50" rewardId="158" rewardType="2" rewardNum="1" dayMaxNum="10" maxNum="480"/>
+  <item id="20" vipLevel="11" costTicket="134" rewardId="31052" rewardType="0" rewardNum="1" dayMaxNum="6" maxNum="30"/>
+  <item id="21" vipLevel="12" costTicket="75" rewardId="121" rewardType="2" rewardNum="1" dayMaxNum="40" maxNum="40"/>
+  <item id="22" vipLevel="13" costTicket="100" rewardId="30067" rewardType="0" rewardNum="1" dayMaxNum="8" maxNum="40"/>
+  <item id="23" vipLevel="14" costTicket="150" rewardId="30062" rewardType="0" rewardNum="1" dayMaxNum="8" maxNum="40"/>
+  <item id="24" vipLevel="15" costTicket="150" rewardId="173" rewardType="2" rewardNum="1" dayMaxNum="20" maxNum="500"/>
+  <item id="25" vipLevel="6" costTicket="10" rewardId="155" rewardType="2" rewardNum="1" dayMaxNum="10" maxNum="400"/>
+  <item id="26" vipLevel="11" costTicket="134" rewardId="30045" rewardType="0" rewardNum="1" dayMaxNum="6" maxNum="30"/>
+</root>

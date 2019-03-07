@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   mapId:地图ID
+   name:地图名称
+   gridCol:地图格子列数
+   gridRow:地图格子行数
+   maxRound:最大回合数
+-->
+
+<root>
+  <item mapId="1" name="仙山" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="2" name="地狱" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="3" name="冥界" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="4" name="排行榜" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="5" name="合作关卡" gridCol="8" gridRow="6" maxRound="10"/>
+  <item mapId="6" name="河边" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="7" name="大殿门口" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="8" name="狮驼岭" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="9" name="云上" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="10" name="宫殿内" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="11" name="山庄外" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="12" name="山庄内" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="13" name="龙宫" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="14" name="试炼洞" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="15" name="高老庄" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="16" name="浮屠山" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="17" name="1" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="18" name="2" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="19" name="3" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="20" name="4" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="21" name="5" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="22" name="6" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="23" name="7" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="24" name="8" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="25" name="9" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="26" name="10" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="27" name="11" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="28" name="12" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="29" name="13" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="30" name="14" gridCol="8" gridRow="3" maxRound="10"/>
+  <item mapId="31" name="15" gridCol="8" gridRow="3" maxRound="10"/>
+</root>

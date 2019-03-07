@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   openDate:活动开始时间
+   closeDate:活动结束时间
+   exchangeStart:礼包有效期
+   exchangeEnd:礼包有效期
+   desc:活动描述
+   bigRewardMsg:获得iPhone6系统公告
+   billMsg:获得20块钱话费系统公告
+   ernieGoods:活动中可以获得的所有物品(格式:类型_物品ID_数量|类型_物品ID_数量|…)
+   showGoods:初始化进入活动界面展示的物品(格式:类型_物品ID_数量|类型_物品ID_数量|…)
+   leastEquip:保底物品(格式:类型_物品ID_数量_概率|类型_物品ID_数量_概率…)
+   freeTimes:免费次数
+   leastNum:保底次数
+   maxBillNum:单服可以摇到话费最大数量
+-->
+
+<root>
+  <item openDate="2015-02-18 00:00:00" closeDate="2015-02-18 23:59:59" exchangeStart="2015-02-18 00:00:00" exchangeEnd="2015-02-21 23:59:59" desc="&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%02d月%02d日~%02d月%02d日&lt;/font&gt;
+&lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;除夕期间，每天参加活动都有免费摇奖机会，奖品拿到手软，根本停不下来！还有超级大奖在等着你哦！那还等什么呢！&lt;/font&gt;
+&lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt;" bigRewardMsg="【%s】在欢乐摇奖活动中幸运获得了iPhone6" billMsg="【%s】在欢乐摇奖活动中幸运获得了20块钱话费" ernieGoods="0_21027_1|0_21028_1|0_21029_1|0_5001_1|0_5002_1|0_1002_1|0_6002_1|2_180_1|1_1057_1|1_3034_1" showGoods="0_21027_1|2_180_1|1_1057_1" leastEquip="2_180_4_1000" freeTimes="2" leastNum="3" maxBillNum="20"/>
+</root>

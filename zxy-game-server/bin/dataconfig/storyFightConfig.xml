@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   costTicket:购买消耗点券(公式,x1代表使用次数)
+   goodsId:扫荡符id
+   num:每次购买给的扫荡符数量
+-->
+
+<root>
+  <item costTicket="(x1+1)*50" goodsId="1002" num="10"/>
+</root>

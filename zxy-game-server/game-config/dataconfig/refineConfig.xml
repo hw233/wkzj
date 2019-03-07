@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   type:精炼类型
+   addValue:达到该等级能附加x%的精炼属性
+-->
+
+<root>
+  <item type="1" addValue="0"/>
+  <item type="2" addValue="50"/>
+  <item type="3" addValue="100"/>
+</root>

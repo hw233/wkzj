@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   index:ID
+   type:物品类型(0.金币,1.元宝,2.物品,3.装备,4.装备碎片,5.魂魄)
+   context:限制条件(物品、碎片、魂魄填id,装备填星级)
+   num:服务器单日产出数量
+-->
+
+<root>
+  <item index="1" type="3" context="5" num="3"/>
+</root>

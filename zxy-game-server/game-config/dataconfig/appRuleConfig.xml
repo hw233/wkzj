@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   appId:活动id
+   openChannelId:渠道id  (格式:渠道id_渠道id,不填则表示所有渠道)
+   rewardGoods:奖励物品 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量(公式)_几率
+   rule:根据活动不同 规则不同(参见EffectId）
+   startTime:开始时间 格式："2013-11-1 23:00:00"
+   endTime:结束时间 格式："2013-11-1 23:00:00"
+   effect:模板id
+   title:活动名称
+   imgeIcon:活动图标(图片)
+   imgeIconTitle:活动图标标题
+   imgeTitle:活动标题(图片)
+   text:活动内容和描述
+-->
+
+<root>
+  <item appId="1" openChannelId="" rewardGoods="0_3006_6_1000|0_2004_5_1000|0_5001_100_1000|0_5002_50_1000" rule="1" startTime="2014-1-1 00:00:00" endTime="2014-1-2 23:59:00" effect="3" title="登陆有礼" imgeIcon="activity_icon_dengjilibao.png" imgeIconTitle="activity_biaoti_dalibao.png" imgeTitle="activity_dabiaoti_xinfudalibao.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;开测七天内每天登录都能领取元宝及物品奖励。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongjiangli.png&quot;/&gt;
+--{{0-11-120}}{{0-10-50000}}{{0-5001-100}}{{0-5002-50}}--"/>
+  <item appId="2" openChannelId="" rewardGoods="" rule="2014-9-18 00:00:00_1" startTime="2014-1-1 00:00:00" endTime="2014-1-2 20:00:00" effect="17" title="最强势力" imgeIcon="activity_icon_iphone6.png" imgeIconTitle="activity_biaoti_iphone6.png" imgeTitle="activity_dabiaoti_iphone6.png" text="&lt;img src=&quot;activity_zuiqiangshili.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%s&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;封神榜第一名会获得3000元宝，2000潜修石，2000精炼石；第二名会获得2000元宝，50个聚仙符；第三名会获得1000元宝&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;截止%d月%d日20:00&lt;/font&gt;&lt;br /&gt;
+&lt;br&gt;&lt;/br&gt;
+&lt;br&gt;&lt;/br&gt;"/>
+  <item appId="3" openChannelId="" rewardGoods="" rule="2014-9-18 00:00:00_1" startTime="2014-12-17 00:00:00" endTime="2014-12-23 23:59:00" effect="6" title="等级最高" imgeIcon="activity_icon_chongjidasai.png" imgeIconTitle="activity_biaoti_chongji.png" imgeTitle="activity_dabiaoti_chongjidasai.png" text="&lt;img src=&quot;activity_dengjipaihang.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%s&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;开测七天等级最高的玩家将会获得元宝以及珍稀饰品。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongjiangli.png&quot;/&gt;
+--{{0-11-1000}}{{1-3026-0}}--"/>
+  <item appId="4" openChannelId="" rewardGoods="" rule="" startTime="2014-1-1 00:00:00" endTime="2014-1-2 23:59:00" effect="13" title="官方豪华特权礼包" imgeIcon="activity_icon_qqqun.png" imgeIconTitle="activity_biaoti_guanfangqqun.png" imgeTitle="activity_dabiaoti_qqunlibao.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;加入官方QQ群:384247145，官方QQ群管理员为您准备了官方豪华特权礼包。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;"/>
+  <item appId="5" openChannelId="" rewardGoods="" rule="1_30" startTime="2014-12-17 00:00:00" endTime="2014-12-23 23:59:00" effect="9" title="升级送话费" imgeIcon="activity_icon_songhuafei.png" imgeIconTitle="activity_biaoti_songhuafei.png" imgeTitle="activity_dabiaoti_huafei.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;&amp;gt;=30级玩家都将得到15元话费，且充值月卡的用户会额外获得15元话费，满足条件的玩家留下手机号，官方将会在活动结束的7个工作日内充值到户。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;"/>
+  <item appId="6" openChannelId="" rewardGoods="" rule="" startTime="2014-11-14 00:00:00" endTime="2015-1-12 23:59:00" effect="13" title="BUG特供礼包" imgeIcon="activity_icon_bug.png" imgeIconTitle="activity_biaoti_zhuabug.png" imgeTitle="activity_dabiaoti_zhuabug.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;通过官方客服QQ:800043619向客服提供BUG，经查实将会获得官方提供的提BUG特供礼包。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongjiangli.png&quot;/&gt;
+--{{0-21002-0}}--"/>
+  <item appId="7" openChannelId="" rewardGoods="" rule="5_21004_1|7_21005_1" startTime="2014-1-1 00:00:00" endTime="2014-1-2 23:59:00" effect="8" title="七天礼包" imgeIcon="activity_icon_account.png" imgeIconTitle="activity_biaoti_denglu.png" imgeTitle="activity_dabiaoti_denglulibao.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;活动时间内连续登录一定天数可领取相应奖励&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;
+&lt;font size=&quot;26&quot; color=&quot;#00aeff&quot;&gt;(活动期间，你已登录&lt;font size=&quot;26&quot; color=&quot;#ff0000&quot;&gt;%d&lt;/font&gt;天)&lt;/font&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt;
+&lt;font size=&quot;26&quot; color=&quot;#ffe7bd&quot;&gt;连续登录&lt;font size=&quot;26&quot; color=&quot;#ff0000&quot;&gt;5&lt;/font&gt;天可领取:&lt;/font&gt;--{{1-1060-0}}--&lt;br/&gt;&lt;br/&gt;
+&lt;font size=&quot;26&quot; color=&quot;#ffe7bd&quot;&gt;连续登录&lt;font size=&quot;26&quot; color=&quot;#ff0000&quot;&gt;7&lt;/font&gt;天可领取:&lt;/font&gt;--{{2-108-40}}--"/>
+  <item appId="8" openChannelId="" rewardGoods="" rule="" startTime="2014-1-1 00:00:00" endTime="2014-1-2 23:59:00" effect="13" title="QQ群答题" imgeIcon="activity_icon_qqqundati.png" imgeIconTitle="activity_biaoti_dati.png" imgeTitle="activity_dabiaoti_qqqundati.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;加入官方QQ群:384247145，QQ群将不定时举行答题拿奖活动。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;"/>
+  <item appId="9" openChannelId="" rewardGoods="" rule="" startTime="2014-1-1 00:00:00" endTime="2014-1-2 23:59:00" effect="13" title="论坛祝福" imgeIcon="activity_icon_songzhufu.png" imgeIconTitle="activity_biaoti_luntan.png" imgeTitle="activity_dabiaoti_luntanzhufu.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;通过官方论坛参与盖楼送祝福活动，官方将送出大量元宝及道具奖励。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;"/>
+  <item appId="10" openChannelId="" rewardGoods="" rule="" startTime="2014-11-14 00:00:00" endTime="2015-1-12 23:59:00" effect="13" title="月卡送观音" imgeIcon="activity_icon_yuekasongguanyin.png" imgeIconTitle="activity_biaoti_yueka.png" imgeTitle="activity_dabiaoti_yuekasongguanyin.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;玩家首充月卡都能获得史诗仙人：观音大士，以及其它道具奖励。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongjiangli.png&quot;/&gt;&lt;br/&gt;&lt;br/&gt;
+--{{2-110-40}}{{0-1000-10}}{{0-2005-10}}{{0-5001-500}}{{0-5002-100}}--"/>
+  <item appId="11" openChannelId="" rewardGoods="" rule="" startTime="2014-11-14 00:00:00" endTime="2015-1-12 23:59:00" effect="13" title="充值双倍" imgeIcon="activity_icon_shuangbeiyuanbao.png" imgeIconTitle="activity_biaoti_chongzhi.png" imgeTitle="activity_dabiaoti_chongzhishuangbei.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;玩家第一次购买指定档元宝300元宝、1980元宝、6480元宝时，可获得双倍元宝奖励&lt;/font&gt;&lt;br&gt;&lt;br&gt;"/>
+  <item appId="12" openChannelId="" rewardGoods="" rule="2_0" startTime="2014-1-1 00:00:00" endTime="2014-1-2 23:59:00" effect="9" title="充值返回" imgeIcon="activity_icon_chongzhifanhuan.png" imgeIconTitle="activity_chongzhifanhuan.png" imgeTitle="activity_chongzhifanhuan1.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;本次测试期间内充值的玩家在下次测试时将会获得双倍充值额度的元宝返还以及VIP专享礼包。请您点击留下手机号码，下次测试时请凭借手机号码、本次测试账号联系官方客服领取返还及礼包。&lt;/font&gt;&lt;br&gt;&lt;br&gt;"/>
+  <item appId="13" openChannelId="" rewardGoods="" rule="1_0,3006,5:0,2004,5:0,5001,100:0,5002,100|2_0,3006,6:0,2004,5:0,5001,100:0,5002,100|3_0,3006,6:0,2004,5:0,5001,100:0,5002,100|4_0,3006,6:0,2004,5:0,5001,100:0,5002,100|5_0,3006,6:0,2004,5:0,5001,100:0,5002,100:1,1060,1|6_0,3006,6:0,2004,5:0,5001,100:0,5002,100|7_0,3006,6:0,2004,5:0,5001,100:0,5002,100:2,108,40" startTime="2014-11-14 00:00:00" endTime="2015-1-12 23:59:00" effect="18" title="七天礼包" imgeIcon="activity_icon_account.png" imgeIconTitle="activity_biaoti_denglu.png" imgeTitle="activity_dabiaoti_denglulibao.png" text="&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;凡新进入游戏的玩家可领取7次奖励，累计登录一定天数可额外领取相应奖励&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;font size=&quot;26&quot; color=&quot;#00aeff&quot;&gt;(你已登录&lt;font size=&quot;26&quot; color=&quot;#ff0000&quot;&gt;%d&lt;/font&gt;天)&lt;/font&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt;
+&lt;font size=&quot;26&quot; color=&quot;#ffe7bd&quot;&gt;每次登陆可获得:&lt;/font&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt;--{{0-11-100}}{{0-10-50000}}{{0-5001-100}}{{0-5002-100}}--&lt;br/&gt;&lt;br/&gt;
+&lt;font size=&quot;26&quot; color=&quot;#ffe7bd&quot;&gt;累计登录&lt;font size=&quot;26&quot; color=&quot;#ff0000&quot;&gt;5&lt;/font&gt;天可额外领取:&lt;/font&gt;--{{1-1060-0}}--&lt;br/&gt;&lt;br/&gt;
+&lt;font size=&quot;26&quot; color=&quot;#ffe7bd&quot;&gt;累计登录&lt;font size=&quot;26&quot; color=&quot;#ff0000&quot;&gt;7&lt;/font&gt;天可额外领取:&lt;/font&gt;--{{2-108-40}}--"/>
+  <item appId="14" openChannelId="" rewardGoods="0_3003_1_1000|0_5001_500_1000|0_5002_200_1000|0_1001_10_1000" rule="6" startTime="2015-1-12 00:00:00" endTime="2015-1-12 23:59:00" effect="16" title="6元礼包" imgeIcon="activity_icon_6yuanlibao.png" imgeIconTitle="activity_biaoti_6yuanlibao.png" imgeTitle="activity_dabiaoti_6yuanlibao.png" text="&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;活动期间每日只需充值6元，即可领取一次奖励。(每天只可领取一次)&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongjiangli.png&quot;/&gt;
+--{{0-11-100}}{{0-5001-500}}{{0-5002-200}}{{0-1001-10}}--"/>
+  <item appId="15" openChannelId="" rewardGoods="2_180_8_1000" rule="80" startTime="2015-1-12 00:00:00" endTime="2015-1-12 23:59:00" effect="16" title="仙人求带走" imgeIcon="activity_icon_xianrenqiudaizou.png" imgeIconTitle="activity_biaoti_qiudaizou.png" imgeTitle="activity_dabiaoti_xianrenqiudaizou.png" text="&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;活动期间每日只需充值80元，即可领取8个强力仙人强良的魂魄。(每天只可领取一次)&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongjiangli.png&quot;/&gt;
+--{{2-180-8}}--"/>
+  <item appId="16" openChannelId="" rewardGoods="" rule="1" startTime="2015-1-12 00:00:00" endTime="2015-1-12 23:59:00" effect="13" title="春节" imgeIcon="activity_icon_nabajie.png" imgeIconTitle="activity_biaoti_labajie.png" imgeTitle="activity_dabiaoti_nabazhou.png" text="&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;活动期间，每次通关降妖关卡均有几率获得&quot;爆竹&quot;道具，使用后可以获得道具奖励。&lt;/font&gt;&lt;br&gt;&lt;br&gt;"/>
+  <item appId="17" openChannelId="" rewardGoods="0_5001_1200_1000|0_5002_800_1000|0_6003_5_1000" rule="80" startTime="2015-1-12 00:00:00" endTime="2015-1-12 23:59:00" effect="16" title="充值送礼" imgeIcon="activity_icon_chongzhisongli.png" imgeIconTitle="activity_biaoti_chongzhisongli.png" imgeTitle="activity_dabiaoti_chongzhisongli.png" text="&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;活动期间每日只需充值80元，即可领取一次以下好礼！(每天只可领取一次)&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+--{{0-5001-1200}}{{0-5002-800}}{{0-6003-5}}--"/>
+  <item appId="18" openChannelId="" rewardGoods="0_7004_x1*6+10_1000" rule="1" startTime="2015-1-12 00:00:00" endTime="2015-1-12 23:59:00" effect="3" title="活力充沛" imgeIcon="activity_icon_huolichongpei.png" imgeIconTitle="activity_biaoti_huolichongpei.png" imgeTitle="activity_dabiaoti_huolichongpei.png" text="&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;活动期间登陆即可领取一次活力药水，掌教等级越高，能领取的活力药水越多。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongjiangli.png&quot;/&gt;
+--{{0-7004-x1*6+10}}--"/>
+  <item appId="19" openChannelId="" rewardGoods="0_5001_600_1000|0_5002_300_1000|0_2007_2_1000|0_1003_50_1000" rule="1" startTime="2015-1-12 00:00:00" endTime="2015-1-12 23:59:00" effect="3" title="节日礼包" imgeIcon="activity_icon_jierilibao.png" imgeIconTitle="activity_biaoti_jierilibao.png" imgeTitle="activity_dabiaoti_jierilibao.png" text="&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;活动期间，全服玩家可领取以下好礼！(每天只可领取一次)&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+--{{0-5001-600}}{{0-5002-300}}{{0-2007-2}}{{0-1003-50}}--"/>
+  <item appId="20" openChannelId="" rewardGoods="2_125_30_1000" rule="20" startTime="2015-1-12 00:00:00" endTime="2015-1-12 23:59:00" effect="20" title="20级送普贤" imgeIcon="activity_icon_chongjisongxianren.png" imgeIconTitle="activity_biaoti_songxianren.png" imgeTitle="activity_chongjisongxianren.png" text="&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;活动时间内，掌教升到20级可在此领取强力仙人普贤菩萨。&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongjiangli.png&quot;/&gt;
+--{{2-125-30}}--"/>
+  <item appId="21" openChannelId="" rewardGoods="0_3003_2_1000|0_2007_20_1000|0_5001_800_1000|0_5002_1000_1000|0_1000_10_1000|0_1003_200_1000" rule="30" startTime="2015-1-12 00:00:00" endTime="2015-1-12 23:59:00" effect="16" title="30元礼包" imgeIcon="activity_icon_sanshiyuanlibao.png" imgeIconTitle="activity_biaoti_sanshiyuanlibao.png" imgeTitle="activity_sanshiyuanlibao.png" text="&lt;img src=&quot;activity_huodongshijain.png&quot;/&gt;
+&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot;&gt;%d月%d日-%d月%d日&lt;/font&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;activity_huodongguize.png&quot;/&gt;&lt;font size=&quot;26&quot; align=&quot;left&quot; color=&quot;#ffe7bd&quot; &gt;活动期间每日只需充值30元，即可领取一次奖励。(每天只可领取一次)&lt;/font&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&quot;activity_huodongjiangli.png&quot;/&gt;
+--{{0-11-200}}{{0-2007-20}}{{0-5001-800}}{{0-5002-1000}}{{0-1000-10}}{{0-1003-200}}--"/>
+</root>

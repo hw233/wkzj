@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   type:碎片的类型： 1表示武器 2表示防具 3表示饰品 4表示钥匙碎片
+   star:品质(1-6)
+   composeSum:合成需要的碎片(格式碎片id_数量|碎片id_数量)
+   outputCollection:合成品集合，如果提供值，则从该集合里面随机抽取一个作为合成的结果
+-->
+
+<root>
+  <item type="1" star="1" composeSum="8211_1|8212_1" outputCollection="1022"/>
+  <item type="1" star="2" composeSum="8221_1|8222_1" outputCollection="1023|1024"/>
+  <item type="1" star="3" composeSum="8231_1|8232_1" outputCollection="1012|1014"/>
+  <item type="1" star="4" composeSum="8241_1|8242_1|8243_1" outputCollection="1001"/>
+  <item type="1" star="5" composeSum="8251_1|8252_1|8253_1|8254_1" outputCollection="1007|1016"/>
+  <item type="1" star="6" composeSum="8261_1|8262_1|8263_1|8264_1" outputCollection="1029"/>
+  <item type="2" star="1" composeSum="8311_1|8312_1" outputCollection="2016"/>
+  <item type="2" star="2" composeSum="8321_1|8322_1" outputCollection="2019|2020"/>
+  <item type="2" star="3" composeSum="8331_1|8332_1" outputCollection="2006"/>
+  <item type="2" star="4" composeSum="8341_1|8342_1|8343_1" outputCollection="2017"/>
+  <item type="2" star="5" composeSum="8351_1|8352_1|8353_1|8354_1" outputCollection="2001|2004"/>
+  <item type="2" star="6" composeSum="8361_1|8362_1|8363_1|8364_1" outputCollection="2023"/>
+  <item type="3" star="1" composeSum="8411_1|8412_1" outputCollection="3023"/>
+  <item type="3" star="2" composeSum="8421_1|8422_1" outputCollection="3007|3015"/>
+  <item type="3" star="3" composeSum="8431_1|8432_1" outputCollection="3001|3008"/>
+  <item type="3" star="4" composeSum="8441_1|8442_1|8443_1" outputCollection="3002|3017"/>
+  <item type="3" star="5" composeSum="8451_1|8452_1|8453_1|8454_1" outputCollection="3003"/>
+  <item type="3" star="6" composeSum="8461_1|8462_1|8463_1|8464_1" outputCollection="3006"/>
+  <item type="4" star="1" composeSum="9011_1|9012_1" outputCollection="9019"/>
+  <item type="4" star="3" composeSum="9021_1|9022_1|9023_1" outputCollection="9029"/>
+  <item type="4" star="5" composeSum="9031_1|9032_1|9033_1|9034_1" outputCollection="9039"/>
+</root>

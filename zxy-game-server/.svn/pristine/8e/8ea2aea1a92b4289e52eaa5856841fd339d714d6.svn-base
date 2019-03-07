@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:配置id(1.南天门 2.前殿 3.宝殿  4.超过30次后)
+   type:类型（0.物品 1.装备 2.仙人魂魄）
+   itemId:物品id
+   num:数量公式
+   propertion:几率
+   breakEven:是否保底奖励(0.否 1.是)
+   sendChat:是否发送系统公告(0.否 1.是)
+-->
+
+<root>
+  <item id="1" type="0" itemId="5001" num="10" propertion="350" breakEven="0" sendChat="0"/>
+  <item id="1" type="0" itemId="7102" num="1" propertion="10" breakEven="0" sendChat="0"/>
+  <item id="1" type="0" itemId="5001" num="10" propertion="175" breakEven="0" sendChat="0"/>
+  <item id="1" type="0" itemId="5002" num="20" propertion="139" breakEven="0" sendChat="0"/>
+  <item id="1" type="1" itemId="2045" num="1" propertion="2" breakEven="0" sendChat="1"/>
+  <item id="1" type="0" itemId="3003" num="1" propertion="10" breakEven="0" sendChat="0"/>
+  <item id="1" type="0" itemId="5002" num="20" propertion="139" breakEven="0" sendChat="0"/>
+  <item id="1" type="0" itemId="5001" num="10" propertion="175" breakEven="0" sendChat="0"/>
+  <item id="1" type="0" itemId="3003" num="1" propertion="1000" breakEven="1" sendChat="0"/>
+  <item id="2" type="0" itemId="5001" num="50" propertion="139" breakEven="0" sendChat="0"/>
+  <item id="2" type="0" itemId="3003" num="5" propertion="10" breakEven="0" sendChat="0"/>
+  <item id="2" type="0" itemId="5002" num="100" propertion="200" breakEven="0" sendChat="0"/>
+  <item id="2" type="0" itemId="5002" num="100" propertion="300" breakEven="0" sendChat="0"/>
+  <item id="2" type="1" itemId="3011" num="1" propertion="2" breakEven="0" sendChat="1"/>
+  <item id="2" type="0" itemId="5002" num="100" propertion="200" breakEven="0" sendChat="0"/>
+  <item id="2" type="0" itemId="7102" num="2" propertion="10" breakEven="0" sendChat="0"/>
+  <item id="2" type="0" itemId="5001" num="50" propertion="139" breakEven="0" sendChat="0"/>
+  <item id="2" type="0" itemId="3003" num="5" propertion="1000" breakEven="1" sendChat="0"/>
+  <item id="3" type="0" itemId="5002" num="600" propertion="242" breakEven="0" sendChat="0"/>
+  <item id="3" type="0" itemId="5001" num="1000" propertion="10" breakEven="0" sendChat="0"/>
+  <item id="3" type="0" itemId="5002" num="600" propertion="242" breakEven="0" sendChat="0"/>
+  <item id="3" type="0" itemId="5002" num="600" propertion="121" breakEven="0" sendChat="0"/>
+  <item id="3" type="0" itemId="7102" num="3" propertion="20" breakEven="0" sendChat="0"/>
+  <item id="3" type="0" itemId="5002" num="600" propertion="242" breakEven="0" sendChat="0"/>
+  <item id="3" type="1" itemId="3046" num="1" propertion="2" breakEven="0" sendChat="1"/>
+  <item id="3" type="0" itemId="5002" num="600" propertion="121" breakEven="0" sendChat="0"/>
+  <item id="3" type="0" itemId="5001" num="1000" propertion="1000" breakEven="1" sendChat="0"/>
+  <item id="4" type="0" itemId="5002" num="600" propertion="242" breakEven="0" sendChat="0"/>
+  <item id="4" type="0" itemId="5001" num="1000" propertion="10" breakEven="0" sendChat="0"/>
+  <item id="4" type="0" itemId="5002" num="600" propertion="242" breakEven="0" sendChat="0"/>
+  <item id="4" type="0" itemId="5002" num="600" propertion="121" breakEven="0" sendChat="0"/>
+  <item id="4" type="0" itemId="7102" num="3" propertion="20" breakEven="0" sendChat="0"/>
+  <item id="4" type="0" itemId="5002" num="600" propertion="242" breakEven="0" sendChat="0"/>
+  <item id="4" type="1" itemId="3046" num="1" propertion="2" breakEven="0" sendChat="1"/>
+  <item id="4" type="0" itemId="5002" num="600" propertion="121" breakEven="0" sendChat="0"/>
+  <item id="4" type="0" itemId="5001" num="1000" propertion="1000" breakEven="1" sendChat="0"/>
+</root>

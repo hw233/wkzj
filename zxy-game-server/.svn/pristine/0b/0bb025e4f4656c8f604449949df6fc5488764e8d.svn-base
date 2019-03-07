@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!-- ================== 连接世界服客户端的的socket配置  ================== -->
+	<bean id="worldClient.mina.backlog" class="java.lang.Integer">
+		<constructor-arg value="12000" />
+	</bean>
+
+	<bean id="worldClient.mina.tcp.nodelay" class="java.lang.Boolean">
+		<constructor-arg value="true" />
+	</bean>
+	
+	<bean id="worldClient.mina.receive.buffer.size" class="java.lang.Integer">
+		<constructor-arg value="8192" />
+	</bean>
+
+	<bean id="worldClient.mina.send.buffer.size" class="java.lang.Integer">
+		<constructor-arg value="8192" />
+	</bean>
+	
+	<!-- 连接检测时间 （毫秒）-->
+	<bean id="worldClient.connectCheck.time" class="java.lang.Integer">
+		<constructor-arg value="1000" />
+	</bean>
+	
+
+</beans>

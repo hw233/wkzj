@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   exchangeId:兑换id
+   deductGoods:兑换的消耗物品 物品id_数量
+   exchangeGoods:兑换的奖励物品 (类型 0.物品 1.装备 2.魂魄 3.金币)_id_数量
+-->
+
+<root>
+  <item exchangeId="1" deductGoods="20052_50" exchangeGoods="0_5002_100"/>
+  <item exchangeId="2" deductGoods="20052_50" exchangeGoods="0_5001_100"/>
+  <item exchangeId="3" deductGoods="20052_100" exchangeGoods="0_30001_1"/>
+  <item exchangeId="4" deductGoods="20052_100" exchangeGoods="0_30016_1"/>
+  <item exchangeId="5" deductGoods="20052_200" exchangeGoods="0_31052_1"/>
+  <item exchangeId="6" deductGoods="20052_200" exchangeGoods="2_160_1"/>
+</root>

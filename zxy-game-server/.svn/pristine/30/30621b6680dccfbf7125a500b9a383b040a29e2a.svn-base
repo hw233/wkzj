@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:每个id对应一个奖励
+   beginTime:每天几点开始 (24小时制:0-23)
+   endTime:每天几点结束 (24小时制:0-23)
+   rewardExpr:奖励类型 (0.物品 1.装备 2.魂魄 4.活力补满)_奖励id_数量(公式 : x1等级) (如果是活力补满，奖励id填0)
+-->
+
+<root>
+  <item id="1" beginTime="12" endTime="13" rewardExpr="0_5002_50+x1*5"/>
+  <item id="2" beginTime="18" endTime="19" rewardExpr="4_0_0"/>
+  <item id="3" beginTime="22" endTime="23" rewardExpr="0_5001_50+x1*5"/>
+</root>

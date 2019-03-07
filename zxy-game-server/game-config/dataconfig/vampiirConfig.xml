@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   level:吸灵堂当前等级
+   upgradeTicket:升级消耗点券
+   increaseExp:指在仙人吸灵时会获得的附加经验百分比2表示2
+-->
+
+<root>
+  <item level="1" upgradeTicket="0" increaseExp="0"/>
+</root>

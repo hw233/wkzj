@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   level:试炼洞的等级
+   trialLimit:最大试炼次数
+   upgradeTicket:升级洞需要的点券
+   battleReputationPercent:战斗后增加的声望百分比
+   battleGoodsNum:战斗后获得的物品额外增加数
+-->
+
+<root>
+  <item level="1" trialLimit="4" upgradeTicket="480" battleReputationPercent="10" battleGoodsNum="3"/>
+  <item level="2" trialLimit="5" upgradeTicket="980" battleReputationPercent="15" battleGoodsNum="6"/>
+  <item level="3" trialLimit="6" upgradeTicket="980" battleReputationPercent="20" battleGoodsNum="9"/>
+  <item level="4" trialLimit="7" upgradeTicket="1980" battleReputationPercent="25" battleGoodsNum="12"/>
+  <item level="5" trialLimit="8" upgradeTicket="1980" battleReputationPercent="30" battleGoodsNum="15"/>
+  <item level="6" trialLimit="9" upgradeTicket="1980" battleReputationPercent="35" battleGoodsNum="18"/>
+</root>

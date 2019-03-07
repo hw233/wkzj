@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   openDate:活动开始时间
+   closeDate:活动结束时间
+   openLv:开放等级
+   beforeStart:开始之前跑马灯通知
+   start:开始通知
+   beforeEnd:结束之前
+   beforeEndHp:boss剩多少血时通知
+   beatEnd:boss被击败时通知内容
+   escapeEnd:boss未被打死但是活动时间已到
+   finalBlowReward:最后一击奖励物品 ..格式(物品类型_物品Id_物品数量|…)
+   actMustReward:攻击boss奖励.格式(物品类型_物品Id_物品数量公式|物品类型_物品Id_物品数量公式|物品类型_物品Id_物品数量公式)
+   actProbReward:攻击boss 概率出物品(物品类型_ID_数量公式_概率|物品类型_ID_数量公式_概率)
+   actLeastReward:攻击boss 保底物品(物品类型_物品Id_数量公式|物品类型_物品Id_数量公式)
+   actLeastNum:攻击boss 保底次数(X_X)
+   actMustRewardNum:攻击boss必出物品数量
+   getReputationTimes:能获得掌教经验的次数
+   getReputationPrecent:掌教经验千分比
+   refreshTime:刷新时间(小时.24小时制)
+   delayTime:boss停留时间(seconds 秒)
+   coolDownTime:攻击boss间隔时间
+   costTicket:花费元宝
+   mapId:地图id
+   monsterConfigId:怪物配置id
+-->
+
+<root>
+  <item openDate="2015-02-18 00:00:00" closeDate="2015-02-24 23:59:59" openLv="20" beforeStart="年兽即将来袭，请掌教们做好作战准备！" start="年兽已经现身，请掌教们火速赶回主界面中寻找年兽，攻击年兽即可获赠好礼，最终击败年兽者更可获增超级大奖！" beforeEnd="年兽不足%d%%的生命值了，大家快来爆装备！" beforeEndHp="5" beatEnd="【%s】击败了年兽，拯救了苍生！并获得了极品装备【%s】,恭喜他！" escapeEnd="年兽发动完一轮袭击后便撤退了，请掌教们不要灰心，争取在年兽下次来袭时击败它！" finalBlowReward="1_3062_1|1_1078_1" actMustReward="0_5001_x1*3+8|0_5002_x1*2+10|0_1000_1|0_1001_1|0_1002_3" actProbReward="2_189_3_200" actLeastReward="2_189_3" actLeastNum="5_5" actMustRewardNum="2" getReputationTimes="10" getReputationPrecent="10" refreshTime="10_22" delayTime="3600" coolDownTime="300" costTicket="50" mapId="3" monsterConfigId="1"/>
+</root>

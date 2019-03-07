@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   type:类型（2：仙人魂魄 ，4：仙人）
+   star:星级
+   id:装备或者仙人id
+   rate:概率千分比
+   num:num：数量
+   recruitType:类型：1:小，2：大
+-->
+
+<root>
+  <item type="4" star="2" id="104" rate="72" num="10" recruitType="1"/>
+  <item type="4" star="2" id="107" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="111" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="113" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="114" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="115" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="131" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="132" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="118" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="119" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="120" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="134" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="141" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="142" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="143" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="144" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="2" id="145" rate="58" num="10" recruitType="1"/>
+  <item type="4" star="3" id="101" rate="87" num="15" recruitType="1"/>
+  <item type="4" star="3" id="102" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="105" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="109" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="116" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="124" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="128" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="136" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="122" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="123" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="135" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="3" id="139" rate="83" num="15" recruitType="1"/>
+  <item type="4" star="4" id="161" rate="77" num="30" recruitType="1"/>
+  <item type="4" star="4" id="127" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="129" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="140" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="152" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="153" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="154" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="164" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="162" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="163" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="165" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="172" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="179" rate="71" num="30" recruitType="1"/>
+  <item type="4" star="4" id="186" rate="71" num="30" recruitType="1"/>
+  <item type="2" star="3" id="101" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="102" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="103" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="105" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="109" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="116" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="124" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="128" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="136" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="122" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="123" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="135" rate="77" num="3" recruitType="1"/>
+  <item type="2" star="3" id="139" rate="76" num="3" recruitType="1"/>
+  <item type="2" star="4" id="161" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="125" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="127" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="129" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="140" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="152" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="153" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="154" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="164" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="162" rate="67" num="3" recruitType="1"/>
+  <item type="2" star="4" id="163" rate="66" num="3" recruitType="1"/>
+  <item type="2" star="4" id="165" rate="66" num="3" recruitType="1"/>
+  <item type="2" star="4" id="172" rate="66" num="3" recruitType="1"/>
+  <item type="2" star="4" id="179" rate="66" num="3" recruitType="1"/>
+  <item type="2" star="4" id="186" rate="66" num="3" recruitType="1"/>
+  <item type="2" star="4" id="161" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="125" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="127" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="129" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="140" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="152" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="153" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="154" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="164" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="162" rate="67" num="5" recruitType="2"/>
+  <item type="2" star="4" id="163" rate="66" num="5" recruitType="2"/>
+  <item type="2" star="4" id="165" rate="66" num="5" recruitType="2"/>
+  <item type="2" star="4" id="172" rate="66" num="5" recruitType="2"/>
+  <item type="2" star="4" id="179" rate="66" num="5" recruitType="2"/>
+  <item type="2" star="4" id="186" rate="66" num="5" recruitType="2"/>
+  <item type="2" star="5" id="108" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="126" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="148" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="156" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="157" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="159" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="176" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="178" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="181" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="182" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="184" rate="77" num="5" recruitType="2"/>
+  <item type="2" star="5" id="185" rate="76" num="5" recruitType="2"/>
+  <item type="2" star="5" id="188" rate="77" num="5" recruitType="2"/>
+  <item type="4" star="4" id="161" rate="77" num="30" recruitType="2"/>
+  <item type="4" star="4" id="127" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="129" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="140" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="152" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="153" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="154" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="164" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="162" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="163" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="165" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="172" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="179" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="4" id="186" rate="71" num="30" recruitType="2"/>
+  <item type="4" star="5" id="108" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="126" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="148" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="156" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="157" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="159" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="176" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="178" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="181" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="182" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="184" rate="84" num="40" recruitType="2"/>
+  <item type="4" star="5" id="185" rate="76" num="40" recruitType="2"/>
+</root>

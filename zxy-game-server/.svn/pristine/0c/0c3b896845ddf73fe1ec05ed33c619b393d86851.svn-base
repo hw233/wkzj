@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   bableType:登天塔类型
+   floorMin:层数下限
+   floorMax:层数上限
+   monsterIndex1:前排怪物数(x1登天塔类型x2层数)
+   monsterIndex2:中排怪物数(x1登天塔类型x2层数)
+   monsterIndex3:后排怪物数(x1登天塔类型x2层数)
+-->
+
+<root>
+  <item bableType="1" floorMin="1" floorMax="5" monsterIndex1="3" monsterIndex2="2" monsterIndex3="0"/>
+  <item bableType="1" floorMin="6" floorMax="20" monsterIndex1="3" monsterIndex2="3" monsterIndex3="0"/>
+  <item bableType="1" floorMin="21" floorMax="30" monsterIndex1="3" monsterIndex2="3" monsterIndex3="1"/>
+  <item bableType="1" floorMin="31" floorMax="100" monsterIndex1="3" monsterIndex2="3" monsterIndex3="3"/>
+  <item bableType="2" floorMin="1" floorMax="100" monsterIndex1="3" monsterIndex2="3" monsterIndex3="3"/>
+  <item bableType="3" floorMin="1" floorMax="100" monsterIndex1="3" monsterIndex2="3" monsterIndex3="3"/>
+</root>

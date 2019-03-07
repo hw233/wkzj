@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:配置id，唯一
+   monster:战场里的怪物(最大9个否则服务器启不来) 格式:怪物id_位置(右下角角1-9)|怪物id_位置(右下角角1-9) 位置:9 8 7      6 5 4      3 2 1
+   monsterAttack:怪物攻击力表达式,x1是排行榜玩家等级总和（对应不同名次）
+   monsterDeffends:怪物防御力表达式,x1是排行榜玩家等级总和（对应不同名次）
+   monsterHp:怪物血值表达式,x1是排行榜玩家等级总和（对应不同名次）
+   morale:气势
+   extraArgs:附加血系数 （格式:时间分钟最小值_时间分钟最大值_系数|…)
+-->
+
+<root>
+  <item id="1" monster="2_40001" monsterAttack="250*x1/20" monsterDeffends="0" monsterHp="304228*x1/20" morale="1" extraArgs="0_0_0.5|1_5_1.5|6_10_1.3|11_15_1.1|16_20_1|21_30_0.7"/>
+  <item id="2" monster="2_40002" monsterAttack="174*x1/30" monsterDeffends="0" monsterHp="229500*x1/30" morale="1" extraArgs="0_0_0.5|1_5_1.5|6_10_1.3|11_15_1.1|16_20_1|21_30_0.7"/>
+  <item id="3" monster="2_40003" monsterAttack="153*x1/50" monsterDeffends="0" monsterHp="195804*x1/50" morale="1" extraArgs="0_0_0.5|1_5_1.5|6_10_1.3|11_15_1.1|16_20_1|21_30_0.7"/>
+  <item id="4" monster="2_40004" monsterAttack="108*x1/200" monsterDeffends="0" monsterHp="116597*x1/200" morale="1" extraArgs="0_0_0.5|1_5_1.5|6_10_1.3|11_15_1.1|16_20_1|21_30_0.7"/>
+</root>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   rechargeNum:充值次数(第几次充值)
+   giveReward:赠送的奖励(类型<详见rewardType>_id_数量|...)
+-->
+
+<root>
+  <item rechargeNum="1" giveReward="1_1076_1|1_3061_1|0_2007_5|0_1000_2"/>
+</root>

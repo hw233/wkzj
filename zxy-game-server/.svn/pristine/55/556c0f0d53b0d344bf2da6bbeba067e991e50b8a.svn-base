@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   type:装备类型 1：武器  2：防具 3：饰品
+   composeStar:合成的星级
+   requireEquipNum:要求的装备数
+   basePercent:随机基础百分比(0-100)
+   useTicketPercent:使用点券的百分比(0-100)
+   consumeTicket:消耗点券数
+   equipList:随机的装备列表 格式:装备id_概率百分比|装备id_概率百分比|装备id_概率百分比
+   failReward:合成失败产生的物品，格式:类型（0.物品1.装备2.魂魄）_ID_数量|...
+-->
+
+<root>
+  <item type="1" composeStar="1" requireEquipNum="5" basePercent="50" useTicketPercent="100" consumeTicket="1" equipList="1004_10|1006_10|1009_10|1011_10|1013_10|1020_10|1023_10|1024_10|1026_10|1028_10" failReward="0_5002_50"/>
+  <item type="1" composeStar="2" requireEquipNum="5" basePercent="40" useTicketPercent="100" consumeTicket="150" equipList="1005_10|1012_10|1014_8|1015_8|1018_8|1019_8|1033_8|1034_8|1035_8|1068_8|1069_8|1070_8" failReward="0_5002_200"/>
+  <item type="1" composeStar="3" requireEquipNum="5" basePercent="30" useTicketPercent="100" consumeTicket="1000" equipList="1058_17|1059_17|1060_17|1064_17|1067_16|1071_16" failReward="0_5002_2000"/>
+  <item type="1" composeStar="4" requireEquipNum="5" basePercent="5" useTicketPercent="100" consumeTicket="2000" equipList="1036_21|1051_8|1062_21|1063_21|1065_8|1073_21" failReward="0_5002_6000"/>
+  <item type="1" composeStar="5" requireEquipNum="5" basePercent="1" useTicketPercent="100" consumeTicket="10000" equipList="1031_100" failReward="0_5002_10000"/>
+  <item type="2" composeStar="1" requireEquipNum="5" basePercent="50" useTicketPercent="100" consumeTicket="1" equipList="2002_16|2008_14|2010_14|2018_14|2019_14|2020_14|2022_14" failReward="0_5002_50"/>
+  <item type="2" composeStar="2" requireEquipNum="5" basePercent="40" useTicketPercent="100" consumeTicket="200" equipList="2003_16|2005_14|2006_14|2011_14|2012_14|2021_14|2046_14" failReward="0_5002_200"/>
+  <item type="2" composeStar="3" requireEquipNum="5" basePercent="20" useTicketPercent="100" consumeTicket="1500" equipList="2013_16|2024_12|2034_12|2038_12|2039_12|2040_12|2041_12|2037_12" failReward="0_5002_2000"/>
+  <item type="2" composeStar="4" requireEquipNum="5" basePercent="5" useTicketPercent="100" consumeTicket="2500" equipList="2029_25|2031_25|2036_25|2044_25" failReward="0_5002_6000"/>
+  <item type="2" composeStar="5" requireEquipNum="5" basePercent="1" useTicketPercent="100" consumeTicket="10000" equipList="2023_100" failReward="0_5002_10000"/>
+  <item type="3" composeStar="1" requireEquipNum="5" basePercent="50" useTicketPercent="100" consumeTicket="100" equipList="3004_17|3005_17|3007_17|3015_17|3019_16|3020_16" failReward="0_5002_50"/>
+  <item type="3" composeStar="2" requireEquipNum="5" basePercent="40" useTicketPercent="100" consumeTicket="500" equipList="3008_20|3009_20|3012_20|3048_20|3049_20" failReward="0_5002_200"/>
+  <item type="3" composeStar="3" requireEquipNum="5" basePercent="20" useTicketPercent="100" consumeTicket="3000" equipList="3002_16|3017_14|3035_14|3036_14|3037_14|3041_14|3051_14" failReward="0_5002_2000"/>
+  <item type="3" composeStar="4" requireEquipNum="5" basePercent="5" useTicketPercent="100" consumeTicket="5000" equipList="3025_17|3027_17|3031_17|3045_17|3054_16|3056_16" failReward="0_5002_6000"/>
+  <item type="3" composeStar="5" requireEquipNum="5" basePercent="1" useTicketPercent="100" consumeTicket="15000" equipList="3006_100" failReward="0_5002_10000"/>
+</root>

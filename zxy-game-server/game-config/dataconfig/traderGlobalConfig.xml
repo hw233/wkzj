@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   conditionNum:初始化触发条件的个数
+   flushNum:免费刷新次数
+   flushTime:刷新时间 24小时制(时间1_时间2_...)
+   level:模块解锁等级
+   vipLevel:模块解锁vip等级
+   rewardRule:同类型同id物品最多出现个数
+   discountNum:商品列表最多有几个打折物品
+   discountType:只有哪几种类型的商品可以打折(类型_类型(0:精炼石、潜修石，1：装备碎片，2.物品，3：魂魄，4：装备))
+   mastDiscountId:必须打折的商品id(id_...)
+   firstInit:第一次触发必出列表(商品id_折扣id|...)
+   flushGoods:刷新道具id
+   goodsStar:指向性装备碎片和魂魄的星级
+   goodsViewNum:指向性装备碎片和魂魄出现的次数
+   goodsNum:指向性装备碎片和魂魄合成欠缺个数
+   equipNum:指向性装备出现的次数
+-->
+
+<root>
+  <item conditionNum="3" flushNum="0" flushTime="12:00:00_18:00:00" level="16" vipLevel="3" rewardRule="2" discountNum="6" discountType="0_1_2_3" mastDiscountId="4_5_6_7_8_9_10_11_12_13_214_215_216_217_220_221_222_223_224_225_226_227_228_229_230_231_232_233_234_235_236_237_238_239" firstInit="8_4|13_4|1_3|2_5|37_5|167_6" flushGoods="1001" goodsStar="3" goodsViewNum="5" goodsNum="5" equipNum="1"/>
+</root>

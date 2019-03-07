@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   exchangeAwardId:兑换奖励唯一id
+   costExchangePoint:扣除贡献点
+   reward:奖励物品(每个物品一条) 格式: 类型(0:物品，1：装备，2：仙人魂魄 ，3：金币）_物品id_物品数量
+-->
+
+<root>
+  <item exchangeAwardId="1" costExchangePoint="1000" reward="0_5002_100"/>
+  <item exchangeAwardId="2" costExchangePoint="2000" reward="0_5001_100"/>
+  <item exchangeAwardId="3" costExchangePoint="6000" reward="2_167_1"/>
+  <item exchangeAwardId="4" costExchangePoint="120000" reward="1_2031_1"/>
+  <item exchangeAwardId="5" costExchangePoint="150000" reward="1_3030_1"/>
+</root>

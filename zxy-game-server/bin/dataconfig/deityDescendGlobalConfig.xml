@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   startDate:活动开始时间
+   endDate:活动结束时间
+   currentHeroId:活动可获得的仙人
+-->
+
+<root>
+  <item startDate="2015-01-09 00:00:00" endDate="2015-01-09 23:59:59" currentHeroId="169"/>
+</root>

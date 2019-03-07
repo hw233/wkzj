@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   type:类型（2：仙人魂魄 ，4：仙人）
+   star:星级
+   rate:概率千分比
+   recruitType:类型：1：小，2：大
+-->
+
+<root>
+  <item type="4" star="2" rate="450" recruitType="1"/>
+  <item type="4" star="3" rate="500" recruitType="1"/>
+  <item type="4" star="4" rate="50" recruitType="1"/>
+  <item type="2" star="3" rate="900" recruitType="1"/>
+  <item type="2" star="4" rate="100" recruitType="1"/>
+  <item type="4" star="4" rate="1000" recruitType="2"/>
+  <item type="4" star="5" rate="0" recruitType="2"/>
+  <item type="2" star="4" rate="700" recruitType="2"/>
+  <item type="2" star="5" rate="300" recruitType="2"/>
+</root>

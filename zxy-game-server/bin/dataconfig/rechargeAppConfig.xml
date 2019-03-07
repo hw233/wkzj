@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   rechargeId:充值id
+   money:充值金额
+   giveTicket:赠送点券
+   rechargeCount:第几次充值赠送
+   goods:赠送的物品
+   startTime:开始时间(yyyy-MM-dd HH:mm:ss)
+   endTime:结束时间(yyyy-MM-dd HH:mm:ss)
+-->
+
+<root>
+  <item rechargeId="3" money="30" giveTicket="300" rechargeCount="1" goods="" startTime="2014-8-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item rechargeId="5" money="198" giveTicket="1980" rechargeCount="1" goods="" startTime="2014-8-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item rechargeId="7" money="648" giveTicket="6480" rechargeCount="1" goods="" startTime="2014-8-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item rechargeId="1002" money="30" giveTicket="300" rechargeCount="1" goods="" startTime="2014-8-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item rechargeId="1004" money="198" giveTicket="1980" rechargeCount="1" goods="" startTime="2014-8-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+  <item rechargeId="1006" money="648" giveTicket="6480" rechargeCount="1" goods="" startTime="2014-8-1 23:00:00" endTime="2030-11-1 23:00:00"/>
+</root>

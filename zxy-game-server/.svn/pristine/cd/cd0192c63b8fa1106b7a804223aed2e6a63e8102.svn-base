@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   rankBegin:排行开始
+   rankEnd:排行结束
+   costMorale:扣除的气势
+   addMorale:增加的气势点
+-->
+
+<root>
+  <item rankBegin="1" rankEnd="-1" costMorale="5" addMorale="5"/>
+</root>

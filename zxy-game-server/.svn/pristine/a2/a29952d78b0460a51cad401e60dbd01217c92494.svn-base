@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   bableId:登天塔id  1.1-50角色等级    2.51-99角色等级    3.99级以上
+   greaterLevel:大于等于角色等级可进入
+   openAwardExpr:是否开放奖励表达式 : 计算结果大于0表示允许   x1:当前层数
+   dropGoods:全局掉落物品集合  格式:物品id_物品数表达式(x1:层数)|... 物品数填1则表示 数量为1
+   dropGoodsRand:随机掉落百分比(1-100)
+   mapId:地图id
+   star:战斗星级评价数，result_num 格式：战斗结果（4.险胜 5.胜利 6.大胜）_评价数 | 战斗结果（4.险胜 5.胜利 6.大胜）_评价数 | 战斗结果（4.险胜 5.胜利 6.大胜）_评价数
+   maxFloorExtraStarNum:顶层额外奖励星数
+   maxFloor:最大层数
+   resetNum:每天重置次数
+   historyFloorPercent:历史登塔最高奖励百分比(1-100)  额外获得金币百分比      格式:最小层_最大层_奖励百分比|最小层_最大层_奖励百分比
+-->
+
+<root>
+  <item bableId="1" greaterLevel="18" openAwardExpr="x1" dropGoods="10_x1*100+100" dropGoodsRand="200" mapId="28" star="4_3|5_6|6_9" maxFloorExtraStarNum="50" maxFloor="100" resetNum="3" historyFloorPercent="1_5_5|6_10_10|11_15_15|16_20_20|21_25_25|26_30_30|31_35_35|36_40_40|41_45_45|46_50_50|51_55_55|56_60_60|61_65_65|66_70_70|71_75_75|76_80_80|81_85_85|86_90_90|91_95_95|96_100_100"/>
+  <item bableId="2" greaterLevel="30" openAwardExpr="x1" dropGoods="10_x1*300+300" dropGoodsRand="200" mapId="28" star="4_3|5_6|6_9" maxFloorExtraStarNum="50" maxFloor="100" resetNum="3" historyFloorPercent="1_5_5|6_10_10|11_15_15|16_20_20|21_25_25|26_30_30|31_35_35|36_40_40|41_45_45|46_50_50|51_55_55|56_60_60|61_65_65|66_70_70|71_75_75|76_80_80|81_85_85|86_90_90|91_95_95|96_100_100"/>
+  <item bableId="3" greaterLevel="60" openAwardExpr="x1" dropGoods="10_x1*600+1000" dropGoodsRand="200" mapId="28" star="4_3|5_6|6_9" maxFloorExtraStarNum="50" maxFloor="100" resetNum="3" historyFloorPercent="1_5_5|6_10_10|11_15_15|16_20_20|21_25_25|26_30_30|31_35_35|36_40_40|41_45_45|46_50_50|51_55_55|56_60_60|61_65_65|66_70_70|71_75_75|76_80_80|81_85_85|86_90_90|91_95_95|96_100_100"/>
+</root>

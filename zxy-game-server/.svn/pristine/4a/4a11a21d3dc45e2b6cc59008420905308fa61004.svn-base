@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   star:放入的打造装备的星级
+   buildProb:打造概率 (第一个装备产出概率_第二个装备产出概率)千分比
+   buildCost:打造花费元宝(第一个装备打造花费_第二个装备打造花费)
+   buildReturn:打造失败返还物品(配有物品的表示返还碎片同时还返还这种物品,3星以上才有碎片 所以1 2 星必须配置返还物品)
+   returnPerc:返还碎片的百分比(根据打造此装备需要的碎片数来计算,比如打造需要30个 ,返还30x80% = 24个)
+-->
+
+<root>
+  <item star="1" buildProb="0_0" buildCost="5000_5000" buildReturn="0_5002_10" returnPerc=""/>
+  <item star="2" buildProb="0_0" buildCost="4000_4000" buildReturn="0_5002_20" returnPerc=""/>
+  <item star="3" buildProb="1_1" buildCost="3800_3800" buildReturn="" returnPerc="10"/>
+  <item star="4" buildProb="1_1" buildCost="3000_3000" buildReturn="" returnPerc="20"/>
+  <item star="5" buildProb="0_1" buildCost="1000_1000" buildReturn="" returnPerc="30"/>
+</root>

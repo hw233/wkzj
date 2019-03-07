@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   goodsId:消耗的物品id （对应goodsConfig）
+   addExp:添加经验
+-->
+
+<root>
+  <item goodsId="6001" addExp="100"/>
+  <item goodsId="6002" addExp="1000"/>
+  <item goodsId="6003" addExp="10000"/>
+  <item goodsId="6004" addExp="25"/>
+</root>

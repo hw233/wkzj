@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   type:潜修类型
+   upPropNum:提升属性的个数
+   goodsId:潜修石ID
+   proportion:表示潜修房为潜修时增加的属性提升的百分比，1表示提升1%等
+   ableRepeatDelve:表示是否可重修，0表示未开放，1表示开放此功能
+-->
+
+<root>
+  <item type="1" upPropNum="1" goodsId="5001" proportion="0" ableRepeatDelve="1"/>
+  <item type="2" upPropNum="2" goodsId="5001" proportion="0" ableRepeatDelve="1"/>
+  <item type="3" upPropNum="2" goodsId="5001" proportion="0" ableRepeatDelve="1"/>
+</root>

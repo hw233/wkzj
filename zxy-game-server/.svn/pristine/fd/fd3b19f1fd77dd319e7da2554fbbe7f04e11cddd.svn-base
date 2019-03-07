@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   count:迷宫寻宝免费次数
+   costTicket:点券消耗（支持公式:x1*2）
+   openTime:开放时间 (格式：8:00_8:10)
+   beginIndex:格子开始坐标
+   endIndex:格子结束坐标
+   useNumReward:使用次数奖励(类型_id_数量(公式x1代表等级)_几率) (类型 0.物品 1.装备 2.魂魄 3.金币)
+   leastStep:保底步数区间 x_x
+   maxStep:一次迷宫最多走多少步(保底步数最大值+2不能大于这个值)
+   firstUseStep:首次使用迷宫多少步直接获得大奖(走到这一步的时候最多需要走两步才能获得大奖,例如10步能获得大奖最多只能填8)
+-->
+
+<root>
+  <item count="10" costTicket="30" openTime="12:00_14:00" beginIndex="0" endIndex="5" useNumReward="0_20052_40_1000" leastStep="20_25" maxStep="30" firstUseStep="8"/>
+</root>

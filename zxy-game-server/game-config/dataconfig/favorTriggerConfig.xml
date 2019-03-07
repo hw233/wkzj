@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   type:触发类型(福神眷顾触发条件，满足任意条件则触发) 1->抢夺 2->登天塔
+   value:触发值  type=1时，value表示抢夺次数 type=2时，value表示登塔次数
+-->
+
+<root>
+  <item type="1" value="20"/>
+  <item type="2" value="2"/>
+</root>

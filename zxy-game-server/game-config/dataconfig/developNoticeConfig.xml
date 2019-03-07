@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><!--	表名：装备突破公告配置表	developNum：需要公告的突破次数（如：developNum="7_9" 为突破到第7次和第9次的时候需要公告）	systemMsg：公告内容{0}玩家名，{1}装备名，{2}突破次数--><root>	<item developNum="1_7_9" systemMsg="恭喜{0}将{1}精铸到+{2}"/></root>	

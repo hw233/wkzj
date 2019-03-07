@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:配置id
+   rewardType:奖励类型 0.物品 1.金币 2.补满星数 3.装备 4.仙人魂魄 5.点券
+   rewardId:奖励id
+   num:数量 <物品，金币，点券支持公式  格式:x1*0.1(公式x1代表等级)>
+   proportion:几率(千分比) 所有概率总和为1000
+-->
+
+<root>
+  <item id="1" rewardType="0" rewardId="5001" num="x1*0.7+1" proportion="40"/>
+  <item id="2" rewardType="0" rewardId="5002" num="x1*1.25+1" proportion="50"/>
+  <item id="3" rewardType="1" rewardId="" num="x1*100+125" proportion="900"/>
+  <item id="4" rewardType="2" rewardId="" num="" proportion="10"/>
+</root>

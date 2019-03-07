@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+	
+	<bean id="lop.url" class="java.lang.String">
+		<constructor-arg value="http://api.wkqz.qianz.com/" />
+	</bean>
+	
+	<bean id="lop.appkey" class="java.lang.String">
+		<constructor-arg value="DotaServer" />
+	</bean>
+	
+	<bean id="lop.appsecret" class="java.lang.String">
+		<constructor-arg value="dc5796286ef9f5c1926a28bee1e87d85" />
+	</bean>	
+</beans>

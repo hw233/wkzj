@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   achieveId:成就id
+   achieveType:成就类型 1.战斗就可获得奖励 2.赢才会获得奖励
+   fightNum:挑战的次数
+   priorId:上一个成就id
+   nextId:下一个成就
+   reward:完成给予的奖励(x1:玩家等级) 类型(详见rewardType)_id_数量|...
+   extReward:条件达成额外产出 类型(详见rewardType)_id_数量(公式:x1表示等级)_几率(和为1000)|....
+-->
+
+<root>
+  <item achieveId="1" achieveType="1" fightNum="1" priorId="0" nextId="2" reward="0_9050_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="2" achieveType="1" fightNum="1" priorId="1" nextId="3" reward="0_9050_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="3" achieveType="1" fightNum="1" priorId="2" nextId="4" reward="0_9050_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="4" achieveType="1" fightNum="1" priorId="3" nextId="5" reward="0_9050_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="5" achieveType="1" fightNum="1" priorId="4" nextId="6" reward="0_9060_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="6" achieveType="1" fightNum="1" priorId="5" nextId="7" reward="0_9050_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="7" achieveType="1" fightNum="1" priorId="6" nextId="8" reward="0_9050_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="8" achieveType="1" fightNum="1" priorId="7" nextId="9" reward="0_9050_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="9" achieveType="1" fightNum="1" priorId="8" nextId="10" reward="0_9050_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="10" achieveType="1" fightNum="1" priorId="9" nextId="0" reward="0_9070_1" extReward="0_5001_x1*0.61*0.5_500|0_5002_x1*0.65*0.5_500"/>
+  <item achieveId="11" achieveType="2" fightNum="20" priorId="0" nextId="12" reward="0_7004_x1*2+3" extReward=""/>
+  <item achieveId="12" achieveType="2" fightNum="20" priorId="11" nextId="13" reward="0_7004_x1*2+3" extReward=""/>
+  <item achieveId="13" achieveType="2" fightNum="20" priorId="12" nextId="0" reward="0_7004_x1*2+3" extReward=""/>
+</root>

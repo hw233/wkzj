@@ -1,0 +1,1 @@
+java -jar lib/ztt-maintain.jar world

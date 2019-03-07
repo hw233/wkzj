@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:1.小兵 2.女人 3.铁匠
+   flushTime:每次间隔时间 x(秒)_x  两个区间中随机一个为下次可领取时间
+   rewardType:奖励类型（1.精炼石2.潜修石3.聚仙符4.扫荡符5.金币6.元宝） 出产类型_几率(和为1000)|… 出产哪几个类型的东西
+-->
+
+<root>
+  <item id="1" flushTime="600_600" rewardType="4_200|5_800"/>
+  <item id="2" flushTime="1200_1200" rewardType="3_200|2_800"/>
+  <item id="3" flushTime="1800_1800" rewardType="6_200|1_800"/>
+</root>

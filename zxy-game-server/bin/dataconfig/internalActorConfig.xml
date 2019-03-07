@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   actorId:中奖账号id（-1为没有玩家能获得）
+-->
+
+<root>
+  <item actorId="-1"/>
+</root>

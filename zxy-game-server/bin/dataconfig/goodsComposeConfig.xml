@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   star:星级
+   weapon:武器合成时间(秒)
+   armor:防具合成时间(秒)
+   ornaments:饰品合成时间(秒)
+-->
+
+<root>
+  <item star="3" weapon="600" armor="600" ornaments="600"/>
+  <item star="4" weapon="600" armor="600" ornaments="600"/>
+  <item star="5" weapon="600" armor="600" ornaments="600"/>
+  <item star="6" weapon="600" armor="600" ornaments="600"/>
+</root>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   level:强化室的等级
+   allyLevel:升级强化室需要的盟友等级总和
+   upgradeTicket:升级需要的点券数
+   addValue:增加强化时获得属性的百分比,2表示2%,3表示3%
+   probability:使装备强化时连升多级的百分比,若为0则不做处理,若为1则表示1%,若为2则表示2%
+   upLevel:与probability相对应,为该概率下可能连升的级数
+-->
+
+<root>
+  <item level="1" allyLevel="0" upgradeTicket="0" addValue="0" probability="0" upLevel="0"/>
+</root>

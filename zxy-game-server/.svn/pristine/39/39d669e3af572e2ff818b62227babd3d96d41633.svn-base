@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   rank:排行名次
+   useNum:使用次数
+   type:奖励类型（ 类型：0.物品 1.装备 2.仙人魂魄）
+   id:id
+   num:数量公式
+-->
+
+<root>
+  <item rank="1" useNum="30" type="2" id="183" num="80"/>
+  <item rank="2" useNum="30" type="0" id="5001" num="50000"/>
+  <item rank="3" useNum="30" type="0" id="5001" num="45000"/>
+  <item rank="4" useNum="30" type="0" id="5001" num="40000"/>
+  <item rank="5" useNum="30" type="0" id="5001" num="35000"/>
+  <item rank="6" useNum="30" type="0" id="5001" num="30000"/>
+  <item rank="7" useNum="30" type="0" id="5001" num="25000"/>
+  <item rank="8" useNum="30" type="0" id="5001" num="20000"/>
+  <item rank="9" useNum="30" type="0" id="5001" num="15000"/>
+  <item rank="10" useNum="30" type="0" id="5001" num="10000"/>
+</root>

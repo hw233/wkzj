@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   fromActorId:gm的actorId 开始段
+   endActorId:gm的actorId 结束段
+-->
+
+<root>
+  <item fromActorId="1" endActorId="100"/>
+</root>

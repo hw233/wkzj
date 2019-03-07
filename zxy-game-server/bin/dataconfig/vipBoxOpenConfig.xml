@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   count:开启的次数
+   costTicket:开启消耗的点券
+   rewardNum:出现奖励的个数(奖励个数_几率<几率和为1000>|...)
+-->
+
+<root>
+  <item count="1" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="2" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="3" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="4" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="5" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="6" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="7" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="8" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="9" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="10" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="11" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="12" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="13" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="14" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="15" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="16" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="17" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="18" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="19" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="20" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="21" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="22" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="23" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="24" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="25" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="26" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="27" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="28" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="29" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="30" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="31" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="32" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="33" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="34" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="35" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="36" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="37" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="38" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="39" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="40" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="41" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="42" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="43" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="44" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="45" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="46" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="47" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="48" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="49" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+  <item count="50" costTicket="5" rewardNum="1_600|2_300|3_100"/>
+</root>

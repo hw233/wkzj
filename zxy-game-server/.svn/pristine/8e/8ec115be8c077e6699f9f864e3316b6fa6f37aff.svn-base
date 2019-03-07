@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   id:特权id（标识唯一性）
+   parseId:解析器id
+   parseValue:当id=1时，补满精力活力次数 当id=2时，补满精力活力次数 当id=3时，每天领取点券数_领取次数
+   useCondition:使用条件   当id=1时候，无   当id=2时候，充值点券大于10（充值超过1元）   当id=3时候，充值点券大于10（充值超过1元）
+   useTarget:使用对象（0未充值，1已充值）
+-->
+
+<root>
+  <item id="1" parseId="1" parseValue="1" useCondition="" useTarget="0"/>
+  <item id="2" parseId="2" parseValue="1" useCondition="80" useTarget="1"/>
+  <item id="3" parseId="3" parseValue="30_1" useCondition="80" useTarget="1"/>
+</root>

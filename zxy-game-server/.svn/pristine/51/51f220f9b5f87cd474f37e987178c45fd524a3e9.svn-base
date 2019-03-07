@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   openTime:开启时间
+   questionsNum:问题数量
+   reward:所有题目回答正确的奖励 type(详见rewardType)_id_num|…
+-->
+
+<root>
+  <item openTime="19:00:00_20:00:00" questionsNum="20" reward="2_150_2"/>
+</root>

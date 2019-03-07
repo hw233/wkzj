@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   startTime:活动开始时间 (yyyy-mm-dd hh:mm:ss)
+   endTime:活动结束时间 (yyyy-mm-dd hh:mm:ss)
+   reward:奖励(类型(详见rewardType)_id_数量_几率|...)
+   propertionType:1.奖励几率总和为1000时多个随机一个奖励 2.奖励几率总和小于1000时有可能没有奖励 3.奖励几率都为1000时,发放所有奖励
+-->
+
+<root>
+  <item startTime="2015-01-09 00:00:00" endTime="2015-01-09 23:59:59" reward="0_21031_1_300" propertionType="2"/>
+</root>

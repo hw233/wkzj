@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   difficult:难度(排名一定要是在对应难度内的，否则忽略)
+   blueCamp:蓝方(最强势力排名_最强势力排名）
+   redCamp:红方(最强势力排名_最强势力排名）
+-->
+
+<root>
+  <item difficult="1" blueCamp="1_3_5_7_9" redCamp="2_4_6_8_10"/>
+  <item difficult="1" blueCamp="1_4_6_7_10" redCamp="2_3_5_8_9"/>
+  <item difficult="1" blueCamp="1_2_8_9_10" redCamp="3_4_5_6_7"/>
+  <item difficult="2" blueCamp="21" redCamp="22"/>
+  <item difficult="3" blueCamp="51" redCamp="52"/>
+  <item difficult="4" blueCamp="101" redCamp="102"/>
+</root>

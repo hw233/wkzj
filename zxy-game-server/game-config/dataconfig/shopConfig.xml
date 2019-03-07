@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   shopId:商品id（ID必须唯一且不能改变）
+   type:奖励类型(0.物品 1.装备 2.仙人魂魄 3.金币 4.仙人 5.元宝)
+   id:id
+   number:物品数量
+   costTicket:购买消耗的元宝
+   costGold:购买消耗的金币
+   maxBuyCount:购买上限(填-1时为没有上线)
+   level:购买需要掌教等级(0.不需要)
+   vipLevel:可购买的vip等级 0为不限制
+   resetTime:重置时间   (0永久 1每天)
+   isMonthCard:是否月卡才能购买(0.不是1.是)
+-->
+
+<root>
+  <item shopId="1" type="0" id="5001" number="100" costTicket="20" costGold="0" maxBuyCount="5" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="2" type="0" id="5002" number="100" costTicket="30" costGold="0" maxBuyCount="5" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="3" type="0" id="1002" number="1" costTicket="1" costGold="0" maxBuyCount="40" level="0" vipLevel="0" resetTime="1" isMonthCard="1"/>
+  <item shopId="4" type="0" id="6001" number="1" costTicket="0" costGold="5000" maxBuyCount="200" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="5" type="0" id="6003" number="1" costTicket="50" costGold="0" maxBuyCount="50" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="6" type="0" id="9069" number="1" costTicket="10" costGold="0" maxBuyCount="-1" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="7" type="0" id="1002" number="1" costTicket="2" costGold="0" maxBuyCount="40" level="0" vipLevel="0" resetTime="1" isMonthCard="1"/>
+  <item shopId="8" type="0" id="1002" number="1" costTicket="3" costGold="0" maxBuyCount="60" level="0" vipLevel="0" resetTime="1" isMonthCard="1"/>
+  <item shopId="9" type="0" id="1002" number="1" costTicket="4" costGold="0" maxBuyCount="80" level="0" vipLevel="0" resetTime="1" isMonthCard="1"/>
+  <item shopId="10" type="0" id="1002" number="1" costTicket="5" costGold="0" maxBuyCount="100" level="0" vipLevel="0" resetTime="1" isMonthCard="1"/>
+  <item shopId="11" type="0" id="1002" number="1" costTicket="10" costGold="0" maxBuyCount="120" level="0" vipLevel="0" resetTime="1" isMonthCard="1"/>
+  <item shopId="12" type="0" id="1002" number="1" costTicket="20" costGold="0" maxBuyCount="140" level="0" vipLevel="0" resetTime="1" isMonthCard="1"/>
+  <item shopId="13" type="0" id="1002" number="1" costTicket="40" costGold="0" maxBuyCount="160" level="0" vipLevel="0" resetTime="1" isMonthCard="1"/>
+  <item shopId="58" type="0" id="5001" number="100" costTicket="30" costGold="0" maxBuyCount="2" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="59" type="0" id="5001" number="100" costTicket="50" costGold="0" maxBuyCount="2" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="60" type="0" id="5001" number="100" costTicket="80" costGold="0" maxBuyCount="2" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="61" type="0" id="5001" number="100" costTicket="100" costGold="0" maxBuyCount="5" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="62" type="0" id="5001" number="100" costTicket="150" costGold="0" maxBuyCount="5" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="63" type="0" id="5001" number="100" costTicket="200" costGold="0" maxBuyCount="5" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="64" type="0" id="5001" number="100" costTicket="250" costGold="0" maxBuyCount="5" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="65" type="0" id="5001" number="100" costTicket="300" costGold="0" maxBuyCount="5" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="66" type="0" id="5001" number="100" costTicket="500" costGold="0" maxBuyCount="-1" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="67" type="0" id="5002" number="100" costTicket="20" costGold="0" maxBuyCount="1" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="68" type="0" id="5002" number="100" costTicket="100" costGold="0" maxBuyCount="2" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="69" type="0" id="5002" number="100" costTicket="500" costGold="0" maxBuyCount="-1" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="70" type="0" id="1005" number="1" costTicket="500" costGold="0" maxBuyCount="-1" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="71" type="0" id="7006" number="30" costTicket="100" costGold="0" maxBuyCount="1" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="72" type="0" id="1001" number="1" costTicket="0" costGold="100000" maxBuyCount="5" level="0" vipLevel="0" resetTime="1" isMonthCard="0"/>
+  <item shopId="14" type="2" id="112" number="1" costTicket="0" costGold="25000" maxBuyCount="2" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="15" type="2" id="133" number="1" costTicket="0" costGold="25000" maxBuyCount="2" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="16" type="2" id="137" number="1" costTicket="0" costGold="25000" maxBuyCount="2" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="17" type="2" id="130" number="1" costTicket="0" costGold="25000" maxBuyCount="2" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="18" type="2" id="138" number="1" costTicket="0" costGold="25000" maxBuyCount="2" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="19" type="2" id="146" number="1" costTicket="0" costGold="25000" maxBuyCount="2" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="20" type="2" id="104" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="21" type="2" id="107" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="22" type="2" id="111" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="23" type="2" id="113" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="24" type="2" id="114" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="25" type="2" id="115" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="26" type="2" id="131" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="27" type="2" id="132" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="28" type="2" id="118" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="29" type="2" id="119" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="30" type="2" id="120" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="31" type="2" id="134" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="32" type="2" id="141" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="33" type="2" id="142" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="34" type="2" id="143" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="35" type="2" id="144" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="36" type="2" id="145" number="1" costTicket="0" costGold="50000" maxBuyCount="10" level="0" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="37" type="0" id="7100" number="10" costTicket="1000" costGold="0" maxBuyCount="1" level="10" vipLevel="15" resetTime="0" isMonthCard="0"/>
+  <item shopId="38" type="1" id="3001" number="1" costTicket="2000" costGold="0" maxBuyCount="1" level="10" vipLevel="15" resetTime="0" isMonthCard="0"/>
+  <item shopId="39" type="1" id="2021" number="1" costTicket="3000" costGold="0" maxBuyCount="1" level="10" vipLevel="15" resetTime="0" isMonthCard="0"/>
+  <item shopId="40" type="2" id="106" number="5" costTicket="135" costGold="0" maxBuyCount="1" level="10" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="41" type="0" id="30057" number="5" costTicket="500" costGold="0" maxBuyCount="1" level="30" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="42" type="0" id="30950" number="5" costTicket="500" costGold="0" maxBuyCount="1" level="30" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="43" type="0" id="30046" number="5" costTicket="665" costGold="0" maxBuyCount="1" level="20" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="44" type="0" id="30053" number="5" costTicket="665" costGold="0" maxBuyCount="1" level="20" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="45" type="0" id="30077" number="5" costTicket="500" costGold="0" maxBuyCount="1" level="30" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="46" type="0" id="30094" number="5" costTicket="750" costGold="0" maxBuyCount="1" level="30" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="47" type="0" id="30064" number="5" costTicket="750" costGold="0" maxBuyCount="1" level="30" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="48" type="0" id="30082" number="5" costTicket="625" costGold="0" maxBuyCount="1" level="30" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="49" type="0" id="30081" number="5" costTicket="625" costGold="0" maxBuyCount="1" level="30" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="50" type="2" id="100" number="5" costTicket="1250" costGold="0" maxBuyCount="1" level="30" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="51" type="0" id="30074" number="5" costTicket="500" costGold="0" maxBuyCount="1" level="30" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="52" type="2" id="117" number="5" costTicket="1250" costGold="0" maxBuyCount="1" level="40" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="53" type="2" id="169" number="5" costTicket="1250" costGold="0" maxBuyCount="1" level="40" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="54" type="0" id="30505" number="5" costTicket="1000" costGold="0" maxBuyCount="1" level="40" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="55" type="0" id="30502" number="5" costTicket="1000" costGold="0" maxBuyCount="1" level="40" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="56" type="0" id="30083" number="5" costTicket="625" costGold="0" maxBuyCount="1" level="40" vipLevel="15" resetTime="1" isMonthCard="0"/>
+  <item shopId="57" type="2" id="166" number="5" costTicket="2000" costGold="0" maxBuyCount="1" level="40" vipLevel="15" resetTime="1" isMonthCard="0"/>
+</root>
